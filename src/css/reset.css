@@ -1,4 +1,9 @@
-/* Reset styles */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -22,14 +27,24 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  transition: color 250ms linear;
 }
 
 button {
   cursor: pointer;
+  padding: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+address {
+  font-style: normal;
 }

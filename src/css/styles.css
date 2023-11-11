@@ -1,25 +1,18 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
-
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+@import url('../partials/header/header.css');
+@import url('../partials/hero/hero.css');
+@import url('../partials/numbers/numbers.css');
+@import url('../partials/about-me/about-me.css');
+@import url('../partials/you-will-find/you-will-find.css');
+@import url('../partials/for-whom/for-whom.css');
+@import url('../partials/apparatus/apparatus.css');
+@import url('../partials/about-training/about-training.css');
+@import url('../partials/what-to-take/what-to-take.css');
+@import url('../partials/submit/submit.css');
+@import url('../partials/answer-questions/answer-questions.css');
+@import url('../partials/message-me/message-me.css');
+@import url('../partials/gallery/gallery.css');
+@import url('../partials/reviews/reviews.css');
+@import url('../partials/contact-me/contact-me.css');
+@import url('../partials/follow-me/follow-me.css');
+@import url('../partials/footer/footer.css');
