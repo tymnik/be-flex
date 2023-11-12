@@ -1,5 +1,29 @@
 :root {
-}
+    /*--------colors-------*/
+    --black-90: #08070C;
+    --white: #FFF;
+    --black-60: #272727;
+    --background: #FDF6FD;
+    --main-violet: #6B39D0;
+    --main-pink: #E53F8E;
+    --error: #A61717;
 
-body {
+    /* ------font-sizes------*/
+    --largest: 90px;
+    --title-2: 60px;
+    --title-3: 35px;
+    --subtitle-1: 34px;
+    --title-4: 28px;
+    --subtitle-2: 24px;
+    --subtitle-3: 20px;
+    --body-1: 18px;
+    --body-regular: 16px;
+    --body-2: 14px;
+    --smallest: 12px;
+
+    /*-----font-weights-----*/
+    --normal: 400;
+    --semi-bold: 500;
+    --bold: 600;
+    --bold-extra: 700;
 }

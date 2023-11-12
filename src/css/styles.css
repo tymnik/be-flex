@@ -16,3 +16,51 @@
 @import url('../partials/contact-me/contact-me.css');
 @import url('../partials/follow-me/follow-me.css');
 @import url('../partials/footer/footer.css');
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/manrope/v7/3JnmSDn90Gmq2mr3blnHaqzZKfwI.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    src: url('https://fonts.gstatic.com/s/manrope/v7/3JnmSDn90Gmq2mr3blnHaq0ZKfwI.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    src: url('https://fonts.gstatic.com/s/manrope/v7/3JnmSDn90Gmq2mr3blnHaq4ZKfwI.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://fonts.gstatic.com/s/manrope/v7/3JnmSDn90Gmq2mr3blnHaq8ZKfwI.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://fonts.gstatic.com/s/orelegaone/v7/2ZDyE3PJlhm3dU8fF3OJ6cIggeShVEA1Za5J1w.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Orelega One', cursive;
+}
