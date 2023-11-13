@@ -1,0 +1,40 @@
+.intro-text p:nth-child(n+4) {
+    display: none;
+}
+
+@media screen and (max-width: 744px) {
+    .intro-text p:nth-child(n+4) {
+        display: none;
+    }
+
+    .intro-text.collapsed p:nth-child(n+4) {
+        display: block;
+    }
+
+    .ellipsis {
+        display: inline;
+    }
+
+    .show-more-btn {
+        display: inline;
+    }
+
+    .show-less-btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 744px) {
+    .ellipsis {
+        display: none;
+    }
+
+    .show-more-btn,
+    .show-less-btn {
+        display: none;
+    }
+
+    .intro-text p {
+        display: block;
+    }
+}
