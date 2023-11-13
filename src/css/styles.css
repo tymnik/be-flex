@@ -1,4 +1,5 @@
 @import url('./reset.css');
+@import url('./vars.css');
 @import url('../partials/header/header.css');
 @import url('../partials/hero/hero.css');
 @import url('../partials/numbers/numbers.css');
