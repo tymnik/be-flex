@@ -1,3 +1,13 @@
+.about-me {
+    padding: 16px 16px;
+}
+
+.about-me-title {
+    font-size: 40px;
+    font-weight: var(--normal);
+    color: var(--black-90);
+}
+
 @media screen and (max-width: 743px) {
     .intro-text p:nth-child(n+4) {
         display: none;
