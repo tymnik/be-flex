@@ -1,8 +1,4 @@
-.intro-text p:nth-child(n+4) {
-    display: none;
-}
-
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 743px) {
     .intro-text p:nth-child(n+4) {
         display: none;
     }
