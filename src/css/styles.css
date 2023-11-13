@@ -21,35 +21,35 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    src: url('https://fonts.gstatic.com/s/manrope/v7/3JnmSDn90Gmq2mr3blnHaqzZKfwI.ttf') format('truetype');
+    src: url('../fonts/Manrope-VariableFont_wght.ttf');
 }
 
 @font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
-    src: url('https://fonts.gstatic.com/s/manrope/v7/3JnmSDn90Gmq2mr3blnHaq0ZKfwI.ttf') format('truetype');
+    src: url('../fonts/Manrope-VariableFont_wght.ttf');
 }
 
 @font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
-    src: url('https://fonts.gstatic.com/s/manrope/v7/3JnmSDn90Gmq2mr3blnHaq4ZKfwI.ttf') format('truetype');
+    src: url('../fonts/Manrope-VariableFont_wght.ttf');
 }
 
 @font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    src: url('https://fonts.gstatic.com/s/manrope/v7/3JnmSDn90Gmq2mr3blnHaq8ZKfwI.ttf') format('truetype');
+    src: url('../fonts/Manrope-VariableFont_wght.ttf');
 }
 
 @font-face {
     font-family: 'Orelega One';
     font-style: normal;
     font-weight: normal;
-    src: url('https://fonts.gstatic.com/s/orelegaone/v7/2ZDyE3PJlhm3dU8fF3OJ6cIggeShVEA1Za5J1w.ttf') format('truetype');
+    src: url('../fonts/OrelegaOne-Regular.ttf');
 }
 
 body {
