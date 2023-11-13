@@ -60,6 +60,10 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M4 16h24"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M4 8h24"></path>
 </symbol>
+<symbol id="icon-close-btn" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M4 26.667l24-21.333"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M4 5.333l24 21.333"></path>
+</symbol>
 <symbol id="icon-star" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M17.38 25.564c-0.846-0.534-1.913-0.534-2.759 0v0l-7.408 4.674 1.982-8.881c0.212-0.951-0.086-1.973-0.828-2.645l-6.673-6.044 8.74-0.775c1.015-0.090 1.843-0.76 2.208-1.658l3.358-8.283 3.358 8.283c0.364 0.898 1.193 1.568 2.208 1.658l8.74 0.775-6.673 6.044c-0.742 0.672-1.040 1.694-0.828 2.645l1.982 8.881-7.408-4.674z"></path>
 </symbol>

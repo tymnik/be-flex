@@ -8,6 +8,10 @@
     --main-pink: #E53F8E;
     --error: #A61717;
 
+    /*------fonts------*/
+    --manrope: 'Manrope';
+    --orelega-one: 'Orelega One';
+
     /* ------font-sizes------*/
     --largest: 90px;
     --title-2: 60px;
@@ -26,4 +30,18 @@
     --semi-bold: 500;
     --bold: 600;
     --bold-extra: 700;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 16px;
+
+    @media screen and (min-width: 744px) {
+        padding: 0 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 0 80px;
+    }
 }
