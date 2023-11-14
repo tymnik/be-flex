@@ -1,0 +1,247 @@
+.training_section {
+	padding: 64px 0 0px 0;
+}
+
+/* .training_container {
+	max-width: 343px;
+} */
+
+.title_wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+
+
+.training_section_title {}
+
+.main_title {
+	color: var(--black-90, #08070C);
+	text-align: center;
+	font-family: Orelega One;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@media (min-width: 744px) {
+	.main_title {
+		font-size: 60px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.title_wrapper {
+		margin-bottom: 64px;
+	}
+}
+
+
+
+
+.gymnast_img {
+	border-radius: 36px 36px 36px 36px;
+	/* border: 2px solid #000;
+		background: lightgray 0px -35.97px / 100% 118.685% no-repeat; */
+}
+
+
+@media (min-width: 744px) {
+	.gymnast_img {
+		border-radius: 36px 36px 0px 0px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.gymnast_img {
+		border-radius: 36px 0px 0px 36px;
+	}
+}
+
+.training_border {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+}
+
+@media (min-width: 744px) {
+	.training_border {
+		border-radius: 36px 36px 36px 36px;
+		border: 2px solid #000;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.training_border {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.training_wrapp_title {
+	color: var(--black-90, #08070C);
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@media (min-width: 744px) {
+	.training_wrapp_title {
+		font-size: 36px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.training_wrapp_title {
+		margin-top: 36px;
+	}
+}
+
+.training_wrapp_text {
+	color: var(--black-90, #08070C);
+	text-align: center;
+	font-family: Manrope;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+@media (min-width: 1440px) {
+	.training_wrapp_text {
+		text-align: left;
+	}
+}
+
+.training_icon {
+	width: 43.996px;
+	height: 44px;
+}
+
+.training_wrapp {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	/* max-width: 327px; */
+}
+
+@media (min-width: 744px) {
+	.training_wrapp {
+		gap: 32px;
+		/* max-width: 627px; */
+		align-items: center;
+	}
+}
+
+@media (min-width: 1440px) {
+	.training_wrapp {
+		align-items: start;
+	}
+}
+
+.training_list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+}
+
+.training_item {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+
+.training_last_text {
+	color: #000;
+	text-align: center;
+	font-family: Manrope;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	/* max-width: 336px;
+			height: 153px; */
+}
+
+@media (min-width: 744px) {
+	.training_last_text {
+		font-size: 18px;
+		max-width: 627px;
+	}
+}
+
+.training_last_text::after {
+	content: '';
+	display: block;
+	max-width: 341px;
+	height: 0px;
+	border-top: 2px solid var(--black-90, #08070C);
+	margin-top: 10px;
+}
+
+@media (min-width: 744px) {
+	.training_last_text::after {
+		content: unset;
+	}
+}
+
+@media (min-width: 1440px) {
+	.training_last_text {
+		text-align: left;
+	}
+}
+
+.top_title {
+	color: var(--black-90, #08070C);
+	font-family: Orelega One;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@media (min-width: 744px) {
+	.top_title {
+		font-size: 36px;
+	}
+}
+
+.low_text {
+	color: var(--black-90, #08070C);
+	font-family: Manrope;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@media (min-width: 744px) {
+	.low_text {
+		font-size: 24px;
+	}
+}
+
+.be_flex_wrap {
+	text-align: center;
+	font-family: Oleo Script;
+	font-size: 45.248px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	stroke: #D53A844D;
+	width: 138px;
+}
+
+@media (max-width: 743px) {
+	.icon_be_flex {
+		display: none;
+	}
+}
