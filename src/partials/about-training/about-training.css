@@ -1,5 +1,5 @@
 .training_section {
-	padding: 72px 16px 72px 16px;
+	padding: 0px 16px;
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;}
@@ -242,25 +242,30 @@
 		font-size: 24px;
 	}
 }
-
-.be_flex_wrap {
+.training_section_box {
+	/* position: relative; */
+}
+.svg_wrap {
+	background-image: url(../../img/about_training/be_flex_pink_1x.svg);
+	background-repeat: space;	
+	width: 100%;
+	height: 63px;
+background-color: transparent;
 	text-align: center;
-	font-family: Oleo Script;
-	font-size: 45.248px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	stroke: #D53A844D;
-	width: 138px;
+		/* font-family: Oleo Script;
+		font-size: 34.795px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal; */
+
 }
 
-.icon_be_flex {
-	background: url(../../img/icons.svg#icon-logo) repeat-x;
-		stroke: #D53A844D;
-		fill: transparent;
-		width: 137.29px;
-		height: 63px;
-		border: 1.6px;
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+	.svg_wrap {
+		background-image: url(../../img/about_training/be_flex_pink_2x.jpg);
+	}
 }
 
 @media (max-width: 743px) {
