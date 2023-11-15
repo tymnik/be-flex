@@ -255,7 +255,7 @@
 }
 
 .icon_be_flex {
-	background: url(../../img/icons.svg#icon-logo);
+	background: url(../../img/icons.svg#icon-logo) repeat-x;
 		stroke: #D53A844D;
 		fill: transparent;
 		width: 137.29px;
