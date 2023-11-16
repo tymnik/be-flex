@@ -36,13 +36,13 @@
 	}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
 	.main_title {
 		font-size: var(--title-2);
 	}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
 	.title_wrapper {
 		margin-bottom: 64px;
 		margin-top: unset;
@@ -65,7 +65,7 @@
 	}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
 	.gymnast_img {
 		border-radius: 36px 0px 0px 36px;
 		/* width: 628px; */
@@ -100,7 +100,7 @@
 		}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
 	.training_border {
 		display: flex;
 		flex-direction: row;
@@ -135,7 +135,7 @@
 	}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
 	.training_wrapp_title {
 		margin-top: 36px;
 	}
@@ -150,7 +150,7 @@
 	line-height: 1.36;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
 	.training_wrapp_text {
 		text-align: left;
 	}
@@ -175,7 +175,7 @@
 	}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
 	.training_wrapp {
 		align-items: start;
 		width: 628px;
@@ -196,7 +196,7 @@
 	}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
 	.training_list {
 		margin-left: unset;
 	}
@@ -248,7 +248,7 @@
 	}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
 	.training_last_text {
 		text-align: left;
 	}
@@ -305,7 +305,7 @@
 	text-align: center;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
 	.training_section::before {
 		/* position: relative; */
 		display: none;
