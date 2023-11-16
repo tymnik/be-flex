@@ -4,9 +4,9 @@
 	flex-direction: column;
 	margin: 0 auto;}
 
-		@media (min-width: 744px) {
-			.training_section {
-				flex-direction: row;
+	@media (min-width: 744px) {
+		.training_section {
+			flex-direction: row;
 			}
 		}
 .title_wrapper {
@@ -17,40 +17,43 @@
 
 @media (min-width: 744px) {
 	.title_wrapper  {
-margin-top: 54px;	
+	margin-top: 54px;	
 }
 }
 
 .main_title {
+	font-family: var(--orelega-one);
 	color: var(--black-90);
 	text-align: center;
 	font-size: 40px;
 	font-weight: var(--normal);
-	line-height: 109.025%;
-	/* 43.61/40 */
+	line-height: 1.09;
 }
 
 @media (min-width: 744px) {
 	.main_title {
-		line-height: 109.033333%;
-		/* 65.42/60 */
+		line-height: 1.09;
+	}
+}
+
+@media (min-width: 1440px) {
+	.main_title {
+		font-size: var(--title-2);
 	}
 }
 
 @media (min-width: 1440px) {
 	.title_wrapper {
 		margin-bottom: 64px;
+		margin-top: unset;
 	}
 }
 
-
-
-
 .gymnast_img {
-		border-radius: 36px;
-		border: 2px solid #000;
-		background: lightgray 0px -35.97px / 100% 118.685% no-repeat;
-		width: 343px;
+	border-radius: 36px;
+	border: 2px solid #000;
+	background: lightgray 0px -35.97px / 100% 118.685% no-repeat;
+	width: 343px;
 }
 
 
@@ -73,7 +76,7 @@ margin-top: 54px;
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
-		align-items: center;
+	align-items: center;
 }
 
 @media (min-width: 744px) {
@@ -88,12 +91,12 @@ margin-top: 54px;
 		position: relative;
 	}
 
-		.training_border::before {
-			content: "";
-			width: 647px;
-			border: 1px solid #000;
-			position: absolute;
-			top: 50.5%;
+	.training_border::before {
+		content: "";
+		width: 647px;
+		border: 1px solid #000;
+		position: absolute;
+		top: 50.5%;
 		}
 }
 
@@ -105,14 +108,14 @@ margin-top: 54px;
 		position: relative;
 		gap: 23px;
 	}
-		.training_border::before {
-				content: "";
-					height: 536px;
-					border: 1px solid #000;
-					position: absolute;
-					width: 1px;
-					top: 0;
-					left: 49.7%;
+	.training_border::before {
+		content: "";
+		height: 536px;
+		border: 1px solid #000;
+		position: absolute;
+		width: 1px;
+		top: 0;
+		left: 49.7%;
 		}
 }
 
@@ -122,7 +125,7 @@ margin-top: 54px;
 	text-align: center;
 	font-size: var(--subtitle-2);
 	font-weight: var(--normal);
-	line-height: 109.041667%; /* 26.17px/24 */
+	line-height: 1.09; 
 }
 
 @media (min-width: 744px) {
@@ -144,7 +147,7 @@ margin-top: 54px;
 	font-family: var(--manrope);	
 	font-size: var(--subtitle-2);
 	font-weight: var(--bold-extra);
-	line-height: 136.583333%; /* 32.78px/24 */
+	line-height: 1.36;
 }
 
 @media (min-width: 1440px) {
@@ -154,8 +157,8 @@ margin-top: 54px;
 }
 
 .training_icon {
-			width: 43.996px;
-			height: 44px;
+	width: 43.996px;
+	height: 44px;
 
 }
 
@@ -193,6 +196,12 @@ margin-top: 54px;
 	}
 }
 
+@media (min-width: 1440px) {
+	.training_list {
+		margin-left: unset;
+	}
+}
+
 .training_item {
 	list-style: none;
 	display: flex;
@@ -211,7 +220,7 @@ margin-top: 54px;
 	font-size: var(--body-2);
 	font-style: normal;
 	font-weight: var(--normal);
-	line-height: 136.571429%; /* 19.12px/14 */
+	line-height: 1.36; 
 	max-width: 327px;
 	height: 153px;
 }
@@ -220,7 +229,7 @@ margin-top: 54px;
 	.training_last_text {
 		font-size: var(--body-1);
 		max-width: 627px;
-			line-height: 136.611111%; /* 24.59px/18 */
+		line-height: 1.36; 
 	}
 }
 
@@ -250,13 +259,13 @@ margin-top: 54px;
 	font-family: Orelega One;
 	font-size: var(--subtitle-2);
 	font-weight: var(--normal);
-	line-height: 109.041667%; /* 26.17px/24 */
+	line-height: 1.09; 
 }
 
 @media (min-width: 744px) {
 	.top_title {
 		font-size: var(--title-3);
-			line-height: 109.028571%; /* 38.16px/35 */
+		line-height: 1.09; 
 	}
 }
 
@@ -266,47 +275,53 @@ margin-top: 54px;
 	font-size: var(--smallest);
 	font-style: normal;
 	font-weight: var(--normal);
-	line-height: 136.583333%; /* 16.39px/12 */
+	line-height: 1.36; 
 }
 
 @media (min-width: 744px) {
 	.low_text {
 		font-size: var(--subtitle-2);
-		line-height: 136.583333%; /* 32.78/24 */
+		line-height: 1.36; 
 	}
 }
 
 @media (min-width: 744px) {
 	.training_section {
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+		/* position: relative; */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		}
 }
 
 .training_section::before {
 	content: '';
-	position: absolute;
-	background-image: url(../../img/about_training/be_flex_pink_1x.svg);
+	/* position: absolute; */
+	background-image: url(/img/about_training/be_flex_pink_1x.svg);
 	background-repeat: space;	
 	width: 100%;
 	height: 63px;
 	background-color: transparent;
 	text-align: center;
+}
 
+@media (min-width: 1440px) {
+	.training_section::before {
+		/* position: relative; */
+		display: none;
+	}
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 	.training_section {
-		background-image: url(../../img/about_training/be_flex_pink_2x.jpg);
+		background-image: url(/img/about_training/be_flex_pink_2x.jpg);
 	}
 }
 
 @media screen and (max-width: 743px) {
 	.training_section::before {
-		display: none;
+	display: none;
 	}
 }
