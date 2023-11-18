@@ -1,0 +1,76 @@
+.sign-btn-block {
+    max-width: 343px;
+    height: 97px;
+    display: flex;
+    background-color: #7439CA;
+    border: 2px solid var(--black-90);
+    border-radius: 36px;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+
+    @media screen and (min-width: 744px) {
+        max-width: 648px;
+        height: 140px;
+        border-radius: 60px;
+        gap: 46px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 954px;
+    }
+}
+
+.sign-btn-block-text {
+    color: var(--white);
+    width: 146px;
+    text-align: center;
+    font-family: var(--orelega-one);
+    font-size: 16px;
+    line-height: normal;
+
+    @media screen and (min-width: 744px) {
+        font-size: 28px;
+        width: 200px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 285px;
+        font-size: 35px;
+    }
+}
+
+.sign-btn-line {
+    display: block;
+    width: 2px;
+    height: 63px;
+    fill: var(--white);
+    
+    @media screen and (min-width: 744px) {
+            height: 92px;
+        }
+}
+
+.sign-up-btn {
+    border: 2px solid var(--background);
+    background-color: transparent;
+    color: var(--background);
+    font-family: var(--orelega-one);
+    font-size: 16px;
+    border-radius: 36px;
+    width: 145px;
+    height: 48px;
+    line-height: normal;
+
+    @media screen and (min-width: 744px) {
+        font-size: 28px;
+        width: 202px;
+        height: 70px;
+    }
+
+        @media screen and (min-width: 1280px) {
+            width: 302px;
+            font-size: 35px;
+        }
+}
