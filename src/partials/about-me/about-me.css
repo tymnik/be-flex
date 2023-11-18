@@ -152,10 +152,6 @@
     .show-less-btn {
         display: none;
     }
-
-    .about-me::after {
-        margin-top: 16px;
-    }
 }
 
 @media screen and (min-width: 1280px) {
