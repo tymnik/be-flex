@@ -63,17 +63,21 @@
     font-weight: var(--normal);
     margin: 0 auto;
     overflow: hidden;
-    width: 343px;
-    max-height: 165px;
+    max-width: 343px;
+    max-height: 187px;
     line-height: 1.375;
 
     &.collapsed {
         max-height: 1500px;
     }
 
+    @media screen and (min-width: 345px) {
+        max-height: 165px;
+    }
+
     @media screen and (min-width: 744px) {
         max-height: unset;
-        width: 628px;
+        max-width: 628px;
         font-size: var(--body-1);
         line-height: 1.38;
     }
