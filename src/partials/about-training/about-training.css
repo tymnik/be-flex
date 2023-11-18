@@ -1,18 +1,18 @@
 .training_section {
-	padding: 0px 16px 0px 16px;
+	padding: 0 16px 72px 16px;
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;}
 
 	@media (min-width: 744px) {
 	.training_section {
-	padding: 0px 48px 137px 48px;
+	padding: 0 48px 137px 48px;
 	}
 	}
 
 	@media (min-width: 1280px) {
 	.training_section {
-	padding: 0px 80px 88px 80px;
+	padding: 0 80px 88px 80px;
 	}
 	}
 .training_section_container {
