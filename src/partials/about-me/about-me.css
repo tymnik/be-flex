@@ -126,6 +126,12 @@
         margin-left: auto;
     }
 
+    .common-button:hover,
+    .common-button:focus {
+        border: 1px solid var(--main-violet);
+        color: var(--main-violet);
+    }
+
     .show-less-btn {
         display: none;
     }
