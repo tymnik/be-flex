@@ -1,24 +1,25 @@
 .training_section {
-	padding: 0px 16px;
+	padding: 0px 16px 0px 16px;
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;}
 
 	@media (min-width: 744px) {
-		.training_section {
-			flex-direction: row;
-			}
-		}
-.title_wrapper {
+	.training_section {
+	padding: 0px 48px 137px 48px;
+	}
+	}
+
+	@media (min-width: 1280px) {
+	.training_section {
+	padding: 0px 80px 88px 80px;
+	}
+	}
+.training_section_container {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 40px;
-}
-
-@media (min-width: 744px) {
-	.title_wrapper  {
-	margin-top: 54px;	
-}
+	width: 100%;
+	align-items: center;
 }
 
 .main_title {
@@ -27,25 +28,13 @@
 	text-align: center;
 	font-size: 40px;
 	font-weight: var(--normal);
-	line-height: 1.09;
-}
-
-@media (min-width: 744px) {
-	.main_title {
-		line-height: 1.09;
-	}
+	line-height: normal;
+	margin-bottom: 40px;
 }
 
 @media (min-width: 1280px) {
 	.main_title {
-		font-size: var(--title-2);
-	}
-}
-
-@media (min-width: 1280px) {
-	.title_wrapper {
-		margin-bottom: 64px;
-		margin-top: unset;
+	font-size: var(--title-2);
 	}
 }
 
@@ -56,11 +45,11 @@
 	width: 343px;
 }
 
-
 @media (min-width: 744px) {
 	.gymnast_img {
 		border-radius: 36px 36px 0px 0px;
 		width: 647px;
+		height: 546px;
 		border: unset;
 	}
 }
@@ -68,7 +57,8 @@
 @media (min-width: 1280px) {
 	.gymnast_img {
 		border-radius: 36px 0px 0px 36px;
-		/* width: 628px; */
+		max-width: 628px;
+		height: 529px;
 	}
 }
 
@@ -82,13 +72,11 @@
 @media (min-width: 744px) {
 	.training_border {
 		gap: unset;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		width: 648px;
 		border-radius: 36px 36px 36px 36px;
 		border: 2px solid #000;
 		position: relative;
+		height: 1051px;
 	}
 
 	.training_border::before {
@@ -96,48 +84,46 @@
 		width: 647px;
 		border: 1px solid #000;
 		position: absolute;
-		top: 50.5%;
+		top: 546px;
 		}
 }
 
 @media (min-width: 1280px) {
 	.training_border {
-		display: flex;
 		flex-direction: row;
-		width: 1278px;
-		position: relative;
+		width: 1256px;
+		height: 529px;
 		gap: 23px;
 	}
+
+.training_border:hover,
+		.training_border:focus {
+		background-color: rgba(213, 58, 132, 0.10);
+	}
+	
 	.training_border::before {
 		content: "";
-		height: 536px;
+		height: 527px;
 		border: 1px solid #000;
 		position: absolute;
 		width: 1px;
 		top: 0;
-		left: 49.7%;
+		left: 628px;
 		}
 }
-
 
 .training_wrapp_title {
 	color: var(--black-90, #08070C);
 	text-align: center;
 	font-size: var(--subtitle-2);
 	font-weight: var(--normal);
-	line-height: 1.09; 
+	line-height: normal; 
 }
 
 @media (min-width: 744px) {
 	.training_wrapp_title {
-		font-size: var(--title-3);
-		margin-top: 24px;
-	}
-}
-
-@media (min-width: 1280px) {
-	.training_wrapp_title {
-		margin-top: 36px;
+	font-size: var(--title-3);
+	margin-top: 24px;
 	}
 }
 
@@ -147,12 +133,12 @@
 	font-family: var(--manrope);	
 	font-size: var(--subtitle-2);
 	font-weight: var(--bold-extra);
-	line-height: 1.36;
+	line-height: normal;
 }
 
 @media (min-width: 1280px) {
 	.training_wrapp_text {
-		text-align: left;
+	text-align: left;
 	}
 }
 
@@ -170,17 +156,15 @@
 
 @media (min-width: 744px) {
 	.training_wrapp {
-		width: 647px;
-		gap: 32px;
+	gap: 32px;
 	}
 }
 
 @media (min-width: 1280px) {
 	.training_wrapp {
-		align-items: start;
-		width: 628px;
-		border-radius: 0px 36px 36px 0px;
-		gap: 24px;
+	align-items: start;
+	border-radius: 0px 36px 36px 0px;
+	gap: 24px;
 	}
 }
 
@@ -191,14 +175,7 @@
 }
 @media (min-width: 744px) {
 	.training_list{
-		margin-left: 26px;
-		gap: 26px;
-	}
-}
-
-@media (min-width: 1280px) {
-	.training_list {
-		margin-left: unset;
+	gap: 24px;
 	}
 }
 
@@ -220,37 +197,36 @@
 	font-size: var(--body-2);
 	font-style: normal;
 	font-weight: var(--normal);
-	line-height: 1.36; 
+	line-height: normal; 
 	max-width: 327px;
-	height: 153px;
 }
 
 @media (min-width: 744px) {
 	.training_last_text {
-		font-size: var(--body-1);
-		max-width: 627px;
-		line-height: 1.36; 
+	font-size: var(--body-1);
+	max-width: 627px;
+	line-height: normal; 
 	}
 }
 
-.training_last_text::after {
-	content: '';
+
+.training_section_container::after {
+	content: "";
 	display: block;
-	max-width: 341px;
-	height: 0px;
-	border-top: 2px solid var(--black-90, #08070C);
-	margin-top: 10px;
+	width: 100%;
+	border-top: 2px solid #949494;
+	margin-top: 8px;
 }
 
 @media (min-width: 744px) {
-	.training_last_text::after {
-		content: unset;
+	.training_section_container::after {
+	content: unset;
 	}
 }
 
 @media (min-width: 1280px) {
 	.training_last_text {
-		text-align: left;
+	text-align: left;
 	}
 }
 
@@ -259,13 +235,13 @@
 	font-family: Orelega One;
 	font-size: var(--subtitle-2);
 	font-weight: var(--normal);
-	line-height: 1.09; 
+	line-height: normal; 
 }
 
 @media (min-width: 744px) {
 	.top_title {
-		font-size: var(--title-3);
-		line-height: 1.09; 
+	font-size: var(--title-3);
+	line-height: normal; 
 	}
 }
 
@@ -275,53 +251,54 @@
 	font-size: var(--smallest);
 	font-style: normal;
 	font-weight: var(--normal);
-	line-height: 1.36; 
+	line-height: normal; 
 }
 
 @media (min-width: 744px) {
 	.low_text {
-		font-size: var(--subtitle-2);
-		line-height: 1.36; 
+	font-size: var(--subtitle-2);
+	line-height: normal; 
 	}
 }
 
-@media (min-width: 744px) {
-	.training_section {
-		/* position: relative; */
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		}
-}
-
-.training_section::before {
+.training_section_container::before {
 	content: '';
-	/* position: absolute; */
-	background-image: url(/img/about_training/be_flex_pink_1x.svg);
-	background-repeat: space;	
+	background-image: url(../../img/about_training/be_flex_pink_1x.svg);
+	background-repeat: repeat-x;
 	width: 100%;
-	height: 63px;
+	height: 45px;
 	background-color: transparent;
 	text-align: center;
 }
 
 @media (min-width: 1280px) {
-	.training_section::before {
-		/* position: relative; */
-		display: none;
+	.training_section_container::before {
+	display: none;
 	}
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-	.training_section {
-		background-image: url(/img/about_training/be_flex_pink_2x.jpg);
+	.training_section_container {
+	background-image: url(../../img/about_training/be_flex_pink_2x.svg);
 	}
 }
 
 @media screen and (max-width: 743px) {
-	.training_section::before {
+	.training_section_container::before {
 	display: none;
+	}
+}
+
+@media (min-width: 744px) {
+	.training_section_title {
+		margin-top: 55px;
+		}
+}
+
+@media (min-width: 1280px) {
+	.training_section_title {
+		margin-top: unset;
 	}
 }
