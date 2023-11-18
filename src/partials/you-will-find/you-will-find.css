@@ -1,0 +1,32 @@
+.you-will-find {
+    padding: 72px 16px;
+}
+
+.you-will-find-title {
+    font-size: 40px;
+    font-style: normal;
+    color: var(--black-90);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.you-will-find-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 343px;
+    margin: 0 auto;
+}
+
+.find-card-wrapper {
+    display: block;
+border: 1.673px solid var(--black-90);
+border-radius: 24px;
+overflow: hidden;
+}
+
+.find-card-photo {
+    display: block;
+    border-top: 1.673px solid var(--black-90);
+    width: 100%;
+}

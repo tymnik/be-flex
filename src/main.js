@@ -2,6 +2,7 @@ import './partials/header/header';
 import './partials/hero/hero';
 import './partials/about-me/about-me';
 import './partials/you-will-find/you-will-find';
+import './partials/sign-up-button/sign-up-button'
 import './partials/for-whom/for-whom';
 import './partials/apparatus/apparatus';
 import './partials/about-training/about-training';
