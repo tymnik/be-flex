@@ -58,7 +58,7 @@
 	.gymnast_img {
 		border-radius: 36px 0px 0px 36px;
 		max-width: 628px;
-		height: 529px;
+		height: 526px;
 	}
 }
 
@@ -260,39 +260,24 @@
 	line-height: normal; 
 	}
 }
-
 @media (min-width: 744px) and (max-width: 1279px) {
-	.training_section_container::before {
-			content: '';
-			background-image: url(../../img/about_training/be_flex_pink_1x.svg);
-			background-repeat: repeat-x;
+	.repeating-image {
 			width: 100%;
-			height: 45px;
-			background-color: transparent;
-			text-align: center;
+			height: 40px;
+			background-image: url('/img/about_training/be_flex_png.png');
+			background-repeat: repeat-x;
+			stroke: #D53A844D;
+			fill: transparent;
 		}
 }
-
-
-/* @media (min-width: 1280px) {
-	.training_section_container::before {
-	display: none;
-	}
-} */
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-	.training_section_container {
-	background-image: url(../../img/about_training/be_flex_pink_2x.svg);
+	.repeating-image {
+	background-image: url(/img/about_training/be_flex_png_2x.jpg);
 	}
 }
-
-/* @media screen and (max-width: 743px) {
-	.training_section_container::before {
-	display: none;
-	}
-} */
 
 @media (min-width: 744px) {
 	.training_section_title {
