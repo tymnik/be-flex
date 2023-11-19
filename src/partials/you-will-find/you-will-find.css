@@ -234,10 +234,6 @@
 
 /** ------THIRD-CARD------**/
 
-.third-card-tab-wrapper {
-    @media screen and (min-width: 1280px) {}
-}
-
 .third-card-ordered-list {
     display: flex;
     flex-direction: column;
@@ -280,6 +276,9 @@
 /**------HOVER-EFFECT------**/
 
 @media screen and (min-width: 1280px) {
+
+    /**------FIRST-CARD------**/
+
     .first-card-photo {
         position: relative;
     }
@@ -292,19 +291,58 @@
         width: 100%;
         height: 100%;
         background: rgba(8, 7, 12, 0.70);
-        z-index: 1;
+        z-index: 0;
         opacity: 0;
         transition: opacity 0.3s ease;
     }
 
-    .first-card-photo:hover::before {
-        opacity: 1;
+    .first-card-photo:hover::before,
+    .first-card-photo:focus::before {
+        opacity: 2;
     }
 
     .first-card-tab-wrapper {
         position: absolute;
-        color: var(--white);
     }
+
+    .find-card-ordered-list {
+        width: 410px;
+        gap: 24px;
+        z-index: 2;
+        opacity: 1;
+        justify-content: center;
+        align-items: center;
+        padding: 0 auto;
+        margin-top: 90px;
+    }
+
+    .find-card-list-text {
+        color: var(--white);
+        font-size: 24px;
+        font-family: var(--orelega-one);
+        font-weight: var(--normal);
+        line-height: normal;
+    }
+
+    .double-training-explanation {
+        color: var(--white);
+        font-size: 14px;
+        font-family: var(--manrope);
+        font-weight: var(--normal);
+        line-height: normal;
+    }
+
+    .find-card-text {
+        color: var(--white);
+        font-size: 14px;
+        font-family: var(--manrope);
+        font-weight: var(--normal);
+        line-height: normal;
+        max-width: 377px;
+        margin: 80px auto 0;
+    }
+
+    /**------SECOND-CARD------**/
 
     .second-card-photo {
         position: relative;
@@ -318,19 +356,44 @@
         width: 100%;
         height: 100%;
         background: rgba(8, 7, 12, 0.70);
-        z-index: 1;
-        opacity: 0;
+        z-index: 0;
+        opacity: 1;
         transition: opacity 0.3s ease;
     }
 
-    .second-card-photo:hover::before {
+    .second-card-photo:hover::before,
+    .second-card-photo:focus::before {
         opacity: 1;
     }
 
     .second-card-text-wrapper {
         position: absolute;
-        color: var(--white);
+        width: 410px;
     }
+
+    .group-classes-title {
+        width: 410px;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        font-size: 24px;
+        font-family: var(--orelega-one);
+        font-weight: var(--normal);
+        line-height: normal;
+        margin: 90px auto 133px;
+    }
+
+    .group-card-text {
+        width: 377px;
+        margin: 0 auto;
+        color: var(--white);
+        font-size: 14px;
+        font-family: var(--manrope);
+        font-weight: var(--normal);
+        line-height: normal;
+    }
+
+    /**------THIRD-CARD------**/
 
     .third-card-photo {
         position: relative;
@@ -344,18 +407,41 @@
         width: 100%;
         height: 100%;
         background: rgba(8, 7, 12, 0.70);
-        z-index: 1;
-        opacity: 0;
+        z-index: 0;
+        opacity: 1;
         transition: opacity 0.3s ease;
     }
 
-    .third-card-photo:hover::before {
+    .third-card-photo:hover::before,
+    .third-card-photo:focus::before {
         opacity: 1;
     }
 
     .third-card-tab-wrapper {
         position: absolute;
+        width: 410px;
+    }
+
+    .third-card-ordered-list {
+        width: 410px;
+        gap: 36px;
+        z-index: 2;
+        opacity: 1;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+    }
+
+    .third-card-span {
+        width: 360px;
+    }
+
+    .third-card-list-text {
         color: var(--white);
+        font-size: 24px;
+        font-family: var(--orelega-one);
+        font-weight: var(--normal);
+        line-height: normal;
     }
 
     .visually-hidden {
