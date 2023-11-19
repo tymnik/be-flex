@@ -1,13 +1,31 @@
 .you-will-find {
-    padding: 72px 16px;
+    padding: 0 16px 72px;
+
+    @media screen and (min-width: 744px) {
+        padding: 0 44px 80px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 0 81px 88px;
+    }
 }
 
 .you-will-find-title {
     font-size: 40px;
     color: var(--black-90);
+    font-weight: var(--normal);
+    line-height: normal;
     text-align: center;
     margin-bottom: 40px;
     font-weight: var(--normal);
+
+    @media screen and (min-width: 744px) {
+        font-size: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 64px;
+    }
 }
 
 .you-will-find-list {
@@ -16,6 +34,23 @@
     gap: 40px;
     max-width: 343px;
     margin: 0 auto;
+
+    @media screen and (min-width: 744px) {
+        background-color: rgba(107, 57, 208, 0.10);
+        border: 2px solid var(--black-90);
+        border-radius: 36px;
+        padding: 40px 16px;
+        max-width: 656px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-color: unset;
+        border: unset;
+        padding: unset;
+        flex-direction: row;
+        max-width: 1278px;
+        align-items: center;
+    }
 }
 
 .find-card-wrapper {
@@ -24,12 +59,27 @@
     border-radius: 24px;
     overflow: hidden;
     margin-bottom: 24px;
+
+    @media screen and (min-width: 744px) {
+        width: 343px;
+        margin-bottom: unset;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 410px;
+        border-radius: 36px;
+        border: 2px solid var(--black-90);
+    }
 }
 
 .find-card-photo {
     display: block;
     border-top: 1.673px solid var(--black-90);
     width: 100%;
+
+    @media screen and (min-width: 1280px) {
+        border-top: 2px solid var(--black-90);
+    }
 }
 
 .find-card-title {
@@ -43,6 +93,25 @@
     font-size: 28px;
     font-weight: var(--normal);
     font-family: var(--orelega-one);
+
+    @media screen and (min-width: 744px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 35px;
+    }
+}
+
+/** ------FIRST-CARD------**/
+
+.you-will-find-card {
+    @media screen and (min-width: 744px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 420px;
+    }
 }
 
 .find-card-ordered-list {
@@ -56,6 +125,10 @@
     list-style: none;
     padding-left: 0;
     color: var(--black-60);
+
+    @media screen and (min-width: 744px) {
+        gap: 18.5px;
+    }
 }
 
 .find-card-list-text {
@@ -74,6 +147,10 @@
     display: flex;
     width: 215px;
     justify-content: center;
+
+    @media screen and (min-width: 744px) {
+        width: 212px;
+    }
 }
 
 .find-card-text {
@@ -86,6 +163,12 @@
     max-width: 329px;
     display: flex;
     margin: 16px auto 0;
+
+    @media screen and (min-width: 744px) {
+        margin: 26.5px auto 0;
+        max-width: 235px;
+        font-size: 14px;
+    }
 }
 
 .break-text {
@@ -101,6 +184,27 @@
     font-family: var(--manrope);
 }
 
+/** ------SECOND-CARD------**/
+
+.find-second-card {
+    @media screen and (min-width: 744px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+    }
+}
+
+.second-card-text-wrapper {
+    @media screen and (min-width: 744px) {
+        width: 239px;
+    }
+}
+
 .group-classes-title {
     display: flex;
     justify-content: center;
@@ -109,6 +213,10 @@
     font-weight: var(--normal);
     font-size: 20px;
     color: var(--black-60);
+
+    @media screen and (min-width: 744px) {
+        font-size: 20px;
+    }
 }
 
 .group-card-text {
@@ -118,6 +226,33 @@
     font-weight: var(--normal);
     color: var(--black-60);
     text-align: center;
+
+    @media screen and (min-width: 744px) {
+        font-size: 14px;
+    }
+}
+
+/** ------THIRD-CARD------**/
+
+.third-card-tab-wrapper {
+    @media screen and (min-width: 1280px) {}
+}
+
+.third-card-ordered-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: var(--orelega-one);
+    font-weight: var(--normal);
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    color: var(--black-60);
+
+    @media screen and (min-width: 744px) {
+        gap: 16px;
+    }
 }
 
 .third-card-list-text {
@@ -136,4 +271,95 @@
     display: flex;
     width: 270px;
     justify-content: center;
+
+    @media screen and (min-width: 744px) {
+        width: 225px;
+    }
+}
+
+/**------HOVER-EFFECT------**/
+
+@media screen and (min-width: 1280px) {
+    .first-card-photo {
+        position: relative;
+    }
+
+    .first-card-photo::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(8, 7, 12, 0.70);
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .first-card-photo:hover::before {
+        opacity: 1;
+    }
+
+    .first-card-tab-wrapper {
+        position: absolute;
+        color: var(--white);
+    }
+
+    .second-card-photo {
+        position: relative;
+    }
+
+    .second-card-photo::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(8, 7, 12, 0.70);
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .second-card-photo:hover::before {
+        opacity: 1;
+    }
+
+    .second-card-text-wrapper {
+        position: absolute;
+        color: var(--white);
+    }
+
+    .third-card-photo {
+        position: relative;
+    }
+
+    .third-card-photo::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(8, 7, 12, 0.70);
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .third-card-photo:hover::before {
+        opacity: 1;
+    }
+
+    .third-card-tab-wrapper {
+        position: absolute;
+        color: var(--white);
+    }
+
+    .visually-hidden {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 }
