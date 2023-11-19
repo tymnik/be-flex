@@ -50,6 +50,8 @@
         flex-direction: row;
         max-width: 1278px;
         align-items: center;
+        gap: unset;
+        justify-content: space-between;
     }
 }
 
@@ -66,7 +68,8 @@
     }
 
     @media screen and (min-width: 1280px) {
-        width: 410px;
+        width: unset;
+        max-width: 410px;
         border-radius: 36px;
         border: 2px solid var(--black-90);
     }
@@ -298,7 +301,7 @@
 
     .first-card-photo:hover::before,
     .first-card-photo:focus::before {
-        opacity: 2;
+        opacity: 1;
     }
 
     .first-card-tab-wrapper {
@@ -357,7 +360,7 @@
         height: 100%;
         background: rgba(8, 7, 12, 0.70);
         z-index: 0;
-        opacity: 1;
+        opacity: 0;
         transition: opacity 0.3s ease;
     }
 
@@ -397,6 +400,7 @@
 
     .third-card-photo {
         position: relative;
+        z-index: 3;
     }
 
     .third-card-photo::before {
@@ -408,7 +412,7 @@
         height: 100%;
         background: rgba(8, 7, 12, 0.70);
         z-index: 0;
-        opacity: 1;
+        opacity: 0;
         transition: opacity 0.3s ease;
     }
 
@@ -419,6 +423,7 @@
 
     .third-card-tab-wrapper {
         position: absolute;
+        z-index: 1;
         width: 410px;
     }
 
