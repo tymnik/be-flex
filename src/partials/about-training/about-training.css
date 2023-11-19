@@ -263,8 +263,8 @@
 @media (min-width: 744px) and (max-width: 1279px) {
 	.repeating-image {
 			width: 100%;
-			height: 40px;
-			background-image: url('../../img/about_training/be_flex_png_1x.png');
+			height: 63px;
+			background-image: url('/img/about_training/be_flex_png_1x.png');
 			background-repeat: repeat-x;
 			background-color: #FDF5FD;
 			stroke: #D53A844D;
@@ -276,7 +276,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 	.repeating-image {
-	background-image: url(../../img/about_training/be_flex_png_2x.png);
+	background-image: url(/img/about_training/be_flex_png_2x.png);
 	}
 }
 
