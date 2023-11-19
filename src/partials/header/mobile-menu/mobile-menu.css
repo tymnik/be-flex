@@ -164,10 +164,6 @@
 
 .mobmenu-phone-icon {
     display: flex;
-    fill: white;
-    padding: 2px;
-    background-color: var(--black-90);
-    border-radius: 50%;
 }
 
 .mobmenu-phone-number {
@@ -209,4 +205,8 @@
 
     height: 48px;
     width: 48px;
+}
+
+.mobmenu-socials-item a {
+    display: flex;
 }
