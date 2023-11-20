@@ -31,7 +31,10 @@
 	font-size: 40px;
 	font-weight: var(--normal);
 	line-height: normal;
-	margin-bottom: 40px;
+}
+
+.training_section .main_title {
+margin-bottom: 40px;
 }
 
 @media (min-width: 1280px) {

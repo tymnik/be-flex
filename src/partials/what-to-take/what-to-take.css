@@ -13,6 +13,12 @@
 	align-items: center;
 }
 
+@media (min-width: 744px) {
+	.to_take_container {
+		margin: unset;
+	}
+}
+
 @media (min-width: 1280px) {
 	.to_take_container {
 		gap: 64px;	
@@ -21,16 +27,17 @@
 
 .to_take_list {
 		display: flex;
-			column-gap: 16px;
-			row-gap: 24px;
-			flex-wrap: wrap;
-			/* width: 328px; */
-			justify-content: center;
+		column-gap: 16px;
+		row-gap: 24px;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 343px;
 }
 
 @media (min-width: 744px) {
 	.to_take_list {
-		width: 648px;
+		max-width: 648px;
+		column-gap: 34.5px;
 	}
 }
 
@@ -40,27 +47,48 @@
 	position: relative;
 }
 
-.current::after {
-	content: "";
-	position: absolute;
-	top: 3.74px;
-	left: 32.19px;
-	width: 100px;
-	height: 100px;
-	background-image: url(../../img/what_to_take/band_svg.svg);
-	background-repeat: no-repeat;
-	background-size: 51px 44px;
+@media (min-width: 744px) {
+	.to_take_item {
+			flex-basis: calc((100% - 3 * 34.5px) / 3);
+	}
+}
+
+.to_take_item .svg {
+	width: 100%;
+}
+
+
+.to_take_border {
+	position: relative;
+	border-radius: 22px;
+	border: 2px solid var(--black-60, #272727);
+	display: flex;
+	max-width: 103px;
+	height: 85.922px;
+}
+
+@media (min-width: 744px) {
+	.to_take_border {
+		max-width: 193px;
+		height: 161px;
+		align-items: center;
+		justify-content: center;
+	}
+
 }
 
 .icon_svg_first {
-	position: relative;
+	/* position: absolute; */
 	top: 22.97px;
 	left: 13.09px;
 	z-index: 2;
 }
 
-.to_take_item:last-child {
-	position: relative;
+.icon_svg_second {
+	position: absolute;
+	z-index: 1;
+	right: 13.088px;
+	top: 3.739px;
 }
 
 .to_take_item:last-child::before {
@@ -74,22 +102,59 @@
 	right: 1.868px;
 	top: 4.269px;
 }
-.to_take_icon_svg {
-	width: 100%;
+
+
+@media (min-width: 744px) {
+	.to_take_item:first-child::before {
+		width: 142px;
+		height: 142px;
+		right: 3.5px;
+		top: 8px;
+	}
 }
+
+@media (min-width: 744px) {
+	.to_take_item:nth-child(1) .to_take_icon_svg {
+		width: 95.765px;
+		height: 149.057px;
+	}
+
+	.to_take_item:nth-child(2) .icon_svg_first {
+		width: 111px;
+		height: 110px;
+	}
+
+	.to_take_item:nth-child(2) .icon_svg_second {
+		width: 97px;
+		height: 84px;
+	}
+
+	.to_take_item:nth-child(3) .to_take_icon_svg {
+		width: 82.185px;
+		height: 149.328px;
+	}
+
+	.to_take_item:nth-child(4) .to_take_icon_svg {
+		width: 141px;
+		height: 153px;
+	}
+
+	.to_take_item:nth-child(5) .to_take_icon_svg {
+		width: 131px;
+		height: 146px;
+	}
+
+	.to_take_item:nth-child(6) .to_take_icon_svg {
+		width: 114px;
+		height: 114px;
+	}
+}
+
 
 .mood_svg {
 	position: absolute;
 	top: 20.81px;
 }
-
-.to_take_border {
-	border-radius: 22px;
-	border: 2px solid var(--black-60, #272727);
-	display: flex;
-	height: 86.756px;
-   max-width: 103.098px;
-	}
 
 .to_take_text {
 	text-align: center;
