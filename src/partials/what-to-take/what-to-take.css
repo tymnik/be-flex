@@ -47,7 +47,7 @@
 	position: relative;
 }
 
-.current::after {
+/* .current::after {
 	content: "";
 	position: absolute;
 	top: 3.74px;
@@ -57,7 +57,7 @@
 	background-image: url(../../img/what_to_take/band_svg.svg);
 	background-repeat: no-repeat;
 	background-size: 51px 44px;
-}
+} */
 
 .icon_svg_first {
 	/* position: absolute; */
