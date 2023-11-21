@@ -47,34 +47,16 @@
 	position: relative;
 }
 
-@media (min-width: 744px) {
-	.to_take_item {
-			flex-basis: calc((100% - 3 * 34.5px) / 3);
-	}
-}
-
-.to_take_item .svg {
-	width: 100%;
-}
-
-
-.to_take_border {
-	position: relative;
-	border-radius: 22px;
-	border: 2px solid var(--black-60, #272727);
-	display: flex;
-	max-width: 103px;
-	height: 85.922px;
-}
-
-@media (min-width: 744px) {
-	.to_take_border {
-		max-width: 193px;
-		height: 161px;
-		align-items: center;
-		justify-content: center;
-	}
-
+.current::after {
+	content: "";
+	position: absolute;
+	top: 3.74px;
+	left: 32.19px;
+	width: 100px;
+	height: 100px;
+	background-image: url(../../img/what_to_take/band_svg.svg);
+	background-repeat: no-repeat;
+	background-size: 51px 44px;
 }
 
 .icon_svg_first {
@@ -84,11 +66,8 @@
 	z-index: 2;
 }
 
-.icon_svg_second {
-	position: absolute;
-	z-index: 1;
-	right: 13.088px;
-	top: 3.739px;
+.to_take_item:last-child {
+	position: relative;
 }
 
 .to_take_item:last-child::before {
