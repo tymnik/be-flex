@@ -31,13 +31,10 @@
 	font-size: 40px;
 	font-weight: var(--normal);
 	line-height: normal;
-<<<<<<< Updated upstream
 }
 
 .training_section .main_title {
 margin-bottom: 40px;
-=======
->>>>>>> Stashed changes
 }
 
 @media (min-width: 1280px) {
