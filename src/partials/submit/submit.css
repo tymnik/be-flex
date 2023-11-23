@@ -1,6 +1,8 @@
 .sign_up_section {
-	padding: 0 16px 40px 16px;
-	margin: 0 auto;
+padding: 0 16px 40px 16px;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
 }
 
 .sign_up_section_container {
@@ -10,114 +12,135 @@ gap: 40px;
 }
 
 .sign_up_section .main_title {
-	margin-bottom: unset;
+margin-bottom: unset;
 }
 
 .sign_up_form {
-	/* max-width: 343px; */
-	display: flex;
-	gap: 16px;
-	flex-direction: column;
-	align-items: center
-}
-
-.sign_up_form input,
-.sign_up_form textarea {
-	border-radius: 36px;
-	border: 2px solid var(--black-60, #272727);
-}
-
-/* NAME_INPUT */
-.user_name_wrap {
+max-width: 344px;
+margin: 0 auto;
+display: flex;
+gap: 16px;
+flex-direction: column;
+align-items: center
 
 }
+
 .sign_up_form_input {
-	color: var(--black-20, #949494);
-	font-family: var(--manrope);
-	font-size: var(--body-2);
-	font-style: normal;
-	font-weight: var(--normal);
-	line-height: normal;
+border-radius: 36px;
+border: 2px solid var(--black-60, #272727);
+padding: 16px;
+width: 328px;
+padding: 16px 36px;
+
+color: var(--black-20, #949494);
+font-family: var(--manrope);
+font-size: var(--body-2);
+font-style: normal;
+font-weight: var(--normal);
+line-height: normal;
 }
+
+@media (max-width: 374px) {
+	.sign_up_form_input {
+		width: 300px;
+	}
+}
+/* NAME_INPUT */
+
+
 /* NAME_INPUT */
 
 /* PHONE_INPUT */
-.user-phone-container {
 
-}
 
-.phone_input {
-	padding: 8px 36px;
-}
+
 /* PHONE_INPUT */
 
-.sign_up_form_input {
-	padding: 16px 36px;
-
-}
 
 /* TEXTAREA */
-.sign_up-textarea_content {
-
-}
 
 .textarea_content {
-	display: flex;
-		height: 166px;
-		padding: 24px 36px;
-		align-items: flex-start;
-		gap: 8px;
-		align-self: stretch;
-		border-radius: 36px;
-		border: 2px solid var(--black-60, #272727);
+display: flex;
+height: 166px;
+padding: 24px 36px;
+gap: 8px;
+border-radius: 36px;
+border: 2px solid var(--black-60, #272727);
 }
 
 /* PRIVACY POLICY */
-
+.modal-check {
+width: 20px;
+height: 20px;
+}   
 .check-text {
-	color: var(--black-60, #272727);
-		font-family: Manrope;
-		font-size: 10px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
+color: var(--black-60, #272727);
+font-family: Manrope;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .sign_up-privacy {
-	display: flex;
-	align-items: center;
-	gap: 8px;
+display: flex;
+align-items: center;
+width: 100%;
 }
 
 .sign_up_button {
-		color: var(--main-1, #D53A84);
-		font-family: var(--orelega-one);
-		font-size: var(--subtitle-2);
-		font-style: normal;
-		font-weight: var(--normal);
-		line-height: normal;
+color: var(--main-1, #D53A84);
+font-family: var(--orelega-one);
+font-size: var(--subtitle-3);
+font-style: normal;
+font-weight: var(--normal);
+line-height: normal;
 
-		display: flex;
-			height: 61px;
-			padding: 16px 58px;
-			justify-content: center;
-			align-items: center;
-			gap: 8px;
+display: flex;
+height: 61px;
+padding: 17.5px 66px;
+justify-content: center;
+align-items: center;
 
-			border-radius: 36px;
-			border: 2px solid var(--main-1, #D53A84);
-			background: rgba(213, 58, 132, 0.10);
+border-radius: 36px;
+border: 2px solid var(--main-1, #D53A84);
+background: rgba(213, 58, 132, 0.10);
 }
 
 .iti__selected-flag {
-	background-color: unset !important;
+background-color: unset !important;
 }
 
-.user-phone-container::after {
+.user-phone-container {
+position: relative;
+}
+.iti--separate-dial-code::after {
 content: "";
 width: 1px;
-height: 53px;
+height: 45px;
 background: var(--black-60, #272727);
 left: 106px;
+top: 5px;
 position: absolute;
+}
+
+.iti__arrow {
+border: unset !important;
+}
+
+.iti__selected-flag  {
+padding: 8px 36px !important;
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type=tel],
+.iti--allow-dropdown input[type=text],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type=tel],
+.iti--separate-dial-code input[type=text] {
+	padding-left: 114px !important;
+}
+
+.iti--separate-dial-code .iti__selected-dial-code {
+	margin-left: 8px !important;
 }
