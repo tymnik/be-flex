@@ -1,8 +1,12 @@
- var input = document.querySelector("#user-tel");
-    var iti = window.intlTelInput(input, {
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-        preferredCountries: ["us", "gb", "ca", "au"], 
-        separateDialCode: true, 
+import intlTelInput from 'intl-tel-input';
+import 'intl-tel-input/build/css/intlTelInput.css';
+
+document.addEventListener('DOMContentLoaded', function () {
+    var input = document.querySelector("#user-tel");
+    var iti = intlTelInput(input, {
+    utilsScript: "/node_modules/intl-tel-input/build/js/utils.js",
+        preferredCountries: ["ae", "us", "gb", "ca", "au", "ua"],
+        separateDialCode: true,
     });
 
     input.addEventListener("click", function () {
@@ -13,3 +17,4 @@
         var selectedCountry = iti.getSelectedCountryData();
         console.log("Selected country code: " + selectedCountry.dialCode);
     });
+});

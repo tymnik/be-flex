@@ -1,3 +1,14 @@
+.iti__flag {
+	background-image: url("/node_modules/intl-tel-input/build/img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	.iti__flag {
+		background-image: url("/node_modules/intl-tel-input/build/img/flags@2x.png");
+	}
+}
+
 .sign_up_section {
 padding: 0 16px 40px 16px;
 display: flex;
@@ -14,6 +25,7 @@ margin: 0 auto;
 @media (min-width: 1280px) {
 	.sign_up_section {
 		padding: 0 81px 88px 81px;
+		position: relative;
 	}
 }
 .sign_up_section_container {
@@ -26,33 +38,64 @@ gap: 40px;
 	.sign_up_section_container {
 		gap: 64px;
 	}
+	
+.sign_up_form {
+	transform: rotate(0deg);
+		}
+}
+
+
+@media (min-width: 1280px) {
+	.be_flex_line {
+		position: absolute;
+		width: 100%;
+		background-image: url(/img/about_training/be_flex_1x.png);
+		background-repeat: repeat-x;
+		background-size: contain;
+		transform: rotate(-15deg);
+		pointer-events: none;
+		z-index: -1;
+		top: 338px;
+		height: 117px;
+	}
+
+		@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			.be_flex_line {
+				background-image: url(../../img/about_training/be_flex_2х.png);
+			}
+		}
 }
 .sign_up_section .main_title {
 margin-bottom: unset;
 }
 
+.form_wrapper {
+	display: flex;
+	justify-content: center;
+}
+
 @media (min-width: 744px) {
 	.form_wrapper {
-			width: 648px;
-			height: 502px;
-			border-radius: 36px;
-			border: 2px solid var(--main-1, #D53A84);
-			background: rgba(253, 246, 253, 0.80);
-			display: flex;
-			align-items: center;
-			margin: 0 auto;
+	width: 648px;
+	height: 502px;
+	border-radius: 36px;
+	border: 2px solid var(--main-1, #D53A84);
+	background: rgba(253, 246, 253, 0.80);
+	align-items: center;
+	margin: 0 auto;
 		}
 }
 
 @media (min-width: 1280px) {
 	.form_wrapper {
 		width: 737px;
-			height: 537px;
+		height: 537px;
 	}
 }
 .sign_up_form {
 max-width: 344px;
-margin: 0 auto;
 display: flex;
 gap: 16px;
 flex-direction: column;
@@ -86,8 +129,6 @@ font-weight: var(--normal);
 line-height: normal;
 }
 
-
-
 @media (max-width: 374px) {
 	.sign_up_form_input {
 		width: 272px;
@@ -107,9 +148,9 @@ line-height: normal;
 @media (min-width: 1280px) {
 	.sign_up_form_input {
 		width: 628px;
-
 	}
 }
+
 .textarea_content {
 display: flex;
 height: 166px;
@@ -123,6 +164,7 @@ border: 2px solid var(--black-60, #272727);
 width: 20px;
 height: 20px;
 }   
+
 .check-text {
 color: var(--black-60, #272727);
 font-family: Manrope;
@@ -131,7 +173,6 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-
 
 @media (min-width: 744px) {
 	.check-text {
@@ -164,7 +205,6 @@ border: 2px solid var(--main-1, #D53A84);
 background: rgba(213, 58, 132, 0.10);
 width: 328px;
 }
-
 
 @media (max-width: 374px) {
 	.sign_up_button {
