@@ -61,6 +61,10 @@
         order: 2;
         width: 200px;
     }
+
+         @media screen and (min-width: 1280px) {
+            width: 407px;
+         }
 }
 
 .for-whom-first-wrapper {
