@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     showMoreBtn.style.display = 'none';
     showLessBtn.style.display = 'inline';
 
-    if (ellipsis) {
+    if (ellipsis && ellipsis.parentNode === introText) {
       introText.removeChild(ellipsis);
     }
   });
