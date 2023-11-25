@@ -105,3 +105,15 @@
         font-size: 35px;
     }
 }
+
+.apparatus-card-fourth {
+    @media screen and (min-width: 1280px) {
+        order: 1;
+    }
+}
+
+.apparatus-card-third {
+    @media screen and (min-width: 1280px) {
+        order: 2;
+    }
+}

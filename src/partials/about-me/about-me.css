@@ -46,6 +46,7 @@
     border-radius: 36px;
     border: 2px solid #000;
     margin-bottom: 16px;
+    position: relative;
 
     @media screen and (min-width: 744px) {
         width: 648px;
@@ -55,9 +56,27 @@
     @media screen and (min-width: 1280px) {
         width: unset;
         max-width: 604px;
-        margin-bottom: unset;
+        margin-bottom: unset;        
     }
 }
+
+/* @media screen and (min-width: 1280px) {
+    .about-me-photo::after {
+        background-color: var(--main-violet);
+        border-radius: 36px;
+        border: 2px solid #000;
+        content: "";
+        display: block;
+        left: 0;
+        position: absolute;
+        transform: translate(0, 0);
+        transition: transform .2s ease-out;
+    }
+
+    &:hover:after {
+        transform: translate(24px, 24px);
+    }
+} */
 
 .intro-text {
     font-weight: var(--normal);
