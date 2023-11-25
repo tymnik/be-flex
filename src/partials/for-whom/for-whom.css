@@ -4,7 +4,7 @@
     flex-direction: column;
 
     @media screen and (min-width: 744px) {
-        padding: 72px 0 0;
+        padding: 120px 0 0;
     }
 
     @media screen and (min-width: 1280px) {

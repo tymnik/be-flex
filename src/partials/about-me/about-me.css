@@ -9,7 +9,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        padding: 32px 79px 88px;
+        padding: 32px 80px 88px;
     }
 }
 
@@ -19,6 +19,15 @@
     width: 100%;
     border-top: 2px solid #949494;
     margin-top: 8px;
+}
+
+.about-me-wrapper {
+    max-width: 343px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 744px) {
+        max-width: 648px;
+    }
 }
 
 .about-me-title {
@@ -55,42 +64,34 @@
 
     @media screen and (min-width: 1280px) {
         width: unset;
-        max-width: 604px;
-        margin-bottom: unset;        
+        max-width: 602px;
+        margin-bottom: unset;
+
+        &:hover,
+        &:focus {
+            box-shadow: 24px 24px var(--main-violet), 26px 26px #000;
+            transition: transform 0.3s ease-in-out;
+        }
     }
 }
-
-/* @media screen and (min-width: 1280px) {
-    .about-me-photo::after {
-        background-color: var(--main-violet);
-        border-radius: 36px;
-        border: 2px solid #000;
-        content: "";
-        display: block;
-        left: 0;
-        position: absolute;
-        transform: translate(0, 0);
-        transition: transform .2s ease-out;
-    }
-
-    &:hover:after {
-        transform: translate(24px, 24px);
-    }
-} */
 
 .intro-text {
     font-weight: var(--normal);
     margin: 0 auto;
     overflow: hidden;
     max-width: 343px;
-    max-height: 187px;
-    line-height: 1.375;
+    max-height: 210px;
+    line-height: normal;
 
     &.collapsed {
         max-height: 1500px;
     }
 
-    @media screen and (min-width: 345px) {
+    @media screen and (min-width: 332px) {
+        max-height: 188px;
+    }
+
+    @media screen and (min-width: 391px) {
         max-height: 165px;
     }
 
@@ -98,12 +99,12 @@
         max-height: unset;
         max-width: 628px;
         font-size: var(--body-1);
-        line-height: 1.38;
+        line-height: normal;
     }
 
     @media screen and (min-width: 1280px) {
-        width: unset;
         max-width: 628px;
+        font-size: 20px;
     }
 }
 
@@ -142,7 +143,7 @@
         border-radius: 12px;
         border: 1px solid var(--black-60);
         font-size: var(--smallest);
-        line-height: 1.33;
+        line-height: normal;
         font-weight: var(--normal);
         font-family: var(--manrope);
         background-color: initial;
@@ -173,6 +174,12 @@
     }
 }
 
+@media screen and (min-width: 744px) {
+    .about-me::after {
+        margin-top: 24px;
+    }
+}
+
 @media screen and (min-width: 1280px) {
     .about-me::after {
         display: none;
@@ -181,8 +188,8 @@
     .about-me-wrapper {
         display: flex;
         justify-content: space-between;
-        gap: 26px;
-        max-width: 1282px;
+        gap: 50px;
+        max-width: 1280px;
         margin: 0 auto;
     }
 }

@@ -1,5 +1,9 @@
 .apparatus {
-    padding: 72px 16px;
+    padding: 72px 8px;
+
+    @media screen and (min-width: 391px) {
+        padding: 72px 16px;
+    }
 
     @media screen and (min-width: 744px) {
         padding: 72px 48px 56px;
