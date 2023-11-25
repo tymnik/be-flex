@@ -59,6 +59,7 @@
 .for-whom-second-photo {
     @media screen and (min-width: 744px) {
         order: 2;
+        width: 200px;
     }
 }
 
@@ -257,32 +258,6 @@
 
 .for-whom-first-block {
     @media screen and (min-width: 744px) {
-        display: flex;
-        gap: 24px;
-        width: 648px;
-        margin: 0 auto;
-    }
-}
-
-.for-whom-second-block {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 343px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-
-    @media screen and (min-width: 744px) {
-        display: flex;
-        gap: 24px;
-        max-width: unset;
-        width: 648px;
-    }
-}
-
-
-.for-whom-first-block {
-    @media screen and (min-width: 744px) {
         margin: 0 auto;
         border-top: 2px solid var(--black-90);
         width: 100%;
@@ -305,7 +280,7 @@
         border-top: 2px solid var(--black-90);
         border-bottom: 2px solid var(--black-90);
         width: 100%;
-        padding: 16px;        
+        padding: 16px;
     }
 }
 
@@ -328,10 +303,16 @@
 .second-box-content {
     display: flex;
     flex-wrap: wrap;
+    max-width: 343px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 
     @media screen and (min-width: 744px) {
+        max-width: unset;
         width: 648px;
         display: flex;
+        flex-wrap: nowrap;
         margin: 0 auto;
         align-items: center;
         gap: 24px;
