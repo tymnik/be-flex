@@ -1,14 +1,14 @@
 .for-whom {
-    padding: 72px 16px;
+    padding: 72px 16px 0;
     display: flex;
     flex-direction: column;
 
     @media screen and (min-width: 744px) {
-        padding: 72px 0;
+        padding: 72px 0 0;
     }
 
     @media screen and (min-width: 1280px) {
-        padding: 88px 0;
+        padding: 88px 0 0;
     }
 }
 
@@ -282,7 +282,6 @@
     @media screen and (min-width: 744px) {
         margin: 0 auto;
         border-top: 2px solid var(--black-90);
-        border-bottom: 2px solid var(--black-90);
         width: 100%;
         padding: 16px;
     }
