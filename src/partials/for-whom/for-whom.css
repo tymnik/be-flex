@@ -4,7 +4,7 @@
     flex-direction: column;
 
     @media screen and (min-width: 744px) {
-        padding: 72px 0 0;
+        padding: 120px 0 0;
     }
 
     @media screen and (min-width: 1280px) {
@@ -260,31 +260,19 @@
     color: var(--white);
 }
 
-.for-whom-first-block {
-    @media screen and (min-width: 744px) {
-        margin: 0 auto;
-        border-top: 2px solid var(--black-90);
-        width: 100%;
-        padding: 16px;
-    }
-}
-
-.for-whom-second-block {
-    @media screen and (min-width: 744px) {
-        margin: 0 auto;
-        border-top: 2px solid var(--black-90);
-        width: 100%;
-        padding: 16px;
-    }
-}
-
+.for-whom-first-block,
+.for-whom-second-block,
 .for-whom-third-block {
     @media screen and (min-width: 744px) {
-        margin: 0 auto;
-        border-top: 2px solid var(--black-90);
-        width: 100%;
-        padding: 16px;
-    }
+            margin: 0 auto;
+            border-top: 2px solid var(--black-90);
+            width: 100%;
+            padding: 16px;
+        }
+    
+        &:hover {
+            background-color: rgba(213, 58, 132, 0.10);
+        }
 }
 
 /**-----BOXES-----**/
