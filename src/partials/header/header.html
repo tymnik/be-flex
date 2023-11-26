@@ -1,15 +1,51 @@
 <header class="header-wrap">
     <div class="header-container">
         <a href="../../index.html" class="header-logo-link">
-            <svg width="90" height="31">
+            <svg>
                 <use href="/img/icons.svg#icon-logo"></use>
             </svg></a>
 
-        <button type="button" class="header-burger-opener">
-            <svg width="24" height="24" class="header-burger-icon">
-                <use href="/img/icons.svg#icon-burger-menu"></use>
-            </svg>
-        </button>
+        <nav class="header-nav">
+            <a href="#about-me" class="header-nav-link">About me</a>
+            <a href="#you-will-find" class="header-nav-link">What will you find</a>
+            <a href="#for-whom" class="header-nav-link">For whom</a>
+            <a href="" class="header-nav-link">Gallery</a>
+            <a href="" class="header-nav-link">Adress</a>
+        </nav>
+
+        <div class="header-switchandburger-wrap">
+            <div class="header-language-switcher">
+                <button class="language-switcher-btn" type="button">
+                    EN
+                    <svg width="24" height="24" class="language-switcher-icon">
+                        <use href="/img/icons.svg#icon-arrow"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <button type="button" class="header-burger-opener">
+                <svg width="24" height="24" class="header-burger-icon">
+                    <use href="/img/icons.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="header-contacts">
+            <a href="" class="header-insta-link">
+                <svg width="24" height="24">
+                    <use href="/img/icons.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <div class="header-phone-wrap">
+                <a href="tel:+971524116236" class="header-phone-icon">
+                    <svg width="24" height="24" class="">
+                        <use href="/img/icons.svg#icon-call"></use>
+                    </svg>
+                </a>
+                <a href="" class="header-phone-number">+971 52 411 6236</a>
+            </div>
+
+        </div>
     </div>
 </header>
 <load src="/partials/header/mobile-menu/mobile-menu.html" />
