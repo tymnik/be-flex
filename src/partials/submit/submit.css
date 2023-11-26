@@ -71,7 +71,7 @@ flex-direction: column;
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
 			.be_flex_line {
-				background-image: url(../../img/about_training/be_flex_2х.png);
+				background-image: url(/img/about_training/be_flex_2х.png);
 			}
 		}
 }
@@ -110,8 +110,8 @@ align-items: center
 
 @media (min-width: 744px) {
 	.sign_up_form {
-	gap: 8px;
 	max-width: 434px;
+	gap: 24px;
 	}
 }
 
@@ -119,6 +119,18 @@ align-items: center
 	.sign_up_form {
 		max-width: 627px;
 	}
+}
+
+.sign_up_form_div {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+@media (min-width: 744px) {
+	.sign_up_form_div {
+			gap: 8px;
+		}
 }
 .sign_up_form_input {
 border-radius: 36px;
@@ -164,6 +176,7 @@ padding: 24px 36px;
 gap: 8px;
 border-radius: 36px;
 border: 2px solid var(--black-60, #272727);
+resize: none;
 }
 
 .modal-check {
@@ -190,8 +203,14 @@ line-height: normal;
 display: flex;
 align-items: center;
 width: 100%;
+gap: 8px;
 }
 
+@media (min-width: 1280px) {
+	.sign_up-privacy {
+	gap: 10px;
+}
+}
 .sign_up_button {
 color: var(--main-1, #D53A84);
 font-family: var(--orelega-one);

@@ -5,34 +5,29 @@
 		training session</h2>
 	<div class="form_wrapper">
 	<form class="sign_up_form" action="#" method="post" enctype="multipart/form-data">
-		<div class="user_name_wrap">
-			<input type="text" id="user-name" name="user-name" class="sign_up_form_input name-input" placeholder="Name"
-				required>
+		<div class="sign_up_form_div">
+					<div class="user_name_wrap">
+						<input type="text" id="user-name" name="user-name" class="sign_up_form_input name-input" placeholder="Name" required>
+					</div>
+					<div class="user-phone-container">
+						<input type="tel" id="user-tel" name="user-phone" class="sign_up_form_input phone_input" required>
+					</div>
+					<!--textarea-->
+					<div class="sign_up-textarea_content">
+						<textarea id="user-comment" name="user-comment" class="sign_up_form_input textarea_content"
+							placeholder="comment"></textarea>
+					</div>
+					<!--checkbox-->
+					<div class="sign_up-privacy">
+						<input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="modal-check ">
+						<label for="user-privacy" class="check-text">
+							I agree to the&nbsp;
+							<a href="#" class="link-privacy link">Privacy Policy</a>
+						</label>
+					</div>
 		</div>
-		<div class="user-phone-container">
-			<input type="tel" id="user-tel" name="user-phone" class="sign_up_form_input phone_input" required>
-		</div>
-		<!--textarea-->
-		<div class="sign_up-textarea_content">
-			<textarea id="user-comment" name="user-comment" class="sign_up_form_input textarea_content"
-				placeholder="comment"></textarea>
-		</div>
-		<!--checkbox-->
-		<div class="sign_up-privacy">
-			<input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="modal-check ">
-			<label for="user-privacy" class="check-text">
-				<span class="checkbox_span">
-					<svg class="check-icon" width="10" height="8">
-						<use href="./images/icons.svg#icon-check"></use>
-					</svg>
-				</span>
-				I agree to the&nbsp;
-				<a href="#" class="link-privacy link">Privacy Policy</a>
-			</label>
-		</div>
-		<div class="submit_btn_wrap">
+
 			<button type="submit" id="btn" class="sign_up_button">Get started for free</button>
-		</div>
 	</form>
 </div>	
 </div>
