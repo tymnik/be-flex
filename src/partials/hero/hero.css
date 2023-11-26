@@ -1,0 +1,7 @@
+.hero-section {
+    max-width: 375px;
+    height: 667px;
+    flex-shrink: 0;
+    background: url('/img/hero/hero_mob_1x.jpg'), lightgray -844.941px -416.352px / 563.265% 225.614% no-repeat;
+    display: flex;
+}
