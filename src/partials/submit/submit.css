@@ -3,7 +3,7 @@ body {
 }
 
 .iti__flag {
-	background-image: url("../../../node_modules/intl-tel-input/build/img/flags@2x.png");
+	background-image: url("../../../node_modules/intl-tel-input/build/img/flags.png");
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -271,13 +271,25 @@ body {
 /* Intl-tel-input */
 
 .iti.iti--separate-dial-code .iti__selected-flag {
-	background-color: white;
+	background-color: transparent;
 	height: 90%;
 	border-radius: 36px;
 	top: 3px;
 	left: 2px;
 	padding: 8px 36px
 }
+
+body .iti.iti--separate-dial-code .iti__selected-flag:hover {
+background-color: transparent;
+}
+
+.iti--allow-dropdown input[disabled]+.iti__flag-container:hover,
+.iti--allow-dropdown input[readonly]+.iti__flag-container:hover {
+	cursor: unset;
+		background-color: transparent;
+}
+
+
 
 .iti.iti--separate-dial-code .iti__arrow {
 	margin-left: 6px;
