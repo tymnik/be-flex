@@ -225,6 +225,9 @@ width: 328px;
 		width: 628px;
 	}
 }
+.iti__selected-flag {
+background-color: unset !important;
+}
 
 .user-phone-container {
 	position: relative;
