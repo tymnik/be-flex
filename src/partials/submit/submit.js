@@ -21,12 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Заборона вводу літер
 document.getElementById('user-tel').addEventListener('input', function (event) {
     this.value = this.value.replace(/[^0-9]/g, '');
 });
 
-// Приховання стрілки після вибору коду країни
 const userTelInput = document.getElementById('user-tel');
 
 userTelInput.addEventListener('countrychange', function () {
