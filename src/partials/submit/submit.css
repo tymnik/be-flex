@@ -1,3 +1,6 @@
+body {
+	margin: unset;
+}
 .iti__flag {
 	background-image: url("/node_modules/intl-tel-input/build/img/flags.png");
 }
@@ -27,7 +30,30 @@ margin: 0 auto;
 		padding: 0 80px 88px 80px;
 		position: relative;
 	}
+
+		.sign_up_section::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-image: url(../../img/be-flex-text/be-flex-line-desc.png);
+			background-repeat: repeat-x;
+			background-position: center;
+			z-index: -1;
+		}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+	.sign_up_section::before {
+		background-image: url(../../img/be-flex-text/be-flex-line-desc-2x.png);
+	}
 }
+}
+	
+
 
 .sign_up_section_container {
 display: flex;
@@ -224,9 +250,6 @@ width: 328px;
 	.sign_up_button {
 		width: 628px;
 	}
-}
-.iti__selected-flag {
-background-color: unset !important;
 }
 
 .user-phone-container {
