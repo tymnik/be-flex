@@ -1,6 +1,18 @@
 body {
 	margin: unset;
 }
+/* .iti__flag {
+	background-image: url("/node_modules/intl-tel-input/build/img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	.iti__flag {
+		background-image: url("/node_modules/intl-tel-input/build/img/flags@2x.png");
+	}
+} */
+
+
 .iti__flag {
 	background-image: url("/node_modules/intl-tel-input/build/img/flags.png");
 }
@@ -38,7 +50,7 @@ margin: 0 auto;
 			right: 0;
 			bottom: 0;
 			left: 0;
-			background-image: url(../../img/be-flex-text/be-flex-line-desc.png);
+			background-image: url("/img/be-flex-text/be-flex-line-desc.png");
 			background-repeat: repeat-x;
 			background-position: center;
 			z-index: -1;
@@ -48,7 +60,7 @@ margin: 0 auto;
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 	.sign_up_section::before {
-		background-image: url(../../img/be-flex-text/be-flex-line-desc-2x.png);
+		background-image: url("/img/be-flex-text/be-flex-line-desc-2x.png");
 	}
 }
 }

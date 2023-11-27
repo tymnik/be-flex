@@ -10,9 +10,6 @@
 	padding: 0 48px 137px 48px;
 	}
 
-	.training_section_container {
-	margin-top: 55px;
-	}
 	}
 
 	@media (min-width: 1280px) {
@@ -43,6 +40,7 @@
 		background-image: url('/img/be-flex-text/be-flex-line-tablet.png');
 		background-repeat: repeat-x;
 		position: absolute;
+		margin-bottom: 55px;
 	}
 }
 
