@@ -62,9 +62,9 @@
         width: 200px;
     }
 
-         @media screen and (min-width: 1280px) {
-            width: 407px;
-         }
+    @media screen and (min-width: 1280px) {
+        width: 407px;
+    }
 }
 
 .for-whom-first-wrapper {
@@ -264,15 +264,15 @@
 .for-whom-second-block,
 .for-whom-third-block {
     @media screen and (min-width: 744px) {
-            margin: 0 auto;
-            border-top: 2px solid var(--black-90);
-            width: 100%;
-            padding: 16px;
-        }
-    
+        margin: 0 auto;
+        border-top: 2px solid var(--black-90);
+        width: 100%;
+        padding: 16px;
+
         &:hover {
             background-color: rgba(213, 58, 132, 0.10);
         }
+    }
 }
 
 /**-----BOXES-----**/
