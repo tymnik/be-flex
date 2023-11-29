@@ -28,6 +28,13 @@
     @media screen and (min-width: 744px) {
         max-width: 648px;
     }
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 24px;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
 }
 
 .about-me-title {
@@ -64,14 +71,8 @@
 
     @media screen and (min-width: 1280px) {
         width: unset;
-        max-width: 602px;
+        max-width: 628px;
         margin-bottom: unset;
-
-        &:hover,
-        &:focus {
-            box-shadow: 24px 24px var(--main-violet), 26px 26px #000;
-            transition: transform 0.3s ease-in-out;
-        }
     }
 }
 
@@ -183,13 +184,5 @@
 @media screen and (min-width: 1280px) {
     .about-me::after {
         display: none;
-    }
-
-    .about-me-wrapper {
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
-        max-width: 1280px;
-        margin: 0 auto;
     }
 }

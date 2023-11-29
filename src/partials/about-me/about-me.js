@@ -8,15 +8,13 @@ document.addEventListener('DOMContentLoaded', function () {
     introText.classList.add('collapsed');
     showMoreBtn.style.display = 'none';
     showLessBtn.style.display = 'inline';
-
-    if (ellipsis && ellipsis.parentNode === introText) {
-      introText.removeChild(ellipsis);
-    }
+    ellipsis.style.display = 'none';
   });
 
   showLessBtn.addEventListener('click', function () {
     introText.classList.remove('collapsed');
     showMoreBtn.style.display = 'inline';
     showLessBtn.style.display = 'none';
+    ellipsis.style.display = 'inline';
   });
 });
