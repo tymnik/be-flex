@@ -1,0 +1,52 @@
+.footer-container {
+  background-color: var(--main-pink);
+  height: 134px;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 36.4px;
+  padding-right: 19.5px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo-link > svg {
+  fill: var(--background);
+  height: 112px;
+  width: 319px;
+}
+
+.footer-logo-link:hover,
+.footer-logo-link:focus {
+  filter: drop-shadow(0px 8px 8px var(--main-violet));
+}
+
+@media only screen and (min-width: 744px) {
+  .footer-container {
+    height: 195px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 154px;
+    padding-right: 128px;
+  }
+
+  .footer-logo-link > svg {
+    width: 464px;
+    height: 163px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-container {
+    height: 235px;
+    padding-top: 13px;
+    padding-bottom: 24px;
+    padding-left: 440px;
+    padding-right: 438px;
+  }
+
+  .footer-logo-link > svg {
+    width: 563px;
+    height: 198px;
+  }
+}
