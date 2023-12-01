@@ -4,17 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
     questionsItems.forEach((item) => {
         item.addEventListener("click", function () {
             questionsItems.forEach((el) => {
-                if (el !== item && el.classList.contains("active")) {
+                if (el !== item) {
                     el.classList.remove("active");
+                    el.querySelector(".questions_svg").classList.remove("rotate");
                 }
             });
 
-            const isActive = item.classList.contains("active");
-            if (isActive) {
-                item.classList.remove("active");
-            } else {
-                item.classList.add("active");
-            }
+            item.classList.toggle("active");
+            item.querySelector(".questions_svg").classList.toggle("rotate");
         });
     });
 });
