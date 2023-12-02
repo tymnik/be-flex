@@ -8,9 +8,9 @@
     <title>Be Flex</title>
   
   <script type="module" crossorigin src="/be-flex/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/be-flex/assets/vendor-a2152ea4.js">
-  <link rel="stylesheet" href="/be-flex/assets/vendor-d9eb1ca6.css">
-  <link rel="stylesheet" href="/be-flex/assets/index-ad34d01c.css">
+  <link rel="modulepreload" crossorigin href="/be-flex/assets/vendor-20b42855.js">
+  <link rel="stylesheet" href="/be-flex/assets/vendor-229fa514.css">
+  <link rel="stylesheet" href="/be-flex/assets/index-b325efd4.css">
 </head>
 
 <body>
@@ -599,11 +599,717 @@
 	</div>
 </section>
   <section></section>
+  <section class="gallery">
+  <div class="gallery-wrapper"></div>
+  <div class="gallery-content">
+    <h2 class="gallery-title">Gallery</h2>
+    <div class="bottom-block">
+      <ul class="slider-btns">
+        <li>
+          <button class="slider-btn slider-btn-prev" type="button">
+            <svg class="slider-icon slider-icon-prev">
+              <use href="../../img/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="slider-btn slider-btn-next" type="button">
+            <svg class="slider-icon slider-icon-next">
+              <use href="../../img/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!-- Swiper -->
+    <div class="gallery-swiper-container">
+      <div class="gallery-swiper swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ../../img/gallery/gallery_1_desc.jpg    1x,
+                  ../../img/gallery/gallery_1_desc_2x.jpg 2x
+                "
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 744)"
+                srcset="
+                    ../../img/gallery/gallery_1_tablet.jpg 1x
+                    ../../img/gallery/gallery_1_tablet_2x.jpg 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 743)"
+                srcset="
+                  ../../img/gallery/gallery_1_mob.jpg    1x,
+                  ../../img/gallery/gallery_1_mob_2x.jpg 2x
+                "
+              />
+              <img
+                src="../../img/gallery/gallery_1_mob.jpg"
+                alt="Girls on the podium"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ../../img/gallery/gallery_2_desc.jpg    1x,
+                  ../../img/gallery/gallery_2_desc_2x.jpg 2x
+                "
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 744px)"
+                srcset="
+                  ../../img/gallery/gallery_2_tablet.jpg    1x,
+                  ../../img/gallery/gallery_2_tablet_2x.jpg 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 743px)"
+                srcset="
+                  ../../img/gallery/gallery_2_mob.jpg    1x,
+                  ../../img/gallery/gallery_2_mob_2x.jpg 2x
+                "
+              />
+              <img
+                src="../../img/gallery/gallery_2_mob.jpg"
+                alt="Girls with coaches"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ../../img/gallery/gallery_3_desc.jpg    1x,
+                  ../../img/gallery/gallery_3_desc_2x.jpg 2x
+                "
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 744px)"
+                srcset="
+                  ../../img/gallery/gallery_3_tablet.jpg    1x,
+                  ../../img/gallery/gallery_3_tablet_2x.jpg 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 743px)"
+                srcset="
+                  ../../img/gallery/gallery_3_mob.jpg    1x,
+                  ../../img/gallery/gallery_3_mob_2x.jpg 2x
+                "
+              />
+              <img
+                src="../../img/gallery/gallery_3_mob.jpg"
+                alt="Little girls on podium"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ../../img/gallery/gallery_4_desc.jpg    1x,
+                  ../../img/gallery/gallery_4_desc_2x.jpg 2x
+                "
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 744px)"
+                srcset="
+                  ../../img/gallery/gallery_4_tablet.jpg    1x,
+                  ../../img/gallery/gallery_4_tablet_2x.jpg 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 743px)"
+                srcset="
+                  ../../img/gallery/gallery_4_mob.jpg    1x,
+                  ../../img/gallery/gallery_4_mob_2x.jpg 2x
+                "
+              />
+              <img
+                src="../../img/gallery/gallery_4_mob.jpg"
+                alt="Little girls team with coach"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ../../img/gallery/gallery_5_desc.jpg    1x,
+                  ../../img/gallery/gallery_5_desc_2x.jpg 2x
+                "
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 744px)"
+                srcset="
+                  ../../img/gallery/gallery_5_tablet.jpg    1x,
+                  ../../img/gallery/gallery_5_tablet_2x.jpg 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 743px)"
+                srcset="
+                  ../../img/gallery/gallery_5_mob.jpg    1x,
+                  ../../img/gallery/gallery_5_mob_2x.jpg 2x
+                "
+              />
+              <img
+                src="../../img/gallery/gallery_5_mob.jpg"
+                alt="girls team with coach"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ../../img/gallery/gallery_6_desc.jpg    1x,
+                  ../../img/gallery/gallery_6_desc_2x.jpg 2x
+                "
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 744px)"
+                srcset="
+                  ../../img/gallery/gallery_6_tablet.jpg    1x,
+                  ../../img/gallery/gallery_6_tablet_2x.jpg 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 743px)"
+                srcset="
+                  ../../img/gallery/gallery_6_mob.jpg    1x,
+                  ../../img/gallery/gallery_6_mob_2x.jpg 2x
+                "
+              />
+              <img
+                src="../../img/gallery/gallery_6_mob.jpg"
+                alt="Two girls with medals and prizes"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ../../img/gallery/gallery_7_desc.jpg    1x,
+                  ../../img/gallery/gallery_7_desc_2x.jpg 2x
+                "
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 744px)"
+                srcset="
+                  ../../img/gallery/gallery_7_tablet.jpg    1x,
+                  ../../img/gallery/gallery_7_tablet_2x.jpg 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 743px)"
+                srcset="
+                  ../../img/gallery/gallery_7_mob.jpg    1x,
+                  ../../img/gallery/gallery_7_mob_2x.jpg 2x
+                "
+              />
+              <img
+                src="../../img/gallery/gallery_7_mob.jpg"
+                alt="Two girls with diplomas and a coach"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ../../img/gallery/gallery_8_desc.jpg    1x,
+                  ../../img/gallery/gallery_8_desc_2x.jpg 2x
+                "
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 744px)"
+                srcset="
+                  ../../img/gallery/gallery_8_tablet.jpg    1x,
+                  ../../img/gallery/gallery_8_tablet_2x.jpg 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 743px)"
+                srcset="
+                  ../../img/gallery/gallery_8_mob.jpg    1x,
+                  ../../img/gallery/gallery_8_mob_2x.jpg 2x
+                "
+              />
+              <img
+                src="../../img/gallery/gallery_8_mob.jpg"
+                alt="Two girls with medals"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ../../img/gallery/gallery_9_desc.jpg    1x,
+                  ../../img/gallery/gallery_9_desc_2x.jpg 2x
+                "
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 744px)"
+                srcset="
+                  ../../img/gallery/gallery_9_tablet.jpg    1x,
+                  ../../img/gallery/gallery_9_tablet_2x.jpg 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 743px)"
+                srcset="
+                  ../../img/gallery/gallery_9_mob.jpg    1x,
+                  ../../img/gallery/gallery_9_mob_2x.jpg 2x
+                "
+              />
+              <img
+                src="../../img/gallery/gallery_9_mob.jpg"
+                alt="Girls in red on podium"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ../../img/gallery/gallery_10_desc.jpg    1x,
+                  ../../img/gallery/gallery_10_desc_2x.jpg 2x
+                "
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 744px)"
+                srcset="
+                  ../../img/gallery/gallery_10_tablet.jpg    1x,
+                  ../../img/gallery/gallery_10_tablet_2x.jpg 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 743px)"
+                srcset="
+                  ../../img/gallery/gallery_10_mob.jpg    1x,
+                  ../../img/gallery/gallery_10_mob_2x.jpg 2x
+                "
+              />
+              <img
+                src="../../img/gallery/gallery_10_mob.jpg"
+                alt="Girl with a cup and a coach"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="reviews">
+  <div class="reviews-content">
+    <h2 class="reviews-title">Reviews</h2>
+    <div class="bottom-block">
+      <ul class="slider-btns">
+        <li>
+          <button class="slider-btn reviews_slider-btn-prev" type="button">
+            <svg class="slider-icon slider-icon-prev">
+              <use href="../../img/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="slider-btn reviews_slider-btn-next" type="button">
+            <svg class="slider-icon slider-icon-next">
+              <use href="../../img/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!-- Swiper -->
+    <div class="reviews-swiper-container">
+      <div class="reviews-swiper-js reviews-swiper">
+        <!-- Additional required wrapper -->
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide">
+            <div class="reviews-card">
+              <ul class="reviews-card-info">
+                <li>
+                  <picture class="reviews-card-img">
+                    <source
+                      srcset="
+                        ../../img/reviews/reviews_1_1x.jpg      1x,
+                        ../../img/reviews/reviews_1_desc_2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="../../img/reviews/reviews_1_1x.jpg"
+                      alt="Reviewer's photo"
+                      loading="lazy"
+                    />
+                  </picture>
+                </li>
+                <li>
+                  <p class="reviews-card-nickname">Veronica G.</p>
+                </li>
+                <li>
+                  <ul class="reviews-card-stars">
+                    <li class="reviews-card-stars-value">5</li>
+                    <li class="reviews-card-stars-icon-box">
+                      <svg class="reviews-card-stars-icon">
+                        <use href="../../img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="reviews-card-comment">
+                The child has been going to Anastasia for acrobatics for about 6
+                months, I am very satisfied with it. I want to emphasize the
+                high level of the master's qualifications and the individual
+                approach to each child.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="reviews-card">
+              <ul class="reviews-card-info">
+                <li>
+                  <picture class="reviews-card-img">
+                    <source
+                      srcset="
+                        ../../img/reviews/reviews_2_desc_1x.jpg 1x,
+                        ../../img/reviews/reviews_2_desc_2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="../../img/reviews/reviews_2_desc_1x.jpg"
+                      alt="Reviewer's photo"
+                      loading="lazy"
+                    />
+                  </picture>
+                </li>
+                <li>
+                  <p class="reviews-card-nickname">Alexander</p>
+                </li>
+                <li>
+                  <ul class="reviews-card-stars">
+                    <li class="reviews-card-stars-value">5</li>
+                    <li class="reviews-card-stars-icon-box">
+                      <svg class="reviews-card-stars-icon">
+                        <use href="../../img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="reviews-card-comment">
+                After the 1st training, we realized that this ideal place is
+                suitable for our Camilla.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="reviews-card">
+              <ul class="reviews-card-info">
+                <li>
+                  <picture class="reviews-card-img">
+                    <source
+                      srcset="
+                        ../../img/reviews/reviews_3_desc_1x.jpg 1x,
+                        ../../img/reviews/reviews_3_desc_2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="../../img/reviews/reviews_3_desc_1x.jpg"
+                      alt="Reviewer's photo"
+                      loading="lazy"
+                    />
+                  </picture>
+                </li>
+                <li>
+                  <p class="reviews-card-nickname">Albina Kravets G.</p>
+                </li>
+                <li>
+                  <ul class="reviews-card-stars">
+                    <li class="reviews-card-stars-value">5</li>
+                    <li class="reviews-card-stars-icon-box">
+                      <svg class="reviews-card-stars-icon">
+                        <use href="../../img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="reviews-card-comment">
+                My daughter was 4 years old and she went to gymnastics for the
+                first time. Now we’ve been practicing for 2 years and I’m just
+                blown away by the progress and desire to do acrobatics with my
+                daughter
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="reviews-card">
+              <ul class="reviews-card-info">
+                <li>
+                  <picture class="reviews-card-img">
+                    <source
+                      srcset="
+                        ../../img/reviews/reviews_4_desc_1x.jpg 1x,
+                        ../../img/reviews/reviews_4_desc_2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="../../img/reviews/reviews_4_desc_1x.jpg"
+                      alt="Reviewer's photo"
+                      loading="lazy"
+                    />
+                  </picture>
+                </li>
+                <li>
+                  <p class="reviews-card-nickname">Albina Kravets G.</p>
+                </li>
+                <li>
+                  <ul class="reviews-card-stars">
+                    <li class="reviews-card-stars-value">5</li>
+                    <li class="reviews-card-stars-icon-box">
+                      <svg class="reviews-card-stars-icon">
+                        <use href="../../img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="reviews-card-comment">
+                My daughter was 4 years old and she went to gymnastics for the
+                first time. Now we’ve been practicing for 2 years and I’m just
+                blown away by the progress and desire to do acrobatics with my
+                daughter
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="reviews-card">
+              <ul class="reviews-card-info">
+                <li>
+                  <picture class="reviews-card-img">
+                    <source
+                      srcset="
+                        ../../img/reviews/reviews_5_desc_1x.jpg 1x,
+                        ../../img/reviews/reviews_5_desc_2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="../../img/reviews/reviews_5_desc_1x.jpg"
+                      alt="Reviewer's photo"
+                      loading="lazy"
+                    />
+                  </picture>
+                </li>
+                <li>
+                  <p class="reviews-card-nickname">Albina Kravets G.</p>
+                </li>
+                <li>
+                  <ul class="reviews-card-stars">
+                    <li class="reviews-card-stars-value">5</li>
+                    <li class="reviews-card-stars-icon-box">
+                      <svg class="reviews-card-stars-icon">
+                        <use href="../../img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="reviews-card-comment">
+                My daughter was 4 years old and she went to gymnastics for the
+                first time. Now we’ve been practicing for 2 years and I’m just
+                blown away by the progress and desire to do acrobatics with my
+                daughter
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section>
+  <div class="contact-me-container">
+    <h2 class="contact-me-title">Contact me</h2>
+    <ul class="contact-me-list">
+      <li>
+    <div class="contact-me-location">
+      <iframe
+        id="map_tabl_mob"
+        class="live-map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28933.09146525062!2d55.1554221!3d24.9784814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f73cdca1cb627%3A0x32f4840192af3c22!2sFly%20High%20Fitness!5e0!3m2!1suk!2sua!4v1701249046233!5m2!1suk!2sua"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+    </li>
+    <li>
+    <ul class="contact-me-card">
+      <li>
+        <ul class="contact-me-card-info">
+          <li class="contact-me-iconbox">
+            <svg class="contact-me-icon">
+              <use href="../../img/icons.svg#icon-location-bw"></use>
+            </svg>
+          </li>
+          <li>
+            <ul class="contact-me-card-details">
+              <li>
+                <p class="contact-me-card-info-title">Address:</p>
+              </li>
+              <li>
+                <p class="contact-me-card-info-data">
+                  Dip 1, “Fly High Fitness”
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="contact-me-card-info">
+          <li class="contact-me-iconbox">
+            <svg class="contact-me-icon">
+              contact-me-icon
+              <use href="../../img/icons.svg#icon-phone"></use>
+            </svg>
+          </li>
+          <li>
+            <ul class="contact-me-card-details">
+              <li>
+                <p class="contact-me-card-info-title">Phone number:</p>
+              </li>
+              <li>
+                <p class="contact-me-card-info-data">+971 52 411 6236</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="contact-me-card-info">
+          <li class="contact-me-iconbox">
+            <svg class="contact-me-icon">
+              <use href="../../img/icons.svg#icon-clock"></use>
+            </svg>
+          </li>
+          <li>
+            <ul class="contact-me-card-details">
+              <li>
+                <p class="contact-me-card-info-title">Working hours:</p>
+              </li>
+              <li>
+                <p class="contact-me-card-info-data">
+                  Monday - Sunday:<span class="contact-me-card-info-data"
+                    >10 am - 9 pm</span
+                  >
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="contact-me-btn">
+          Get your trial class
+        </button>
+      </li>
+    </ul>
+    </ul>
+    </li>
+  </div>
+</section>
+
   <section></section>
-  <section></section>
-  
-  <section></section>
-  <section></section>
+  <section class="footer-container">
+  <a href="../../index.html" class="footer-logo-link">
+    <svg>
+      <use href="../../img/icons.svg#icon-logo"></use></svg
+  ></a>
+</section>
+
 
   
 </body>
