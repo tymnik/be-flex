@@ -1,25 +1,75 @@
 .training_section {
-	padding: 0 16px 72px 16px;
+	padding: 0 16px 80px;
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;}
+	margin: 0 auto;
+}
 
-	@media (min-width: 744px) {
+@media (min-width: 744px) {
 	.training_section {
-	padding: 0 48px 137px 48px;
+		padding: 0 48px 137px 48px;
 	}
+}
+
+@media (min-width: 1280px) {
+	.training_section {
+		padding: 0 80px 88px 80px;
 	}
 
-	@media (min-width: 1280px) {
-	.training_section {
-	padding: 0 80px 88px 80px;
-	}
-	}
+}
+
 .training_section_container {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	align-items: center;
+}
+
+@media (min-width: 744px) and (max-width: 1279px) {
+	.training_section {
+		position: relative;
+	}
+
+	.training_section::before {
+		content: "";
+		width: 100%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-image: url('/img/be-flex-text/be-flex-line-tablet.png');
+		background-size: 100% 64px;
+		background-repeat: repeat-x;
+		position: absolute;
+	}
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+	.training_section::before {
+		background-image: url('/img/be-flex-text/be-flex-line-tablet-2x.png');
+	}
+}
+
+@media (min-width: 744px) {
+	.training_section_container {
+		margin-top: 55px;
+	}
+
+	.training_section_title {
+		margin-top: 55px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.training_section_title {
+		margin-top: unset;
+	}
+
+	.training_section_container {
+		margin-top: unset;
+	}
 }
 
 .main_title {
@@ -34,7 +84,7 @@
 
 @media (min-width: 1280px) {
 	.main_title {
-	font-size: var(--title-2);
+		font-size: var(--title-2);
 	}
 }
 
@@ -73,7 +123,7 @@
 	.training_border {
 		gap: unset;
 		width: 648px;
-		border-radius: 36px 36px 36px 36px;
+		border-radius: 36px;
 		border: 2px solid #000;
 		position: relative;
 		height: 1051px;
@@ -85,7 +135,7 @@
 		border: 1px solid #000;
 		position: absolute;
 		top: 546px;
-		}
+	}
 }
 
 @media (min-width: 1280px) {
@@ -96,11 +146,11 @@
 		gap: 23px;
 	}
 
-.training_border:hover,
-		.training_border:focus {
+	.training_border:hover,
+	.training_border:focus {
 		background-color: rgba(213, 58, 132, 0.10);
 	}
-	
+
 	.training_border::before {
 		content: "";
 		height: 527px;
@@ -109,28 +159,28 @@
 		width: 1px;
 		top: 0;
 		left: 628px;
-		}
+	}
 }
 
 .training_wrapp_title {
-	color: var(--black-90, #08070C);
+	color: var(--black-90);
 	text-align: center;
 	font-size: var(--subtitle-2);
 	font-weight: var(--normal);
-	line-height: normal; 
+	line-height: normal;
 }
 
 @media (min-width: 744px) {
 	.training_wrapp_title {
-	font-size: var(--title-3);
-	margin-top: 24px;
+		font-size: var(--title-3);
+		margin-top: 24px;
 	}
 }
 
 .training_wrapp_text {
-	color: var(--black-90, #08070C);
+	color: var(--black-90);
 	text-align: center;
-	font-family: var(--manrope);	
+	font-family: var(--manrope);
 	font-size: var(--subtitle-2);
 	font-weight: var(--bold-extra);
 	line-height: normal;
@@ -138,7 +188,7 @@
 
 @media (min-width: 1280px) {
 	.training_wrapp_text {
-	text-align: left;
+		text-align: left;
 	}
 }
 
@@ -156,15 +206,15 @@
 
 @media (min-width: 744px) {
 	.training_wrapp {
-	gap: 32px;
+		gap: 32px;
 	}
 }
 
 @media (min-width: 1280px) {
 	.training_wrapp {
-	align-items: start;
-	border-radius: 0px 36px 36px 0px;
-	gap: 24px;
+		align-items: start;
+		border-radius: 0px 36px 36px 0px;
+		gap: 24px;
 	}
 }
 
@@ -173,9 +223,10 @@
 	flex-direction: column;
 	gap: 16px;
 }
+
 @media (min-width: 744px) {
-	.training_list{
-	gap: 24px;
+	.training_list {
+		gap: 24px;
 	}
 }
 
@@ -186,9 +237,11 @@
 	gap: 24px;
 	max-width: 343px;
 }
+
 @media (min-width: 744px) {
 	.training_item {
-	max-width: 627px;	}
+		max-width: 627px;
+	}
 }
 
 .training_last_text {
@@ -197,15 +250,15 @@
 	font-size: var(--body-2);
 	font-style: normal;
 	font-weight: var(--normal);
-	line-height: normal; 
+	line-height: normal;
 	max-width: 327px;
 }
 
 @media (min-width: 744px) {
 	.training_last_text {
-	font-size: var(--body-1);
-	max-width: 627px;
-	line-height: normal; 
+		font-size: var(--body-1);
+		max-width: 627px;
+		line-height: normal;
 	}
 }
 
@@ -220,74 +273,43 @@
 
 @media (min-width: 744px) {
 	.training_section_container::after {
-	content: unset;
+		content: unset;
 	}
 }
 
 @media (min-width: 1280px) {
 	.training_last_text {
-	text-align: left;
+		text-align: left;
 	}
 }
 
 .top_title {
-	color: var(--black-90, #08070C);
-	font-family: Orelega One;
+	color: var(--black-90);
+	font-family: var(--orelega-one);
 	font-size: var(--subtitle-2);
 	font-weight: var(--normal);
-	line-height: normal; 
+	line-height: normal;
 }
 
 @media (min-width: 744px) {
 	.top_title {
-	font-size: var(--title-3);
-	line-height: normal; 
+		font-size: var(--title-3);
+		line-height: normal;
 	}
 }
 
 .low_text {
-	color: var(--black-90, #08070C);
+	color: var(--black-90);
 	font-family: var(--manrope);
 	font-size: var(--smallest);
 	font-style: normal;
 	font-weight: var(--normal);
-	line-height: normal; 
+	line-height: normal;
 }
 
 @media (min-width: 744px) {
 	.low_text {
-	font-size: var(--subtitle-2);
-	line-height: normal; 
-	}
-}
-@media (min-width: 744px) and (max-width: 1279px) {
-	.repeating-image {
-			width: 100%;
-			height: 63px;
-			background-image: url('/img/about_training/be_flex_png_1x.png');
-			background-repeat: repeat-x;
-			background-color: #FDF5FD;
-			stroke: #D53A844D;
-			fill: transparent;
-		}
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-	.repeating-image {
-	background-image: url(/img/about_training/be_flex_png_2x.png);
-	}
-}
-
-@media (min-width: 744px) {
-	.training_section_title {
-		margin-top: 55px;
-		}
-}
-
-@media (min-width: 1280px) {
-	.training_section_title {
-		margin-top: unset;
+		font-size: var(--subtitle-2);
+		line-height: normal;
 	}
 }
