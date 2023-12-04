@@ -1,10 +1,6 @@
 .reviews {
-  margin-bottom: 72px;
   position: relative;
-  width: 375px;
-  margin-right: auto;
-  margin-left: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .reviews::before {
   content: '';
@@ -25,6 +21,15 @@
   .sign_up_section::before {
     background-image: url('../../img/be-flex-text/be-flex-line-desc-2x.png');
   }
+}
+
+.reviews-wrap {
+  margin-bottom: 72px;
+  position: relative;
+  width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
 }
 
 .reviews-title {
@@ -112,7 +117,7 @@
 }
 
 @media only screen and (min-width: 744px) {
-  .reviews {
+  .reviews-wrap {
     margin-bottom: 80px;
     width: 744px;
   }
@@ -132,7 +137,7 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-  .reviews {
+  .reviews-wrap {
     margin-bottom: 88px;
     width: 1280px;
   }
@@ -174,7 +179,6 @@
   width: 24px;
   height: 24px;
   fill: black;
-  stroke: black;
 }
 
 .slider-icon-prev {
@@ -184,6 +188,18 @@
 .slider-icon-next {
   transform: rotate(-90deg);
 }
+
+.slider-icon:hover,
+.slider-icon:focus {
+  fill: var(--main-violet);
+  transition: fill 250ms linear;
+}
+.slider-btn:hover,
+.slider-btn:focus {
+  border: 2px solid var(--main-violet);
+  transition: fill 250ms linear;
+}
+
 @media screen and (min-width: 744px) {
   .bottom-block {
     padding: 8px 48px;
@@ -194,7 +210,3 @@
     padding: 8px 80px;
   }
 }
-/* 
-.slider-btn:disabled .slider-icon {
-  display: none;
-} */
