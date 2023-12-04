@@ -40,17 +40,23 @@ desktopPhoneNumber.addEventListener('click', function () {
 });
 
 function copyPhoneNumber(phoneNumber) {
-  const tempTextArea = document.createElement('textarea');
-  tempTextArea.value = phoneNumber;
+  const tempInput = document.createElement('input');
+  tempInput.value = phoneNumber;
 
-  document.body.appendChild(tempTextArea);
+  document.body.appendChild(tempInput);
 
-  tempTextArea.select();
-  tempTextArea.setSelectionRange(0, 99999); /* For mobile devices */
+  tempInput.select();
+  tempInput.setSelectionRange(0, 99999);
 
-  document.execCommand('copy');
-
-  document.body.removeChild(tempTextArea);
-
-  alert('Phone number copied to clipboard: ' + phoneNumber);
+  navigator.clipboard
+    .writeText(phoneNumber)
+    .then(() => {
+      alert('Phone number copied to clipboard: ' + phoneNumber);
+    })
+    .catch(err => {
+      console.error('Unable to copy to clipboard', err);
+    })
+    .finally(() => {
+      document.body.removeChild(tempInput);
+    });
 }
