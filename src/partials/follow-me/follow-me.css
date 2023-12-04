@@ -1,0 +1,54 @@
+.follow-me {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  padding: auto 3px;
+  border-top: 2px solid rgba(0, 0, 0, 1);
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+.follow-me > p {
+  font-family: var(--orelega-one);
+  font-size: var(--body-2);
+  font-style: normal;
+  line-height: normal;
+  font-weight: var(--normal);
+  color: var(--black-90);
+}
+
+.follow-me-socials-list {
+  display: flex;
+  gap: 8px;
+}
+
+.follow-me-socials-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 48px;
+  width: 48px;
+}
+
+.follow-me-socials-item a {
+  display: flex;
+}
+
+.follow-me-socials-item a:hover,
+.follow-me-socials-item a:focus {
+  fill: var(--main-violet);
+  color: var(--main-violet);
+  transition: fill 250ms linear;
+}
+
+@media only screen and (min-width: 744px) {
+  .follow-me {
+    padding: auto 21px;
+  }
+  .follow-me > p {
+    font-size: var(--title-3);
+  }
+}

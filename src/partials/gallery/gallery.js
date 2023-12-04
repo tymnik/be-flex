@@ -3,7 +3,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const swiperGallery = new Swiper('.swiper', {
+const swiperGallery = new Swiper('.gallery-swiper-js', {
   modules: [Navigation],
   rewind: true,
   setWrapperSize: true,
@@ -14,18 +14,18 @@ const swiperGallery = new Swiper('.swiper', {
   breakpoints: {
     744: {
       spaceBetween: 16,
-      slidesPerView: 1.6626,
+      slidesPerView: 1.7,
     },
-    1440: {
+    1280: {
       spaceBetween: 16,
-      slidesPerView: 3.2078,
+      slidesPerView: 2.9,
       grabCursor: true,
     },
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-btn-next',
-    prevEl: '.slider-btn-prev',
+    nextEl: '.gallery-slider-btn-next-js',
+    prevEl: '.gallery-slider-btn-prev-js',
   },
 });
