@@ -91,7 +91,7 @@ body {
 		width: 648px;
 		height: 502px;
 		border-radius: 36px;
-		border: 2px solid var(--main-1, #D53A84);
+		border: 2px solid #D53A84;
 		background: rgba(253, 246, 253, 0.80);
 		align-items: center;
 		margin: 0 auto;
@@ -153,6 +153,12 @@ body {
 	line-height: normal;
 }
 
+.sign_up_form_input:hover,
+.sign_up_form_input:hover {
+	border: 2px solid var(--main-1, #D53A84);
+	background: rgba(224, 137, 179, 0.10);
+}
+
 @media (max-width: 374px) {
 	.sign_up_form_input {
 		width: 272px;
@@ -200,6 +206,11 @@ body {
 	line-height: normal;
 }
 
+
+.red-border {
+	border: 2px solid var(--error, #A61717);
+}
+
 @media (min-width: 744px) {
 	.check-text {
 		font-size: var(--body-2);
@@ -237,6 +248,12 @@ body {
 	border: 2px solid var(--main-1, #D53A84);
 	background: rgba(213, 58, 132, 0.10);
 	width: 328px;
+}
+
+.sign_up_button:hover,
+.sign_up_button:focus {
+	background: var(--main-11, #E53F8E);
+	color: var(--white-1, #FFF);
 }
 
 @media (max-width: 374px) {

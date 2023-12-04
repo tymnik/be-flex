@@ -48,3 +48,7 @@ html {
 address {
   font-style: normal;
 }
+
+input[type="checkbox" i] {
+  background-color: #6B39D0;
+}
