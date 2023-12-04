@@ -3,7 +3,6 @@ const mobileMenuClose = document.querySelector('.header-burger-closer');
 const mobileMenu = document.querySelector('.mobile-backdrop');
 const mobileMenuIcon = document.querySelector('.header-burger-icon');
 const headerNav = document.querySelectorAll('.mobile-nav-link');
-const desktopPhoneIcon = document.querySelector('.header-phone-icon');
 const desktopPhoneNumber = document.querySelector('.header-phone-number');
 const body = document.querySelector('body');
 
@@ -28,11 +27,6 @@ function close() {
   mobileMenuOpen.style.visibility = 'visible';
   body.style.overflow = 'visible';
 }
-
-desktopPhoneIcon.addEventListener('click', function () {
-  const phoneNumber = '+971524116236';
-  copyPhoneNumber(phoneNumber);
-});
 
 desktopPhoneNumber.addEventListener('click', function () {
   const phoneNumber = '+971524116236';
