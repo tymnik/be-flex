@@ -9,23 +9,23 @@ const swiperReviews = new Swiper('.reviews-swiper-js', {
   setWrapperSize: true,
   uniqueNavElements: true,
   speed: 300,
-  spaceBetween: 20,
+  spaceBetween: 16,
   slidesPerView: 1,
   breakpoints: {
     744: {
-      spaceBetween: 24,
-      slidesPerView: 1.643,
+      spaceBetween: 16,
+      slidesPerView: 1.7,
     },
-    1440: {
-      spaceBetween: 26,
-      slidesPerView: 3.1345,
+    1280: {
+      spaceBetween: 16,
+      slidesPerView: 2.9,
       grabCursor: true,
     },
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.reviews_slider-btn-next',
-    prevEl: '.reviews_slider-btn-prev',
+    nextEl: '.reviews-slider-btn-next-js',
+    prevEl: '.reviews-slider-btn-prev-js',
   },
 });

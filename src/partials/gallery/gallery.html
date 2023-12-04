@@ -1,18 +1,17 @@
 <section class="gallery">
-  <div class="gallery-wrapper"></div>
-  <div class="gallery-content">
+  <div class="gallery-wrapper">
     <h2 class="gallery-title">Gallery</h2>
     <div class="bottom-block">
       <ul class="slider-btns">
         <li>
-          <button class="slider-btn slider-btn-prev" type="button">
+          <button class="slider-btn gallery-slider-btn-prev-js" type="button">
             <svg class="slider-icon slider-icon-prev">
               <use href="/img/icons.svg#icon-arrow"></use>
             </svg>
           </button>
         </li>
         <li>
-          <button class="slider-btn slider-btn-next" type="button">
+          <button class="slider-btn gallery-slider-btn-next-js" type="button">
             <svg class="slider-icon slider-icon-next">
               <use href="/img/icons.svg#icon-arrow"></use>
             </svg>
@@ -20,9 +19,10 @@
         </li>
       </ul>
     </div>
+
     <!-- Swiper -->
     <div class="gallery-swiper-container">
-      <div class="gallery-swiper swiper">
+      <div class="gallery-swiper-js">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -31,27 +31,27 @@
             <picture class="gallery-img">
               <!-- Desktop screen -->
               <source
-                media="(min-width: 1280px)"
                 srcset="
                   /img/gallery/gallery_1_desc.jpg    1x,
                   /img/gallery/gallery_1_desc_2x.jpg 2x
                 "
+                media="(min-width: 1280px)"
               />
               <!-- Tablet screen -->
               <source
-                media="(min-width: 744)"
                 srcset="
-                   /img/gallery/gallery_1_tablet.jpg 1x
-                   /img/gallery/gallery_1_tablet_2x.jpg 2x
+                  /img/gallery/gallery_1_tablet.jpg    1x,
+                  /img/gallery/gallery_1_tablet_2x.jpg 2x
                 "
+                media="(min-width: 744px)"
               />
               <!-- Mobile screen -->
               <source
-                media="(max-width: 743)"
                 srcset="
                   /img/gallery/gallery_1_mob.jpg    1x,
                   /img/gallery/gallery_1_mob_2x.jpg 2x
                 "
+                media="(max-width: 743px)"
               />
               <img
                 src="/img/gallery/gallery_1_mob.jpg"
@@ -288,7 +288,7 @@
                 media="(max-width: 743px)"
                 srcset="
                   /img/gallery/gallery_8_mob.jpg    1x,
-                 /img/gallery/gallery_8_mob_2x.jpg 2x
+                  /img/gallery/gallery_8_mob_2x.jpg 2x
                 "
               />
               <img
