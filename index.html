@@ -9,7 +9,7 @@
     <script type="module" crossorigin src="/be-flex/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/be-flex/assets/vendor-07277db3.js">
     <link rel="stylesheet" href="/be-flex/assets/vendor-229fa514.css">
-    <link rel="stylesheet" href="/be-flex/assets/index-fd2e0173.css">
+    <link rel="stylesheet" href="/be-flex/assets/index-ef685356.css">
   </head>
 
   <body>
@@ -64,71 +64,73 @@
     </div>
 </header>
 <div class="mobile-backdrop">
+  <div class="mobile-menu-container">
+    <button type="button" class="header-burger-closer">
+      <svg width="24" height="24" class="header-burger-icon">
+        <use href="/be-flex/assets/icons-4a807171.svg#icon-close-btn"></use>
+      </svg>
+    </button>
 
-    <div class="mobile-menu-container">
+    <nav class="mobile-menu-nav">
+      <a href="#about-me" class="mobile-nav-link">About me</a>
+      <a href="#you-will-find" class="mobile-nav-link">What will you find</a>
+      <a href="#for-whom" class="mobile-nav-link">For whom</a>
+      <a href="#" class="mobile-nav-link">Gallery</a>
+      <a href="#" class="mobile-nav-link">Adress</a>
+    </nav>
 
-        <button type="button" class="header-burger-closer">
-            <svg width="24" height="24" class="header-burger-icon">
-                <use href="/be-flex/assets/icons-4a807171.svg#icon-close-btn"></use>
-            </svg>
+    <ul class="mobile-menu-info">
+      <li class="mobile-info-item language-switcher">
+        <p>Switch language:</p>
+        <button class="language-switcher-btn" type="button">
+          EN
+          <svg width="24" height="24" class="language-switcher-icon">
+            <use href="/be-flex/assets/icons-4a807171.svg#icon-arrow"></use>
+          </svg>
         </button>
-
-        <nav class="mobile-menu-nav">
-            <a href="#about-me" class="mobile-nav-link">About me</a>
-            <a href="#you-will-find" class="mobile-nav-link">What will you find</a>
-            <a href="#for-whom" class="mobile-nav-link">For whom</a>
-            <a href="#" class="mobile-nav-link">Gallery</a>
-            <a href="#" class="mobile-nav-link">Adress</a>
-        </nav>
-
-        <ul class="mobile-menu-info">
-            <li class="mobile-info-item language-switcher">
-                <p>Switch language: </p>
-                <button class="language-switcher-btn" type="button">
-                    EN
-                    <svg width="24" height="24" class="language-switcher-icon">
-                        <use href="/be-flex/assets/icons-4a807171.svg#icon-arrow"></use>
-                    </svg>
-                </button>
-            </li>
-            <li class="mobile-info-item mobmenu-our-phone">
-                <a href="tel:+971524116236" class="mobmenu-phone-icon">
-                    <svg width="24" height="24" class="">
-                        <use href="/be-flex/assets/icons-4a807171.svg#icon-call"></use>
-                    </svg>
-                </a>
-                <a href="tel:+971524116236" class="mobmenu-phone-number">+971 52 411 6236</a>
-            </li>
-            <li class="mobile-info-item mobile-our-socials">
-                <p>Follow me</p>
-                <ul class="mobmenu-socials-list">
-                    <li class="mobmenu-socials-item">
-                        <a href="">
-                            <svg width="24" height="24" class="">
-                                <use href="/be-flex/assets/icons-4a807171.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mobmenu-socials-item">
-                        <a href="">
-                            <svg width="24" height="24" class="">
-                                <use href="/be-flex/assets/icons-4a807171.svg#icon-whatsapp"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mobmenu-socials-item">
-                        <a href="">
-                            <svg width="24" height="24" class="">
-                                <use href="/be-flex/assets/icons-4a807171.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+      </li>
+      <li class="mobile-info-item mobmenu-our-phone">
+        <a href="tel:+971524116236" class="mobmenu-phone-icon">
+          <svg width="24" height="24" class="">
+            <use href="/be-flex/assets/icons-4a807171.svg#icon-call"></use>
+          </svg>
+        </a>
+        <a href="tel:+971524116236" class="mobmenu-phone-number"
+          >+971 52 411 6236</a
+        >
+      </li>
+      <li class="mobile-info-item mobile-our-socials">
+        <p>Follow me</p>
+        <ul class="mobmenu-socials-list">
+          <li class="mobmenu-socials-item">
+            <a
+              href="https://www.instagram.com/be.flexs/?igshid=MzMyNGUyNmU2YQ%3D%3D"
+            >
+              <svg width="24" height="24" class="">
+                <use href="/be-flex/assets/icons-4a807171.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobmenu-socials-item">
+            <a href="">
+              <svg width="24" height="24" class="">
+                <use href="/be-flex/assets/icons-4a807171.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobmenu-socials-item">
+            <a href="https://m.facebook.com/be.flexs">
+              <svg width="24" height="24" class="">
+                <use href="/be-flex/assets/icons-4a807171.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
-    </div>
-
+      </li>
+    </ul>
+  </div>
 </div>
+
     <section></section>
     <section></section>
     <section class="about-me" id="about-me">
@@ -883,218 +885,220 @@
 </section>
 
     <section class="reviews">
-  <h2 class="reviews-title">Reviews</h2>
-  <div class="bottom-block">
-    <ul class="slider-btns">
-      <li>
-        <button class="slider-btn reviews-slider-btn-prev-js" type="button">
-          <svg class="slider-icon slider-icon-prev">
-            <use href="/be-flex/assets/icons-4a807171.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </li>
-      <li>
-        <button class="slider-btn reviews-slider-btn-next-js" type="button">
-          <svg class="slider-icon slider-icon-next">
-            <use href="/be-flex/assets/icons-4a807171.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
-  </div>
+  <div class="reviews-wrap">
+    <h2 class="reviews-title">Reviews</h2>
+    <div class="bottom-block">
+      <ul class="slider-btns">
+        <li>
+          <button class="slider-btn reviews-slider-btn-prev-js" type="button">
+            <svg class="slider-icon slider-icon-prev">
+              <use href="/be-flex/assets/icons-4a807171.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="slider-btn reviews-slider-btn-next-js" type="button">
+            <svg class="slider-icon slider-icon-next">
+              <use href="/be-flex/assets/icons-4a807171.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
 
-  <!-- Swiper -->
-  <div class="reviews-swiper-container">
-    <div class="reviews-swiper-js">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
+    <!-- Swiper -->
+    <div class="reviews-swiper-container">
+      <div class="reviews-swiper-js">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
 
-        <div class="swiper-slide">
-          <div class="reviews-card">
-            <ul class="reviews-card-info">
-              <li>
-                <picture class="reviews-card-img">
-                  <source
-                    srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAxAAACAgMBAAAAAAAAAAAAAAAFBwEGAwQIAgEBAQEBAQAAAAAAAAAAAAAAAwIBAAT/2gAMAwEAAhADEAAAAH/RMdRqYChRXZfnwjDBto+NjGgqi9LFhExypwTh2mjOr0E/kRBOdWdyu0X0X2//xAAvEAACAgIBAgQFAQkAAAAAAAABAgMEABEFBhIHEyExFDJCYbFxFSNRVGJjgYKh/9oACAEBAAE/AJZY4Y3llcKijZJ9gM5Tq6xKWioDyoh9Z+c5LYnncmaxIzf1MTnJdQy8KE8iWQzsNhUYrofxJGdP+Mk8c6Q8zVL1ydGdPnTKlitbrQ2K8qywyqHR1OwwOdYcs01ocdEdRRaMmvqfCR2nOWvtHPpG9R+coxPyN9nnb5z6k+wXWWum+KfiCscKE6DqRo7I+4zwy5f4eSfiu8/DORJAG+gvkq+fZnnMjFpJGc/7HeTQERSEOfRTk48zl0V3JXvJb9BnBUaXlTm3GjJKN6PsNnLyonGyTGw9ZIFLhFPv9s6MsTwX1ckr5axkfrGcmjaCxNCwIMcjKf8ABywwWvKzEABSSTly7D+0WaN9r3EbzpuR7bhkk7Sidrow2pzqt5Rfio9wWDsWRlX0DMW1nFBJOaSAMA8xVFXeiSxzq7i2hsjkI1/dS+kn2fOuuWkC16ET6DqXk1gU6ByrzvKUGJq2ShPofQH85NzHIXJvNtWWkft0Cc8MeEl5bkY+orkZEFUFIP7kuTQwzwvDKgeN10yn2IOdd+FfMS2xd4bVmAJowE6lTOQqX6LpFboT1/L0CJY2Q/8Acq8byXIy6pULE7MfQRRs/wCM6U8Hr87xWuoD8NX/AJZDuZ8q1a1GrDWrQpFDEgVI0GgoGf/EABsRAAICAwEAAAAAAAAAAAAAAAABAhEDISJh/9oACAECAQE/AEifKFK9UIzy7RF7j6IUbe0OKuz/xAAdEQEAAwACAwEAAAAAAAAAAAABAAIRAzEEEiFB/9oACAEDAQE/AFlN5LYS3HagO6RnhVMtp+s58W2dESCnTPayfWf/2Q== 1x, data:image/jpeg;base64,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 2x"
-                  />
-                  <img
-                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAxAAACAgMBAAAAAAAAAAAAAAAFBwEGAwQIAgEBAQEBAQAAAAAAAAAAAAAAAwIBAAT/2gAMAwEAAhADEAAAAH/RMdRqYChRXZfnwjDBto+NjGgqi9LFhExypwTh2mjOr0E/kRBOdWdyu0X0X2//xAAvEAACAgIBAgQFAQkAAAAAAAABAgMEABEFBhIHEyExFDJCYbFxFSNRVGJjgYKh/9oACAEBAAE/AJZY4Y3llcKijZJ9gM5Tq6xKWioDyoh9Z+c5LYnncmaxIzf1MTnJdQy8KE8iWQzsNhUYrofxJGdP+Mk8c6Q8zVL1ydGdPnTKlitbrQ2K8qywyqHR1OwwOdYcs01ocdEdRRaMmvqfCR2nOWvtHPpG9R+coxPyN9nnb5z6k+wXWWum+KfiCscKE6DqRo7I+4zwy5f4eSfiu8/DORJAG+gvkq+fZnnMjFpJGc/7HeTQERSEOfRTk48zl0V3JXvJb9BnBUaXlTm3GjJKN6PsNnLyonGyTGw9ZIFLhFPv9s6MsTwX1ckr5axkfrGcmjaCxNCwIMcjKf8ABywwWvKzEABSSTly7D+0WaN9r3EbzpuR7bhkk7Sidrow2pzqt5Rfio9wWDsWRlX0DMW1nFBJOaSAMA8xVFXeiSxzq7i2hsjkI1/dS+kn2fOuuWkC16ET6DqXk1gU6ByrzvKUGJq2ShPofQH85NzHIXJvNtWWkft0Cc8MeEl5bkY+orkZEFUFIP7kuTQwzwvDKgeN10yn2IOdd+FfMS2xd4bVmAJowE6lTOQqX6LpFboT1/L0CJY2Q/8Acq8byXIy6pULE7MfQRRs/wCM6U8Hr87xWuoD8NX/AJZDuZ8q1a1GrDWrQpFDEgVI0GgoGf/EABsRAAICAwEAAAAAAAAAAAAAAAABAhEDISJh/9oACAECAQE/AEifKFK9UIzy7RF7j6IUbe0OKuz/xAAdEQEAAwACAwEAAAAAAAAAAAABAAIRAzEEEiFB/9oACAEDAQE/AFlN5LYS3HagO6RnhVMtp+s58W2dESCnTPayfWf/2Q=="
-                    alt="Reviewer's photo"
-                    loading="lazy"
-                  />
-                </picture>
-              </li>
-              <li>
-                <p class="reviews-card-nickname">Veronica G.</p>
-              </li>
-              <li>
-                <ul class="reviews-card-stars">
-                  <li class="reviews-card-stars-value">5</li>
-                  <li class="reviews-card-stars-icon-box">
-                    <svg class="reviews-card-stars-icon">
-                      <use href="/be-flex/assets/icons-4a807171.svg#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <p class="reviews-card-comment">
-              The child has been going to Anastasia for acrobatics for about 6
-              months, I am very satisfied with it. I want to emphasize the high
-              level of the master's qualifications and the individual approach
-              to each child.
-            </p>
+          <div class="swiper-slide">
+            <div class="reviews-card">
+              <ul class="reviews-card-info">
+                <li>
+                  <picture class="reviews-card-img">
+                    <source
+                      srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAxAAACAgMBAAAAAAAAAAAAAAAFBwEGAwQIAgEBAQEBAQAAAAAAAAAAAAAAAwIBAAT/2gAMAwEAAhADEAAAAH/RMdRqYChRXZfnwjDBto+NjGgqi9LFhExypwTh2mjOr0E/kRBOdWdyu0X0X2//xAAvEAACAgIBAgQFAQkAAAAAAAABAgMEABEFBhIHEyExFDJCYbFxFSNRVGJjgYKh/9oACAEBAAE/AJZY4Y3llcKijZJ9gM5Tq6xKWioDyoh9Z+c5LYnncmaxIzf1MTnJdQy8KE8iWQzsNhUYrofxJGdP+Mk8c6Q8zVL1ydGdPnTKlitbrQ2K8qywyqHR1OwwOdYcs01ocdEdRRaMmvqfCR2nOWvtHPpG9R+coxPyN9nnb5z6k+wXWWum+KfiCscKE6DqRo7I+4zwy5f4eSfiu8/DORJAG+gvkq+fZnnMjFpJGc/7HeTQERSEOfRTk48zl0V3JXvJb9BnBUaXlTm3GjJKN6PsNnLyonGyTGw9ZIFLhFPv9s6MsTwX1ckr5axkfrGcmjaCxNCwIMcjKf8ABywwWvKzEABSSTly7D+0WaN9r3EbzpuR7bhkk7Sidrow2pzqt5Rfio9wWDsWRlX0DMW1nFBJOaSAMA8xVFXeiSxzq7i2hsjkI1/dS+kn2fOuuWkC16ET6DqXk1gU6ByrzvKUGJq2ShPofQH85NzHIXJvNtWWkft0Cc8MeEl5bkY+orkZEFUFIP7kuTQwzwvDKgeN10yn2IOdd+FfMS2xd4bVmAJowE6lTOQqX6LpFboT1/L0CJY2Q/8Acq8byXIy6pULE7MfQRRs/wCM6U8Hr87xWuoD8NX/AJZDuZ8q1a1GrDWrQpFDEgVI0GgoGf/EABsRAAICAwEAAAAAAAAAAAAAAAABAhEDISJh/9oACAECAQE/AEifKFK9UIzy7RF7j6IUbe0OKuz/xAAdEQEAAwACAwEAAAAAAAAAAAABAAIRAzEEEiFB/9oACAEDAQE/AFlN5LYS3HagO6RnhVMtp+s58W2dESCnTPayfWf/2Q== 1x, data:image/jpeg;base64,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 2x"
+                    />
+                    <img
+                      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAxAAACAgMBAAAAAAAAAAAAAAAFBwEGAwQIAgEBAQEBAQAAAAAAAAAAAAAAAwIBAAT/2gAMAwEAAhADEAAAAH/RMdRqYChRXZfnwjDBto+NjGgqi9LFhExypwTh2mjOr0E/kRBOdWdyu0X0X2//xAAvEAACAgIBAgQFAQkAAAAAAAABAgMEABEFBhIHEyExFDJCYbFxFSNRVGJjgYKh/9oACAEBAAE/AJZY4Y3llcKijZJ9gM5Tq6xKWioDyoh9Z+c5LYnncmaxIzf1MTnJdQy8KE8iWQzsNhUYrofxJGdP+Mk8c6Q8zVL1ydGdPnTKlitbrQ2K8qywyqHR1OwwOdYcs01ocdEdRRaMmvqfCR2nOWvtHPpG9R+coxPyN9nnb5z6k+wXWWum+KfiCscKE6DqRo7I+4zwy5f4eSfiu8/DORJAG+gvkq+fZnnMjFpJGc/7HeTQERSEOfRTk48zl0V3JXvJb9BnBUaXlTm3GjJKN6PsNnLyonGyTGw9ZIFLhFPv9s6MsTwX1ckr5axkfrGcmjaCxNCwIMcjKf8ABywwWvKzEABSSTly7D+0WaN9r3EbzpuR7bhkk7Sidrow2pzqt5Rfio9wWDsWRlX0DMW1nFBJOaSAMA8xVFXeiSxzq7i2hsjkI1/dS+kn2fOuuWkC16ET6DqXk1gU6ByrzvKUGJq2ShPofQH85NzHIXJvNtWWkft0Cc8MeEl5bkY+orkZEFUFIP7kuTQwzwvDKgeN10yn2IOdd+FfMS2xd4bVmAJowE6lTOQqX6LpFboT1/L0CJY2Q/8Acq8byXIy6pULE7MfQRRs/wCM6U8Hr87xWuoD8NX/AJZDuZ8q1a1GrDWrQpFDEgVI0GgoGf/EABsRAAICAwEAAAAAAAAAAAAAAAABAhEDISJh/9oACAECAQE/AEifKFK9UIzy7RF7j6IUbe0OKuz/xAAdEQEAAwACAwEAAAAAAAAAAAABAAIRAzEEEiFB/9oACAEDAQE/AFlN5LYS3HagO6RnhVMtp+s58W2dESCnTPayfWf/2Q=="
+                      alt="Reviewer's photo"
+                      loading="lazy"
+                    />
+                  </picture>
+                </li>
+                <li>
+                  <p class="reviews-card-nickname">Veronica G.</p>
+                </li>
+                <li>
+                  <ul class="reviews-card-stars">
+                    <li class="reviews-card-stars-value">5</li>
+                    <li class="reviews-card-stars-icon-box">
+                      <svg class="reviews-card-stars-icon">
+                        <use href="/be-flex/assets/icons-4a807171.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="reviews-card-comment">
+                The child has been going to Anastasia for acrobatics for about 6
+                months, I am very satisfied with it. I want to emphasize the
+                high level of the master's qualifications and the individual
+                approach to each child.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="reviews-card">
-            <ul class="reviews-card-info">
-              <li>
-                <picture class="reviews-card-img">
-                  <source
-                    srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAAFBwIEBggDAQEBAAMAAAAAAAAAAAAAAAAFAgMEBv/aAAwDAQACEAMQAAAAfy3HYyaJCtHMd+m9OOWwoCtClwFFtSzlRg/SkK629GuXbCW7kVObDk2UYlrKqqo8L+yd/8QAMBAAAgICAQIEAwYHAAAAAAAAAQIDBAURAAYhEhMiQQcVQiQxUWFigRRTgpLR0uL/2gAIAQEAAT8AmmhrxPNM6pGg2zHsBzP9YWArV8btHf0CT69nk2F6hnCz/NpZnYDxpIxIPLONzeNRJKs8scoP3wOU5gfirksfcWpnkM9f3nA1In+/K1uvcrQ2a0yyQyqGR1OwQedeZaazka2KgmCwwzJ5g/mS/wCF5dvR1LaR/wAO8pGiz7/bQHKXVlSSA6o3NoDv0D217kj8eSdVY2T6ZVOiT6PHrX4+DeuZx69rJWJq53E7diAQCefCbK5KpPJirEEopS7khdh2ST/rly3k72Rnvxgq7zNIGPcgk7505VVL08uSdwGiJDMT30eYtYJKccbNEAWdg6NveyRv1D3HLkdfG15bZkLaj7b0P2GuDNYKjWqI8ivKU82QRjx6eTuRxOu6dezDJBWlJSRW2SF5k89Fhb1qrFjYhLDK8ZLbYgqeN1VZt3ak04A8liVAAA78HUGHhrSarqzsPSGQchmyOfIEg8unAP7tew5OvhlPrDb7kjmPqPeyFOmgJaeeOMf1nXPi50vJWvDOQR/Z59LPr6JeeHZ7cxPTkcr1PsJdhXjL+Idg7DuDvlXCwIiCfTAfci9lHOtuhknj+YYasqyoD50KDXmfmP1c+FHTEs+R+eWoyIK21g/XLyzVrXK0tezEskMilXRhsEHk3wtr18tDZrMslOE+NIdakDfqP1AcWN0GnUjXsRwI7n0qTyGidAydvy4iJGoVFCqPYc//xAAgEQACAgEEAwEAAAAAAAAAAAABAgARAxIhIjEEUWFB/9oACAECAQE/AHNIx+R3yg2DuPyYWLY1Ld1Mus4391GvkWFD2ZhQIgUSt4PCxa9T8z96lT//xAAeEQACAgIDAQEAAAAAAAAAAAABAgADETEEEiFBYf/aAAgBAwEBPwCsdrFB1kRaOMVxpSN5lwC3Oo9GfDKDWl9ZJ00DjKqjdiRoTkXvbazHA+Qrkw820J0TCD83HClsz//Z 1x, data:image/jpeg;base64,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 2x"
-                  />
-                  <img
-                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAAFBwIEBggDAQEBAAMAAAAAAAAAAAAAAAAFAgMEBv/aAAwDAQACEAMQAAAAfy3HYyaJCtHMd+m9OOWwoCtClwFFtSzlRg/SkK629GuXbCW7kVObDk2UYlrKqqo8L+yd/8QAMBAAAgICAQIEAwYHAAAAAAAAAQIDBAURAAYhEhMiQQcVQiQxUWFigRRTgpLR0uL/2gAIAQEAAT8AmmhrxPNM6pGg2zHsBzP9YWArV8btHf0CT69nk2F6hnCz/NpZnYDxpIxIPLONzeNRJKs8scoP3wOU5gfirksfcWpnkM9f3nA1In+/K1uvcrQ2a0yyQyqGR1OwQedeZaazka2KgmCwwzJ5g/mS/wCF5dvR1LaR/wAO8pGiz7/bQHKXVlSSA6o3NoDv0D217kj8eSdVY2T6ZVOiT6PHrX4+DeuZx69rJWJq53E7diAQCefCbK5KpPJirEEopS7khdh2ST/rly3k72Rnvxgq7zNIGPcgk7505VVL08uSdwGiJDMT30eYtYJKccbNEAWdg6NveyRv1D3HLkdfG15bZkLaj7b0P2GuDNYKjWqI8ivKU82QRjx6eTuRxOu6dezDJBWlJSRW2SF5k89Fhb1qrFjYhLDK8ZLbYgqeN1VZt3ak04A8liVAAA78HUGHhrSarqzsPSGQchmyOfIEg8unAP7tew5OvhlPrDb7kjmPqPeyFOmgJaeeOMf1nXPi50vJWvDOQR/Z59LPr6JeeHZ7cxPTkcr1PsJdhXjL+Idg7DuDvlXCwIiCfTAfci9lHOtuhknj+YYasqyoD50KDXmfmP1c+FHTEs+R+eWoyIK21g/XLyzVrXK0tezEskMilXRhsEHk3wtr18tDZrMslOE+NIdakDfqP1AcWN0GnUjXsRwI7n0qTyGidAydvy4iJGoVFCqPYc//xAAgEQACAgEEAwEAAAAAAAAAAAABAgARAxIhIjEEUWFB/9oACAECAQE/AHNIx+R3yg2DuPyYWLY1Ld1Mus4391GvkWFD2ZhQIgUSt4PCxa9T8z96lT//xAAeEQACAgIDAQEAAAAAAAAAAAABAgADETEEEiFBYf/aAAgBAwEBPwCsdrFB1kRaOMVxpSN5lwC3Oo9GfDKDWl9ZJ00DjKqjdiRoTkXvbazHA+Qrkw820J0TCD83HClsz//Z"
-                    alt="Reviewer's photo"
-                    loading="lazy"
-                  />
-                </picture>
-              </li>
-              <li>
-                <p class="reviews-card-nickname">Alexander</p>
-              </li>
-              <li>
-                <ul class="reviews-card-stars">
-                  <li class="reviews-card-stars-value">5</li>
-                  <li class="reviews-card-stars-icon-box">
-                    <svg class="reviews-card-stars-icon">
-                      <use href="/be-flex/assets/icons-4a807171.svg#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <p class="reviews-card-comment">
-              After the 1st training, we realized that this ideal place is
-              suitable for our Camilla.
-            </p>
+          <div class="swiper-slide">
+            <div class="reviews-card">
+              <ul class="reviews-card-info">
+                <li>
+                  <picture class="reviews-card-img">
+                    <source
+                      srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAAFBwIEBggDAQEBAAMAAAAAAAAAAAAAAAAFAgMEBv/aAAwDAQACEAMQAAAAfy3HYyaJCtHMd+m9OOWwoCtClwFFtSzlRg/SkK629GuXbCW7kVObDk2UYlrKqqo8L+yd/8QAMBAAAgICAQIEAwYHAAAAAAAAAQIDBAURAAYhEhMiQQcVQiQxUWFigRRTgpLR0uL/2gAIAQEAAT8AmmhrxPNM6pGg2zHsBzP9YWArV8btHf0CT69nk2F6hnCz/NpZnYDxpIxIPLONzeNRJKs8scoP3wOU5gfirksfcWpnkM9f3nA1In+/K1uvcrQ2a0yyQyqGR1OwQedeZaazka2KgmCwwzJ5g/mS/wCF5dvR1LaR/wAO8pGiz7/bQHKXVlSSA6o3NoDv0D217kj8eSdVY2T6ZVOiT6PHrX4+DeuZx69rJWJq53E7diAQCefCbK5KpPJirEEopS7khdh2ST/rly3k72Rnvxgq7zNIGPcgk7505VVL08uSdwGiJDMT30eYtYJKccbNEAWdg6NveyRv1D3HLkdfG15bZkLaj7b0P2GuDNYKjWqI8ivKU82QRjx6eTuRxOu6dezDJBWlJSRW2SF5k89Fhb1qrFjYhLDK8ZLbYgqeN1VZt3ak04A8liVAAA78HUGHhrSarqzsPSGQchmyOfIEg8unAP7tew5OvhlPrDb7kjmPqPeyFOmgJaeeOMf1nXPi50vJWvDOQR/Z59LPr6JeeHZ7cxPTkcr1PsJdhXjL+Idg7DuDvlXCwIiCfTAfci9lHOtuhknj+YYasqyoD50KDXmfmP1c+FHTEs+R+eWoyIK21g/XLyzVrXK0tezEskMilXRhsEHk3wtr18tDZrMslOE+NIdakDfqP1AcWN0GnUjXsRwI7n0qTyGidAydvy4iJGoVFCqPYc//xAAgEQACAgEEAwEAAAAAAAAAAAABAgARAxIhIjEEUWFB/9oACAECAQE/AHNIx+R3yg2DuPyYWLY1Ld1Mus4391GvkWFD2ZhQIgUSt4PCxa9T8z96lT//xAAeEQACAgIDAQEAAAAAAAAAAAABAgADETEEEiFBYf/aAAgBAwEBPwCsdrFB1kRaOMVxpSN5lwC3Oo9GfDKDWl9ZJ00DjKqjdiRoTkXvbazHA+Qrkw820J0TCD83HClsz//Z 1x, data:image/jpeg;base64,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 2x"
+                    />
+                    <img
+                      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAAFBwIEBggDAQEBAAMAAAAAAAAAAAAAAAAFAgMEBv/aAAwDAQACEAMQAAAAfy3HYyaJCtHMd+m9OOWwoCtClwFFtSzlRg/SkK629GuXbCW7kVObDk2UYlrKqqo8L+yd/8QAMBAAAgICAQIEAwYHAAAAAAAAAQIDBAURAAYhEhMiQQcVQiQxUWFigRRTgpLR0uL/2gAIAQEAAT8AmmhrxPNM6pGg2zHsBzP9YWArV8btHf0CT69nk2F6hnCz/NpZnYDxpIxIPLONzeNRJKs8scoP3wOU5gfirksfcWpnkM9f3nA1In+/K1uvcrQ2a0yyQyqGR1OwQedeZaazka2KgmCwwzJ5g/mS/wCF5dvR1LaR/wAO8pGiz7/bQHKXVlSSA6o3NoDv0D217kj8eSdVY2T6ZVOiT6PHrX4+DeuZx69rJWJq53E7diAQCefCbK5KpPJirEEopS7khdh2ST/rly3k72Rnvxgq7zNIGPcgk7505VVL08uSdwGiJDMT30eYtYJKccbNEAWdg6NveyRv1D3HLkdfG15bZkLaj7b0P2GuDNYKjWqI8ivKU82QRjx6eTuRxOu6dezDJBWlJSRW2SF5k89Fhb1qrFjYhLDK8ZLbYgqeN1VZt3ak04A8liVAAA78HUGHhrSarqzsPSGQchmyOfIEg8unAP7tew5OvhlPrDb7kjmPqPeyFOmgJaeeOMf1nXPi50vJWvDOQR/Z59LPr6JeeHZ7cxPTkcr1PsJdhXjL+Idg7DuDvlXCwIiCfTAfci9lHOtuhknj+YYasqyoD50KDXmfmP1c+FHTEs+R+eWoyIK21g/XLyzVrXK0tezEskMilXRhsEHk3wtr18tDZrMslOE+NIdakDfqP1AcWN0GnUjXsRwI7n0qTyGidAydvy4iJGoVFCqPYc//xAAgEQACAgEEAwEAAAAAAAAAAAABAgARAxIhIjEEUWFB/9oACAECAQE/AHNIx+R3yg2DuPyYWLY1Ld1Mus4391GvkWFD2ZhQIgUSt4PCxa9T8z96lT//xAAeEQACAgIDAQEAAAAAAAAAAAABAgADETEEEiFBYf/aAAgBAwEBPwCsdrFB1kRaOMVxpSN5lwC3Oo9GfDKDWl9ZJ00DjKqjdiRoTkXvbazHA+Qrkw820J0TCD83HClsz//Z"
+                      alt="Reviewer's photo"
+                      loading="lazy"
+                    />
+                  </picture>
+                </li>
+                <li>
+                  <p class="reviews-card-nickname">Alexander</p>
+                </li>
+                <li>
+                  <ul class="reviews-card-stars">
+                    <li class="reviews-card-stars-value">5</li>
+                    <li class="reviews-card-stars-icon-box">
+                      <svg class="reviews-card-stars-icon">
+                        <use href="/be-flex/assets/icons-4a807171.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="reviews-card-comment">
+                After the 1st training, we realized that this ideal place is
+                suitable for our Camilla.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="reviews-card">
-            <ul class="reviews-card-info">
-              <li>
-                <picture class="reviews-card-img">
-                  <source
-                    srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAvAAADAQEBAQAAAAAAAAAAAAAEBQYCBwMIAQEBAQEAAAAAAAAAAAAAAAAFAQAC/9oADAMBAAIQAxAAAADv4GpGblUSqY836wdR9N1Ao22B1g9MNGKm1QLFMkpY3W6yO/Y45JmyGNSM/8QAKhAAAgEEAQIFBAMBAAAAAAAAAQIDAAQREgUhQQYTMVFhIjJCcQcUJKH/2gAIAQEAAT8AJABJOAKu+SbDeWdEHevFH8j3QvinFyyaKGRi49TXG8zz8/Jh47+586VsbRs22e2CK4e/vksrdL9i8mg3b8hQIYAg5Bq9l2byl+1f+mvE14bDg7+6GQ0URKEdmPQUlpdXjtMyyOXYlmPXqfc1Da8pws0d3G5RAw6q5Ab4ytcLcrecdbzoBo6KUI7ggHvVjMUYoftNNlmJ9zXjuB5/Dd3GGwC8W363FcSnCWSQ8biMuPRGXJPya55eJvYZ+OOnm6E6hT9PzXg2BYPDXFIrhwIB1HuepFKcEGmXBI9jV7ZxXcYilXKE9RTRQIqgwL/ZPTbH1YX1pLa2lnP+dDcb43xk4Y1ZWyW/nRxqFQOCAPQZAoKCQKuYtW27Grq4ht4meTOB2UZNKTeTPLphN8gH1HbNSedaTQPEgYmUZXOMhulRSxY6nUk9c1bxhzt+IogEEH0NXvEbxSxxMcMM/INW9tPaBhJn9MKt7d7iZJcEonUfLVDxhkO0v0r7UqqqhVGAK//EAB4RAAEDBAMAAAAAAAAAAAAAABEBAhAAEiExQVHB/9oACAECAQE/AKKdzdnk+w4hRumNer02bjH/xAAeEQACAQQDAQAAAAAAAAAAAAABEQIAEBIxISJRwf/aAAgBAwEBPwCsZbRVhuseD58tFZB6dTkBAh9Erf/Z 1x, data:image/jpeg;base64,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 2x"
-                  />
-                  <img
-                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAvAAADAQEBAQAAAAAAAAAAAAAEBQYCBwMIAQEBAQEAAAAAAAAAAAAAAAAFAQAC/9oADAMBAAIQAxAAAADv4GpGblUSqY836wdR9N1Ao22B1g9MNGKm1QLFMkpY3W6yO/Y45JmyGNSM/8QAKhAAAgEEAQIFBAMBAAAAAAAAAQIDAAQREgUhQQYTMVFhIjJCcQcUJKH/2gAIAQEAAT8AJABJOAKu+SbDeWdEHevFH8j3QvinFyyaKGRi49TXG8zz8/Jh47+586VsbRs22e2CK4e/vksrdL9i8mg3b8hQIYAg5Bq9l2byl+1f+mvE14bDg7+6GQ0URKEdmPQUlpdXjtMyyOXYlmPXqfc1Da8pws0d3G5RAw6q5Ab4ytcLcrecdbzoBo6KUI7ggHvVjMUYoftNNlmJ9zXjuB5/Dd3GGwC8W363FcSnCWSQ8biMuPRGXJPya55eJvYZ+OOnm6E6hT9PzXg2BYPDXFIrhwIB1HuepFKcEGmXBI9jV7ZxXcYilXKE9RTRQIqgwL/ZPTbH1YX1pLa2lnP+dDcb43xk4Y1ZWyW/nRxqFQOCAPQZAoKCQKuYtW27Grq4ht4meTOB2UZNKTeTPLphN8gH1HbNSedaTQPEgYmUZXOMhulRSxY6nUk9c1bxhzt+IogEEH0NXvEbxSxxMcMM/INW9tPaBhJn9MKt7d7iZJcEonUfLVDxhkO0v0r7UqqqhVGAK//EAB4RAAEDBAMAAAAAAAAAAAAAABEBAhAAEiExQVHB/9oACAECAQE/AKKdzdnk+w4hRumNer02bjH/xAAeEQACAQQDAQAAAAAAAAAAAAABEQIAEBIxISJRwf/aAAgBAwEBPwCsZbRVhuseD58tFZB6dTkBAh9Erf/Z"
-                    alt="Reviewer's photo"
-                    loading="lazy"
-                  />
-                </picture>
-              </li>
-              <li>
-                <p class="reviews-card-nickname">Albina Kravets G.</p>
-              </li>
-              <li>
-                <ul class="reviews-card-stars">
-                  <li class="reviews-card-stars-value">5</li>
-                  <li class="reviews-card-stars-icon-box">
-                    <svg class="reviews-card-stars-icon">
-                      <use href="/be-flex/assets/icons-4a807171.svg#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <p class="reviews-card-comment">
-              Coach Anastasia is a game-changer! Our daughter's skills and
-              confidence have soared since joining gymnastics classes.
-              Anastasia's passion and personalized approach make every session
-              enjoyable and productive.
-            </p>
+          <div class="swiper-slide">
+            <div class="reviews-card">
+              <ul class="reviews-card-info">
+                <li>
+                  <picture class="reviews-card-img">
+                    <source
+                      srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAvAAADAQEBAQAAAAAAAAAAAAAEBQYCBwMIAQEBAQEAAAAAAAAAAAAAAAAFAQAC/9oADAMBAAIQAxAAAADv4GpGblUSqY836wdR9N1Ao22B1g9MNGKm1QLFMkpY3W6yO/Y45JmyGNSM/8QAKhAAAgEEAQIFBAMBAAAAAAAAAQIDAAQREgUhQQYTMVFhIjJCcQcUJKH/2gAIAQEAAT8AJABJOAKu+SbDeWdEHevFH8j3QvinFyyaKGRi49TXG8zz8/Jh47+586VsbRs22e2CK4e/vksrdL9i8mg3b8hQIYAg5Bq9l2byl+1f+mvE14bDg7+6GQ0URKEdmPQUlpdXjtMyyOXYlmPXqfc1Da8pws0d3G5RAw6q5Ab4ytcLcrecdbzoBo6KUI7ggHvVjMUYoftNNlmJ9zXjuB5/Dd3GGwC8W363FcSnCWSQ8biMuPRGXJPya55eJvYZ+OOnm6E6hT9PzXg2BYPDXFIrhwIB1HuepFKcEGmXBI9jV7ZxXcYilXKE9RTRQIqgwL/ZPTbH1YX1pLa2lnP+dDcb43xk4Y1ZWyW/nRxqFQOCAPQZAoKCQKuYtW27Grq4ht4meTOB2UZNKTeTPLphN8gH1HbNSedaTQPEgYmUZXOMhulRSxY6nUk9c1bxhzt+IogEEH0NXvEbxSxxMcMM/INW9tPaBhJn9MKt7d7iZJcEonUfLVDxhkO0v0r7UqqqhVGAK//EAB4RAAEDBAMAAAAAAAAAAAAAABEBAhAAEiExQVHB/9oACAECAQE/AKKdzdnk+w4hRumNer02bjH/xAAeEQACAQQDAQAAAAAAAAAAAAABEQIAEBIxISJRwf/aAAgBAwEBPwCsZbRVhuseD58tFZB6dTkBAh9Erf/Z 1x, data:image/jpeg;base64,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 2x"
+                    />
+                    <img
+                      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAvAAADAQEBAQAAAAAAAAAAAAAEBQYCBwMIAQEBAQEAAAAAAAAAAAAAAAAFAQAC/9oADAMBAAIQAxAAAADv4GpGblUSqY836wdR9N1Ao22B1g9MNGKm1QLFMkpY3W6yO/Y45JmyGNSM/8QAKhAAAgEEAQIFBAMBAAAAAAAAAQIDAAQREgUhQQYTMVFhIjJCcQcUJKH/2gAIAQEAAT8AJABJOAKu+SbDeWdEHevFH8j3QvinFyyaKGRi49TXG8zz8/Jh47+586VsbRs22e2CK4e/vksrdL9i8mg3b8hQIYAg5Bq9l2byl+1f+mvE14bDg7+6GQ0URKEdmPQUlpdXjtMyyOXYlmPXqfc1Da8pws0d3G5RAw6q5Ab4ytcLcrecdbzoBo6KUI7ggHvVjMUYoftNNlmJ9zXjuB5/Dd3GGwC8W363FcSnCWSQ8biMuPRGXJPya55eJvYZ+OOnm6E6hT9PzXg2BYPDXFIrhwIB1HuepFKcEGmXBI9jV7ZxXcYilXKE9RTRQIqgwL/ZPTbH1YX1pLa2lnP+dDcb43xk4Y1ZWyW/nRxqFQOCAPQZAoKCQKuYtW27Grq4ht4meTOB2UZNKTeTPLphN8gH1HbNSedaTQPEgYmUZXOMhulRSxY6nUk9c1bxhzt+IogEEH0NXvEbxSxxMcMM/INW9tPaBhJn9MKt7d7iZJcEonUfLVDxhkO0v0r7UqqqhVGAK//EAB4RAAEDBAMAAAAAAAAAAAAAABEBAhAAEiExQVHB/9oACAECAQE/AKKdzdnk+w4hRumNer02bjH/xAAeEQACAQQDAQAAAAAAAAAAAAABEQIAEBIxISJRwf/aAAgBAwEBPwCsZbRVhuseD58tFZB6dTkBAh9Erf/Z"
+                      alt="Reviewer's photo"
+                      loading="lazy"
+                    />
+                  </picture>
+                </li>
+                <li>
+                  <p class="reviews-card-nickname">Albina Kravets G.</p>
+                </li>
+                <li>
+                  <ul class="reviews-card-stars">
+                    <li class="reviews-card-stars-value">5</li>
+                    <li class="reviews-card-stars-icon-box">
+                      <svg class="reviews-card-stars-icon">
+                        <use href="/be-flex/assets/icons-4a807171.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="reviews-card-comment">
+                Coach Anastasia is a game-changer! Our daughter's skills and
+                confidence have soared since joining gymnastics classes.
+                Anastasia's passion and personalized approach make every session
+                enjoyable and productive.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="reviews-card">
-            <ul class="reviews-card-info">
-              <li>
-                <picture class="reviews-card-img">
-                  <source
-                    srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAxAAEAAgMBAQAAAAAAAAAAAAAGBQcDBAgBAgEAAwEBAAAAAAAAAAAAAAAAAAIDBAH/2gAMAwEAAhADEAAAAL+qrVEBtLMcDJ7FfcrPuoTnB7xdDcAtE5rV394fduDpQJdhgespvXyQuXWSFkkv/8QALhAAAgIBAgUDAwIHAAAAAAAAAQIDBBEABQYSEyExFCJBB1GRFWEjM0JDcqHS/9oACAEBAAE/ALFivTry2LEqxxRqWd2OAANb39Qy9NX2btl2XmfHNhdbfxTvPVBs3rDARksScnm8/Otm4+Z5xHuISJTkiRdN9SNqq3ErNzzRf3JVH8vVazBaginryrJFIoZHU5BB1x/uF3ddyOwU8CGIB5PvLLjIXWxLLA7yTxdMLMUC/LN4IOfgaq8LztZa3yMzEFSJJCQVYeABriDbK9KJYfTv15CuH+EVO2MankEcKKFAKn3H7519M+KDBf8A0adx0bGTB+0utr3+od2nvbhDNN1TI8YHY87PkHWz1YLF9455DmJlIXm88wzn8nVL9bjsSCWGFq4DcmGyxA8Y7DXF1qS4ImsQNWm6eBGSCfJ08jREDOSPJbVK36Lcad5S/PFMkgIGAOUg6g2OV97mpYeL000iOzD2qEOPOrMXprcFlID1YsJhuxZMYOm3eFYIrRtxRxx+VfmD5+3YjOuNJJ3ajbdP4ViE5zqV2KFCgC/kjVCtJbv0q8TMzTTpEo/zYDXFvDVC6skzQBXkPaQdiH1tu37hVrhLTlo0sYic/CjGuIoEENPLAKZh+T7dOsV7ZjE55jAA2B+w1Nt9Zhnpv3HgY1wPwwovDdHjZY4MiIMPL6dEkRkdQykYIOtx4fsw9RqoM8T5JjJ94Ot/2qeb0HOGR45W8qR/Sf8AfbXDsU5IhWN25kZWIXWx8F7rLM8u6SiOvk4jXu7/API1DDFBEkcaBEQYVR4A1//EABwRAQADAQEAAwAAAAAAAAAAAAEAAhEDIRMiMf/aAAgBAgEBPwBQNny82Uvs7biD+k5Gp5KksLVI8/pXJy5Xq7a3k//EAB4RAAEEAwADAAAAAAAAAAAAAAEAAhESAwQQMUFC/9oACAEDAQE/AACTAT8Tmeea0XkhbIhnrjTVwKOS4Mp9Plf/2Q== 1x, data:image/jpeg;base64,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 2x"
-                  />
-                  <img
-                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAxAAEAAgMBAQAAAAAAAAAAAAAGBQcDBAgBAgEAAwEBAAAAAAAAAAAAAAAAAAIDBAH/2gAMAwEAAhADEAAAAL+qrVEBtLMcDJ7FfcrPuoTnB7xdDcAtE5rV394fduDpQJdhgespvXyQuXWSFkkv/8QALhAAAgIBAgUDAwIHAAAAAAAAAQIDBBEABQYSEyExFCJBB1GRFWEjM0JDcqHS/9oACAEBAAE/ALFivTry2LEqxxRqWd2OAANb39Qy9NX2btl2XmfHNhdbfxTvPVBs3rDARksScnm8/Otm4+Z5xHuISJTkiRdN9SNqq3ErNzzRf3JVH8vVazBaginryrJFIoZHU5BB1x/uF3ddyOwU8CGIB5PvLLjIXWxLLA7yTxdMLMUC/LN4IOfgaq8LztZa3yMzEFSJJCQVYeABriDbK9KJYfTv15CuH+EVO2MankEcKKFAKn3H7519M+KDBf8A0adx0bGTB+0utr3+od2nvbhDNN1TI8YHY87PkHWz1YLF9455DmJlIXm88wzn8nVL9bjsSCWGFq4DcmGyxA8Y7DXF1qS4ImsQNWm6eBGSCfJ08jREDOSPJbVK36Lcad5S/PFMkgIGAOUg6g2OV97mpYeL000iOzD2qEOPOrMXprcFlID1YsJhuxZMYOm3eFYIrRtxRxx+VfmD5+3YjOuNJJ3ajbdP4ViE5zqV2KFCgC/kjVCtJbv0q8TMzTTpEo/zYDXFvDVC6skzQBXkPaQdiH1tu37hVrhLTlo0sYic/CjGuIoEENPLAKZh+T7dOsV7ZjE55jAA2B+w1Nt9Zhnpv3HgY1wPwwovDdHjZY4MiIMPL6dEkRkdQykYIOtx4fsw9RqoM8T5JjJ94Ot/2qeb0HOGR45W8qR/Sf8AfbXDsU5IhWN25kZWIXWx8F7rLM8u6SiOvk4jXu7/API1DDFBEkcaBEQYVR4A1//EABwRAQADAQEAAwAAAAAAAAAAAAEAAhEDIRMiMf/aAAgBAgEBPwBQNny82Uvs7biD+k5Gp5KksLVI8/pXJy5Xq7a3k//EAB4RAAEEAwADAAAAAAAAAAAAAAEAAhESAwQQMUFC/9oACAEDAQE/AACTAT8Tmeea0XkhbIhnrjTVwKOS4Mp9Plf/2Q=="
-                    alt="Reviewer's photo"
-                    loading="lazy"
-                  />
-                </picture>
-              </li>
-              <li>
-                <p class="reviews-card-nickname">Emily T.</p>
-              </li>
-              <li>
-                <ul class="reviews-card-stars">
-                  <li class="reviews-card-stars-value">5</li>
-                  <li class="reviews-card-stars-icon-box">
-                    <svg class="reviews-card-stars-icon">
-                      <use href="/be-flex/assets/icons-4a807171.svg#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <p class="reviews-card-comment">
-              Coach Anastasia has been transformative for our child. The classes
-              strike the perfect balance between fun and skill-building.
-              Anastasia's dedication and focus on safety make us confident in
-              our daughter's gymnastics journey.
-            </p>
+          <div class="swiper-slide">
+            <div class="reviews-card">
+              <ul class="reviews-card-info">
+                <li>
+                  <picture class="reviews-card-img">
+                    <source
+                      srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAxAAEAAgMBAQAAAAAAAAAAAAAGBQcDBAgBAgEAAwEBAAAAAAAAAAAAAAAAAAIDBAH/2gAMAwEAAhADEAAAAL+qrVEBtLMcDJ7FfcrPuoTnB7xdDcAtE5rV394fduDpQJdhgespvXyQuXWSFkkv/8QALhAAAgIBAgUDAwIHAAAAAAAAAQIDBBEABQYSEyExFCJBB1GRFWEjM0JDcqHS/9oACAEBAAE/ALFivTry2LEqxxRqWd2OAANb39Qy9NX2btl2XmfHNhdbfxTvPVBs3rDARksScnm8/Otm4+Z5xHuISJTkiRdN9SNqq3ErNzzRf3JVH8vVazBaginryrJFIoZHU5BB1x/uF3ddyOwU8CGIB5PvLLjIXWxLLA7yTxdMLMUC/LN4IOfgaq8LztZa3yMzEFSJJCQVYeABriDbK9KJYfTv15CuH+EVO2MankEcKKFAKn3H7519M+KDBf8A0adx0bGTB+0utr3+od2nvbhDNN1TI8YHY87PkHWz1YLF9455DmJlIXm88wzn8nVL9bjsSCWGFq4DcmGyxA8Y7DXF1qS4ImsQNWm6eBGSCfJ08jREDOSPJbVK36Lcad5S/PFMkgIGAOUg6g2OV97mpYeL000iOzD2qEOPOrMXprcFlID1YsJhuxZMYOm3eFYIrRtxRxx+VfmD5+3YjOuNJJ3ajbdP4ViE5zqV2KFCgC/kjVCtJbv0q8TMzTTpEo/zYDXFvDVC6skzQBXkPaQdiH1tu37hVrhLTlo0sYic/CjGuIoEENPLAKZh+T7dOsV7ZjE55jAA2B+w1Nt9Zhnpv3HgY1wPwwovDdHjZY4MiIMPL6dEkRkdQykYIOtx4fsw9RqoM8T5JjJ94Ot/2qeb0HOGR45W8qR/Sf8AfbXDsU5IhWN25kZWIXWx8F7rLM8u6SiOvk4jXu7/API1DDFBEkcaBEQYVR4A1//EABwRAQADAQEAAwAAAAAAAAAAAAEAAhEDIRMiMf/aAAgBAgEBPwBQNny82Uvs7biD+k5Gp5KksLVI8/pXJy5Xq7a3k//EAB4RAAEEAwADAAAAAAAAAAAAAAEAAhESAwQQMUFC/9oACAEDAQE/AACTAT8Tmeea0XkhbIhnrjTVwKOS4Mp9Plf/2Q== 1x, data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAGAAYAMBIgACEQEDEQH/xAAzAAACAgMBAQAAAAAAAAAAAAAGBwQFAgMIAAEBAAMBAQEAAAAAAAAAAAAAAAIDBAABBf/aAAwDAQACEAMQAAAAf/vV+08JXoXuGl4obvZzEvL5sOfO1Iju3SPoU0u4cvtded4NHIUZgyunGNxNSsqZqqY5c4W+sESDpbjp4PwMXJ297rW7omLL6Mu9oLRJfUQfhboxn7lAonyJxvSemYkt/wBK0j29BJcxo9NrmqtEy3knV5fyJ90vTr24kh7otO9ACPOpgx2SFuxXjUXCqWMPb7lSV/CI46gFW8NO2xeXz76gV/oY42HRlUOsO4VMehhyDFgRlJ9zsSb7z5//xAAlEAACAwABBAICAwEAAAAAAAACAwEEBQYAERITBxQQIRUiIyT/2gAIAQEAAQgA/BGIDJFs86o51kqy1/IW28HsfR5VpuQFiKnK8y08krRdlgwaE6IxEC0SEoiR/O5u53Hs4rt2tzq5qabm3r4w82yIA9aoWFSw+nUf4/3/ALNnA5dGcowPb522IYmti8t2Mh/3JwNvP3M8LdPqzYRUrOs2OW788i04fFaK0XAhuJMH9vvp0di0ZITjZ3hTuVLc4tloU6ad3KDMtAhOfWUclLjbHl4zxvkTMHSG0qrYRarpsI+UtEgoVsivj4atClZqJThWI1WVWzZgbS6y0YvlIHP8DUL99XqTq9Z3Tfsm9hun+k/qxPgzzgzH9zHxJv8AvrW8dvKts7u/tEPGMH3UV6azcwZccZePZOyc2C2UU+wHRv0byYbW3GKjKul1owxcSa1G5gnJDYSESB2fJkf58Gssy+TZL5C1cay45VHkGvFdFJGia6zsqweVZrzIkNviGXdszbhGOpVOwFduVdyatuxb0bMPL1TY8gmZLuuOgY6Y7gh71Wks6bWYj3oHMB0WCBVigt2dWr2OOANIrFJg3F11f60tBMvOB5LYGxnN6e1VkI7RIJ7wdr1HPsiTd3kRpSTHpV1zHOuZnKtUFcYzfqK9+laRcAylluuTLPvHL1xEPRb0t/KzQcFTPpsv4ZLe5X0jcozSQz3IoMJLoWkf7PhebOlyzJSHJcOveldo9/ijqcQ+lx/btIsxTNcdrsFIqgJgoth7dK0c4Fn/AJa3feyzZbl0NymSMTLMp5B0WWxcePXxrhDVTZ1nkMEMjOlWgGlWYjjiWbAW+oQyi9QmPckvXNxyl7dYBoXF157FsqkqXnAiXhMyQumSlePh3dTQWjpCVIUCldW6Fe4gku0Kl7Nsg1rhB65kFF5r8hTXmvqaJRlR7YYE12fZomJN05F/h1j07O8Urp5uZWzKooR+TATGRK9xUfApzzyryO8lNSCt6wlTS8TYAYWZoeiImv8AHmf9xtm6ivXrJBKPx//EADEQAAICAQIFAwIFAwUAAAAAAAECAAMREiEEMUFRYRMiMhBxICNCcpEFUrFDYoGSwf/aAAgBAQAJPwD6MAB1MQOwX5sdo5ZQ2QEwoAlKmg2AMxbcCXYZN2LbCXh16EHIiY8iEEfgfxXWPk7dll4q4dlIrpHxQR/apJHM5ER/ee2xjsmoaWr56ouBnl4lZKYARRKwA1Yw8ua1Hb30udnjeLEb5I3Zvo4SqpC7seQAhYcNVla1bkol6aFQFSo2PiUj0+XqOuyDoB3MtWjhQwCoD7j5bE4lGzg1uRujGUgEMVsbpv1ja8LufM0H2NgNtvApwISamwt9fR0jh6rUDow6ho4BvdXv/YI1WpXDDMIUI27DliOVpq0om/X+49zLexm23SdGyrg4OJeLMnG8sEIIPOAkGWZ9D86jwh2cQFjTxBSogfpq9k4n01sqOtSIymy2wU1tyL4PnkIMMgUnrkzhrGVebKUP8LqzLQyxwdNR2zvKzonIRQxMXbsJsHuFL/a32RzixmL+QxzOIK1/EqOogzTXYjk45jYky0W1P+vvMhiN9zGxYUwHPUgYycQ8Oa2AUMaxq1FpYy6VAV26xtS/wDH056YlY2GNUzlLFb+DmNkh2VlH+04gPqYI36QatNYBx3m2bC9Y+2xnqFDt7FLf4n9TYoeSOmCPE/0W3B7spEcJgYEYPiHUSdwIjAYziZzZYq/9jiVPpe821lR0t98SpLrXBT1flHR6nB0tXusJFlezY7Dk3/hiFgdtQhZ+K5aGJITPeHNl9ZtLHq81hw+CMdRMnVuBPaY5x1PeITWlwufwtXvnqKVUoxrbSSvTJEvttr6o7ZYQG2i07qN8E9Zkrkq37SMxMbZgJLN6h+w9s/sC/wDIAgrKP1YRajgbThknDcpVpe78qn9i8zBkETKB/gejdQV7MJ+VYquvEVKNmyuA6+DGDYYpq6FTuIAQg1oBz8rB8sqcb5Voc1CzRkfoJ5Rd1dScdjsYcRjNqwc2v0VYoWtFCqB0A+i5B5HqD3EUuqAhbR+tOzeRH+RFiHOd5tavPzBm2uxxXnfQsGzhyZuTUwP3EBCgk4iaKw+HuIwqQE9WZvk7dz+BQQeYMu9PBLLU/wAR9jOGblzX3CU6G9RSCQd8oIjFiMbDO04axR0LjT/mXtahsLLQmVA8FpUldSjCogAH1//EACIRAQADAAIBBAMBAAAAAAAAAAEAAhEDITEQIkFRBBIU4f/aAAgBAgEBPwCBrGsapK6+nR2zktmhP6HMIc2kLftpsoMsOTnvYqZ4fmAFa52yh2/MAf8AIb4lnKstXa2qvnuVpbwHc4a+177GFcd3uH0k1q6Tnx7PqcVWtl+6xLBbOmV5eQ+ScLa3ufS1dJTQRJau2Yfj060gAYT/xAAkEQABBAECBgMAAAAAAAAAAAABAAIDERIQIQQTICIxQVFhcf/aAAgBAwEBPwDrjZkUYWp7MDrsuHjbX2PSdgSTZCnAsb+tQLKhdRaQiWAOyBs+FOO/ohd5CMge38KlFkLlJwrbRpo2rGVpzu0J0/wibX//2Q== 2x"
+                    />
+                    <img
+                      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAxAAEAAgMBAQAAAAAAAAAAAAAGBQcDBAgBAgEAAwEBAAAAAAAAAAAAAAAAAAIDBAH/2gAMAwEAAhADEAAAAL+qrVEBtLMcDJ7FfcrPuoTnB7xdDcAtE5rV394fduDpQJdhgespvXyQuXWSFkkv/8QALhAAAgIBAgUDAwIHAAAAAAAAAQIDBBEABQYSEyExFCJBB1GRFWEjM0JDcqHS/9oACAEBAAE/ALFivTry2LEqxxRqWd2OAANb39Qy9NX2btl2XmfHNhdbfxTvPVBs3rDARksScnm8/Otm4+Z5xHuISJTkiRdN9SNqq3ErNzzRf3JVH8vVazBaginryrJFIoZHU5BB1x/uF3ddyOwU8CGIB5PvLLjIXWxLLA7yTxdMLMUC/LN4IOfgaq8LztZa3yMzEFSJJCQVYeABriDbK9KJYfTv15CuH+EVO2MankEcKKFAKn3H7519M+KDBf8A0adx0bGTB+0utr3+od2nvbhDNN1TI8YHY87PkHWz1YLF9455DmJlIXm88wzn8nVL9bjsSCWGFq4DcmGyxA8Y7DXF1qS4ImsQNWm6eBGSCfJ08jREDOSPJbVK36Lcad5S/PFMkgIGAOUg6g2OV97mpYeL000iOzD2qEOPOrMXprcFlID1YsJhuxZMYOm3eFYIrRtxRxx+VfmD5+3YjOuNJJ3ajbdP4ViE5zqV2KFCgC/kjVCtJbv0q8TMzTTpEo/zYDXFvDVC6skzQBXkPaQdiH1tu37hVrhLTlo0sYic/CjGuIoEENPLAKZh+T7dOsV7ZjE55jAA2B+w1Nt9Zhnpv3HgY1wPwwovDdHjZY4MiIMPL6dEkRkdQykYIOtx4fsw9RqoM8T5JjJ94Ot/2qeb0HOGR45W8qR/Sf8AfbXDsU5IhWN25kZWIXWx8F7rLM8u6SiOvk4jXu7/API1DDFBEkcaBEQYVR4A1//EABwRAQADAQEAAwAAAAAAAAAAAAEAAhEDIRMiMf/aAAgBAgEBPwBQNny82Uvs7biD+k5Gp5KksLVI8/pXJy5Xq7a3k//EAB4RAAEEAwADAAAAAAAAAAAAAAEAAhESAwQQMUFC/9oACAEDAQE/AACTAT8Tmeea0XkhbIhnrjTVwKOS4Mp9Plf/2Q=="
+                      alt="Reviewer's photo"
+                      loading="lazy"
+                    />
+                  </picture>
+                </li>
+                <li>
+                  <p class="reviews-card-nickname">Emily T.</p>
+                </li>
+                <li>
+                  <ul class="reviews-card-stars">
+                    <li class="reviews-card-stars-value">5</li>
+                    <li class="reviews-card-stars-icon-box">
+                      <svg class="reviews-card-stars-icon">
+                        <use href="/be-flex/assets/icons-4a807171.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="reviews-card-comment">
+                Coach Anastasia has been transformative for our child. The
+                classes strike the perfect balance between fun and
+                skill-building. Anastasia's dedication and focus on safety make
+                us confident in our daughter's gymnastics journey.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="reviews-card">
-            <ul class="reviews-card-info">
-              <li>
-                <picture class="reviews-card-img">
-                  <source
-                    srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAuAAEAAgMBAQAAAAAAAAAAAAAHBQYDBAgBAgEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAHzn3GQ1NXc6V0k3Dk64KM4NjVRCVx/cIOJxfYtUDsQcWPLWOtIKtnvQS//EAC8QAAICAgECAwYFBQAAAAAAAAECAwQABREGEgcUYhMVISQxYSIyNEFRQkNxkbH/2gAIAQEAAT8At261KtLYsTJFDEpZ3Y8AAZ1H4t7G7M9PQDy0H0NlhzK+WZ9hfLtcv2LEjfvLIz/9zpLXQJReWPZyQW2bmP2c/Yw4+wOavxP22l2JodRp7aDn4WVHDgZTs1rdaKzWlSWGVQyOp5BBzxh6slt7H3BWcitW4Nj1y5T4HexyibFu7HXiHLSOFAxunNoJdfDI9d6sZHcO0DgZ19SettC5DMknBRufgBnhD1S9W+dFYl+WsctX9EubK49/Y3rjklrFiSUk+tucRuARnQwqiw7yIBIPo5y1ZQL3sGdVHPap4Jzf7PzNiwByA7DgFy/aFzV3HobGlcRiGgsRyAj0NzmzpPQ2d6m6kNBYkiIPoYjBnTNUy07BZSAQpU/cc5Z6j2Wn/D3rL+w7xmz2k2zteYlRVP8AC5rKj3thRqICWsTxxAfd2Azxf6TersRvqyfL2eFseiXNJ0xJsHV7JMUH8f1vja+KrUCQR8BQAAM6krzix3Oh7O3nHKEKEH+c8Iul3s3vf1pCK9YkV/XLlupVuVZqtmFZIJFKujDkMDm36B3unse20jG7R5/Tu3E8X2BP5xgE5rgzQSxNx8VkQqR/vLmotbFZI4YJZWKlQEUn650x4OX7E6WN5J5eqP7CHmV8rVa1OtDVqxLFBEoVEUcAAZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAw/9oACAECAQE/AB//xAAUEQEAAAAAAAAAAAAAAAAAAAAw/9oACAEDAQE/AB//2Q== 1x, data:image/jpeg;base64,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 2x"
-                  />
-                  <img
-                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAuAAEAAgMBAQAAAAAAAAAAAAAHBQYDBAgBAgEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAHzn3GQ1NXc6V0k3Dk64KM4NjVRCVx/cIOJxfYtUDsQcWPLWOtIKtnvQS//EAC8QAAICAgECAwYFBQAAAAAAAAECAwQABREGEgcUYhMVISQxYSIyNEFRQkNxkbH/2gAIAQEAAT8At261KtLYsTJFDEpZ3Y8AAZ1H4t7G7M9PQDy0H0NlhzK+WZ9hfLtcv2LEjfvLIz/9zpLXQJReWPZyQW2bmP2c/Yw4+wOavxP22l2JodRp7aDn4WVHDgZTs1rdaKzWlSWGVQyOp5BBzxh6slt7H3BWcitW4Nj1y5T4HexyibFu7HXiHLSOFAxunNoJdfDI9d6sZHcO0DgZ19SettC5DMknBRufgBnhD1S9W+dFYl+WsctX9EubK49/Y3rjklrFiSUk+tucRuARnQwqiw7yIBIPo5y1ZQL3sGdVHPap4Jzf7PzNiwByA7DgFy/aFzV3HobGlcRiGgsRyAj0NzmzpPQ2d6m6kNBYkiIPoYjBnTNUy07BZSAQpU/cc5Z6j2Wn/D3rL+w7xmz2k2zteYlRVP8AC5rKj3thRqICWsTxxAfd2Azxf6TersRvqyfL2eFseiXNJ0xJsHV7JMUH8f1vja+KrUCQR8BQAAM6krzix3Oh7O3nHKEKEH+c8Iul3s3vf1pCK9YkV/XLlupVuVZqtmFZIJFKujDkMDm36B3unse20jG7R5/Tu3E8X2BP5xgE5rgzQSxNx8VkQqR/vLmotbFZI4YJZWKlQEUn650x4OX7E6WN5J5eqP7CHmV8rVa1OtDVqxLFBEoVEUcAAZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAw/9oACAECAQE/AB//xAAUEQEAAAAAAAAAAAAAAAAAAAAw/9oACAEDAQE/AB//2Q=="
-                    alt="Reviewer's photo"
-                    loading="lazy"
-                  />
-                </picture>
-              </li>
-              <li>
-                <p class="reviews-card-nickname">Sarah M.</p>
-              </li>
-              <li>
-                <ul class="reviews-card-stars">
-                  <li class="reviews-card-stars-value">5</li>
-                  <li class="reviews-card-stars-icon-box">
-                    <svg class="reviews-card-stars-icon">
-                      <use href="/be-flex/assets/icons-4a807171.svg#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <p class="reviews-card-comment">
-              Our daughter loves gymnastics with Coach Anastasia! The classes
-              are fun yet structured, and Anastasia's patience and expertise
-              shine through. It's fantastic to see our child's progress and
-              enthusiasm grow each week.
-            </p>
+          <div class="swiper-slide">
+            <div class="reviews-card">
+              <ul class="reviews-card-info">
+                <li>
+                  <picture class="reviews-card-img">
+                    <source
+                      srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAuAAEAAgMBAQAAAAAAAAAAAAAHBQYDBAgBAgEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAHzn3GQ1NXc6V0k3Dk64KM4NjVRCVx/cIOJxfYtUDsQcWPLWOtIKtnvQS//EAC8QAAICAgECAwYFBQAAAAAAAAECAwQABREGEgcUYhMVISQxYSIyNEFRQkNxkbH/2gAIAQEAAT8At261KtLYsTJFDEpZ3Y8AAZ1H4t7G7M9PQDy0H0NlhzK+WZ9hfLtcv2LEjfvLIz/9zpLXQJReWPZyQW2bmP2c/Yw4+wOavxP22l2JodRp7aDn4WVHDgZTs1rdaKzWlSWGVQyOp5BBzxh6slt7H3BWcitW4Nj1y5T4HexyibFu7HXiHLSOFAxunNoJdfDI9d6sZHcO0DgZ19SettC5DMknBRufgBnhD1S9W+dFYl+WsctX9EubK49/Y3rjklrFiSUk+tucRuARnQwqiw7yIBIPo5y1ZQL3sGdVHPap4Jzf7PzNiwByA7DgFy/aFzV3HobGlcRiGgsRyAj0NzmzpPQ2d6m6kNBYkiIPoYjBnTNUy07BZSAQpU/cc5Z6j2Wn/D3rL+w7xmz2k2zteYlRVP8AC5rKj3thRqICWsTxxAfd2Azxf6TersRvqyfL2eFseiXNJ0xJsHV7JMUH8f1vja+KrUCQR8BQAAM6krzix3Oh7O3nHKEKEH+c8Iul3s3vf1pCK9YkV/XLlupVuVZqtmFZIJFKujDkMDm36B3unse20jG7R5/Tu3E8X2BP5xgE5rgzQSxNx8VkQqR/vLmotbFZI4YJZWKlQEUn650x4OX7E6WN5J5eqP7CHmV8rVa1OtDVqxLFBEoVEUcAAZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAw/9oACAECAQE/AB//xAAUEQEAAAAAAAAAAAAAAAAAAAAw/9oACAEDAQE/AB//2Q== 1x, data:image/jpeg;base64,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 2x"
+                    />
+                    <img
+                      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAuAAEAAgMBAQAAAAAAAAAAAAAHBQYDBAgBAgEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAHzn3GQ1NXc6V0k3Dk64KM4NjVRCVx/cIOJxfYtUDsQcWPLWOtIKtnvQS//EAC8QAAICAgECAwYFBQAAAAAAAAECAwQABREGEgcUYhMVISQxYSIyNEFRQkNxkbH/2gAIAQEAAT8At261KtLYsTJFDEpZ3Y8AAZ1H4t7G7M9PQDy0H0NlhzK+WZ9hfLtcv2LEjfvLIz/9zpLXQJReWPZyQW2bmP2c/Yw4+wOavxP22l2JodRp7aDn4WVHDgZTs1rdaKzWlSWGVQyOp5BBzxh6slt7H3BWcitW4Nj1y5T4HexyibFu7HXiHLSOFAxunNoJdfDI9d6sZHcO0DgZ19SettC5DMknBRufgBnhD1S9W+dFYl+WsctX9EubK49/Y3rjklrFiSUk+tucRuARnQwqiw7yIBIPo5y1ZQL3sGdVHPap4Jzf7PzNiwByA7DgFy/aFzV3HobGlcRiGgsRyAj0NzmzpPQ2d6m6kNBYkiIPoYjBnTNUy07BZSAQpU/cc5Z6j2Wn/D3rL+w7xmz2k2zteYlRVP8AC5rKj3thRqICWsTxxAfd2Azxf6TersRvqyfL2eFseiXNJ0xJsHV7JMUH8f1vja+KrUCQR8BQAAM6krzix3Oh7O3nHKEKEH+c8Iul3s3vf1pCK9YkV/XLlupVuVZqtmFZIJFKujDkMDm36B3unse20jG7R5/Tu3E8X2BP5xgE5rgzQSxNx8VkQqR/vLmotbFZI4YJZWKlQEUn650x4OX7E6WN5J5eqP7CHmV8rVa1OtDVqxLFBEoVEUcAAZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAw/9oACAECAQE/AB//xAAUEQEAAAAAAAAAAAAAAAAAAAAw/9oACAEDAQE/AB//2Q=="
+                      alt="Reviewer's photo"
+                      loading="lazy"
+                    />
+                  </picture>
+                </li>
+                <li>
+                  <p class="reviews-card-nickname">Sarah M.</p>
+                </li>
+                <li>
+                  <ul class="reviews-card-stars">
+                    <li class="reviews-card-stars-value">5</li>
+                    <li class="reviews-card-stars-icon-box">
+                      <svg class="reviews-card-stars-icon">
+                        <use href="/be-flex/assets/icons-4a807171.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="reviews-card-comment">
+                Our daughter loves gymnastics with Coach Anastasia! The classes
+                are fun yet structured, and Anastasia's patience and expertise
+                shine through. It's fantastic to see our child's progress and
+                enthusiasm grow each week.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1205,7 +1209,7 @@
       </a>
     </li>
     <li class="follow-me-socials-item">
-      <a href="">
+      <a href="+971 52 411 6236">
         <svg width="24" height="24" class="">
           <use href="/be-flex/assets/icons-4a807171.svg#icon-whatsapp"></use>
         </svg>
@@ -1222,11 +1226,12 @@
 </section>
 
     <section class="footer-container">
-  <a href="/index.html" class="footer-logo-link">
+  <a href="./index.html" class="footer-logo-link">
     <svg>
-      <use href="/be-flex/assets/icons-4a807171.svg#icon-logo"></use>
-    </svg></a>
+      <use href="/be-flex/assets/icons-4a807171.svg#icon-logo"></use></svg
+  ></a>
 </section>
+
 
     
   </body>
