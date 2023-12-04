@@ -133,6 +133,9 @@
     gap: 16px;
     justify-content: center;
   }
+  .contact-me-location {
+    margin-bottom: unset;
+  }
   .contact-me-card {
     flex-direction: column;
     flex-wrap: unset;
