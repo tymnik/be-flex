@@ -89,6 +89,10 @@
   color: #d53a84;
 }
 
+.contact-me-btn:hover {
+  background-color: var(--main-pink);
+  color: var(--white);
+}
 .contect-me-map {
   width: 100%;
   height: 384px;
