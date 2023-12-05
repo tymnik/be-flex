@@ -54,6 +54,8 @@
   gap: 32px;
   width: 343px;
   height: 249px;
+  /* opacity: 70%; */
+  background: rgba(253, 246, 253, 0.8);
 }
 
 .reviews-card-info {
@@ -189,11 +191,12 @@
   transform: rotate(-90deg);
 }
 
-.slider-icon:hover,
-.slider-icon:focus {
+.slider-btn:hover .slider-icon,
+.slider-btn:focus .slider-icon {
   fill: var(--main-violet);
   transition: fill 250ms linear;
 }
+
 .slider-btn:hover,
 .slider-btn:focus {
   border: 2px solid var(--main-violet);
