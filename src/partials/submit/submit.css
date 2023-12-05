@@ -192,9 +192,59 @@ body {
 	resize: none;
 }
 
-.modal-check {
+.sign_up-privacy {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox]+ .check-label {
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+}
+
+.check-label:before {
+	content: "✔";
+	border: 1px solid var(--black-90, #08070C);
+	border-radius: 4px;
+	display: inline-block;
 	width: 20px;
 	height: 20px;
+
+	color: transparent;
+	transition: .2s;
+	margin-right: 8px;
+
+
+	padding-left: 3px;
+	padding-top: -2px;
+	vertical-align: middle;
+}
+
+@media (min-width: 1280px) {
+	input[type=checkbox]+.check-label:before {
+		margin-right: 10px;
+	}
+}
+
+input[type=checkbox]+.check-label:active:before {
+	transform: scale(0);
+}
+
+input[type=checkbox]:checked+.check-label:before {
+	background-color: #6B39D0;
+	border-color: #6B39D0;
+	color: #fff;
+}
+
+input[type=checkbox]:disabled+.check-label:before {
+	transform: scale(1);
+	border-color: #fff;
 }
 
 .check-text {
@@ -206,9 +256,10 @@ body {
 	line-height: normal;
 }
 
-
-.red-border {
-	border: 2px solid var(--error, #A61717);
+@media (min-width: 744px) {
+	.check-text {
+		font-size: var(--body-2);
+	}
 }
 
 @media (min-width: 744px) {
@@ -217,18 +268,11 @@ body {
 	}
 }
 
-.sign_up-privacy {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	gap: 8px;
+.red-border {
+	border: 2px solid var(--error, #A61717);
 }
 
-@media (min-width: 1280px) {
-	.sign_up-privacy {
-		gap: 10px;
-	}
-}
+
 
 .sign_up_button {
 	color: var(--main-1, #D53A84);
