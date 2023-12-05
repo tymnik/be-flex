@@ -227,6 +227,11 @@
 
     @media screen and (min-width: 1280px) {
         font-size: 60px;
+        width: unset;
+        max-width: 409px;
+    }
+
+    @media screen and (min-width: 1300px) {
         width: 409px;
     }
 }
@@ -286,8 +291,12 @@
     }
 
     @media screen and (min-width: 1280px) {
-        width: 1280px;
+        width: 1260px;
         gap: 26px;
+    }
+
+    @media screen and (min-width: 1300px) {
+        width: 1280px;
     }
 }
 
@@ -310,9 +319,13 @@
     }
 
     @media screen and (min-width: 1280px) {
-        width: 1280px;
+        width: 1260px;
         gap: 27px;
         flex-wrap: nowrap;
+    }
+
+    @media screen and (min-width: 1300px) {
+        width: 1280px;
     }
 }
 
@@ -327,7 +340,12 @@
     }
 
     @media screen and (min-width: 1280px) {
-        width: 1280px;
+        width: 1260px;
+        gap: 70px;
+    }
+
+    @media screen and (min-width: 1300px) {
+        width: 1277px;
         gap: 78px;
     }
 }
