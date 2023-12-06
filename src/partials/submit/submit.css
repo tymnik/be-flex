@@ -138,10 +138,9 @@ body {
 	}
 }
 
-.sign_up_form_input {
+.submit_form_input {
 	border-radius: 36px;
 	border: 2px solid var(--black-60, #272727);
-	padding: 16px;
 	width: 328px;
 	padding: 16px 36px;
 
@@ -153,32 +152,37 @@ body {
 	line-height: normal;
 }
 
-.sign_up_form_input:hover,
-.sign_up_form_input:hover {
+.submit_form_input:hover {
 	border: 2px solid var(--main-1, #D53A84);
 	background: rgba(224, 137, 179, 0.10);
 }
 
+.submit_form_input:focus {
+	border-radius: 36px;
+	border: 2px solid var(--black-60, #272727);
+	color: var(--black-60, #272727);
+}
+
 @media (max-width: 374px) {
-	.sign_up_form_input {
+	.submit_form_input {
 		width: 272px;
 	}
 }
 
-.sign_up_form_input:focus {
+.submit_form_input:focus {
 	outline: none;
 }
 
 @media (min-width: 744px) {
-	.sign_up_form_input {
-		width: 424px;
-		font-size: var(--subtitle-3);
+	.submit_form_input {
+	width: 424px;
+	font-size: var(--subtitle-3);
 	}
 }
 
 @media (min-width: 1280px) {
-	.sign_up_form_input {
-		width: 628px;
+	.submit_form_input {
+	width: 628px;
 	}
 }
 
@@ -195,57 +199,48 @@ body {
 .sign_up-privacy {
 	display: flex;
 	align-items: center;
-	width: 100%;
 }
 
-input[type=checkbox] {
-	display: none;
-}
-
-input[type=checkbox]+ .check-label {
-	display: flex;
-	cursor: pointer;
-	align-items: center;
-}
-
-.check-label:before {
-	content: "✔";
-	border: 1px solid var(--black-90, #08070C);
-	border-radius: 4px;
-	display: inline-block;
+#user-privacy {
+	appearance: none;
 	width: 20px;
 	height: 20px;
-
-	color: transparent;
-	transition: .2s;
-	margin-right: 8px;
-
-
-	padding-left: 3px;
-	padding-top: -2px;
-	vertical-align: middle;
+	border: 1px solid var(--black-90, #08070C);
+	background: transparent;
+	border-radius: 4px;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: 0.3s ease;
 }
 
-@media (min-width: 1280px) {
-	input[type=checkbox]+.check-label:before {
-		margin-right: 10px;
-	}
-}
-
-input[type=checkbox]+.check-label:active:before {
-	transform: scale(0);
-}
-
-input[type=checkbox]:checked+.check-label:before {
+#user-privacy:checked {
 	background-color: #6B39D0;
-	border-color: #6B39D0;
-	color: #fff;
+	border: 1px solid #6B39D0;
 }
 
-input[type=checkbox]:disabled+.check-label:before {
-	transform: scale(1);
-	border-color: #fff;
+#user-privacy:checked::before {
+	content: "\2713";
+	color: var(--background);
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	font-weight: bold;
+	display: block;
 }
+
+#user-privacy:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.check-text {
+	color: #000000;
+}
+
+/* .red-border-checkbox {
+	border: 2px solid var(--error, #A61717);
+} */
+
 
 .check-text {
 	color: var(--black-60, #272727);
@@ -271,8 +266,6 @@ input[type=checkbox]:disabled+.check-label:before {
 .red-border {
 	border: 2px solid var(--error, #A61717);
 }
-
-
 
 .sign_up_button {
 	color: var(--main-1, #D53A84);
@@ -302,20 +295,20 @@ input[type=checkbox]:disabled+.check-label:before {
 
 @media (max-width: 374px) {
 	.sign_up_button {
-		width: 272px;
+	width: 272px;
 	}
 }
 
 @media (min-width: 744px) {
 	.sign_up_button {
-		width: 424px;
-		font-style: var(--subtitle-2);
+	width: 424px;
+	font-style: var(--subtitle-2);
 	}
 }
 
 @media (min-width: 1280px) {
 	.sign_up_button {
-		width: 628px;
+	width: 628px;
 	}
 }
 
@@ -325,7 +318,7 @@ input[type=checkbox]:disabled+.check-label:before {
 
 @media (min-width: 744px) {
 	.sign_up_section .main_title {
-		font-size: var(--title-2);
+	font-size: var(--title-2);
 	}
 }
 
@@ -347,17 +340,23 @@ background-color: transparent;
 .iti--allow-dropdown input[disabled]+.iti__flag-container:hover,
 .iti--allow-dropdown input[readonly]+.iti__flag-container:hover {
 	cursor: unset;
-		background-color: transparent;
+	background-color: transparent;
 }
 
 
 
 .iti.iti--separate-dial-code .iti__arrow {
-	margin-left: 6px;
+	margin-left: 8px;
 	width: 1px;
 	height: 45px;
 	border: unset;
 	background: var(--black-60, #272727);
+}
+
+@media (min-width: 744px) {
+	.iti.iti--separate-dial-code .iti__arrow {
+			margin-right: 8px;
+	}
 }
 
 .iti .iti__flag-container .iti__selected-flag {
@@ -368,4 +367,25 @@ background-color: transparent;
 
 .iti .iti--separate-dial-code .iti--show-flags .iti__selected-dial-code {
 	margin: unset;
+}
+
+/* .iti__selected-dial-code.vfkb {
+	font-size: 14px;
+
+}
+
+@media (min-width: 744px) {
+	.iti__selected-dial-code.vfkb {
+			font-size: 20px;
+		}
+} */
+
+.iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+	font-size: 14px;
+}
+
+@media (min-width: 744px) {
+	.iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+		font-size: 20px;
+	}
 }
