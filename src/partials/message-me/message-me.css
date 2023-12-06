@@ -8,68 +8,76 @@
 
 @media (min-width: 744px) {
 	.message_me-section {
-		gap: 24px;
+		padding: 0 0 72px;
+	}
+}
+
+@media (min-width: 744px) {
+	.message_me-section {
+	gap: 24px;
 	}
 }
 
 .message_me-block {
 	width: 343px;
 	height: 97px;
+
 	border-radius: 36px;
 	border: 2px solid var(--black-90, #08070C);
 	background: #7439CA;
 
 	display: flex;
 	align-items: center;
-	gap: 10px;
-	/* margin: 0 auto; */
 	justify-content: center;
-	
+	gap: 10px;
 }
+
 @media (max-width: 374px) {
 	.message_me-block {
-		width: 284px;
+	width: 320px;
 	}
 }
+
 	@media (min-width: 744px) {
-		.message_me-block {
-		width: 648px;
-		height: 140px;
-		border-radius: 60px;
-		gap: 46px;
-		}
-		}
+	.message_me-block {
+	width: 648px;
+	border-radius: 60px;
+	gap: 46px;
+	}
+	}
 	
-		@media (min-width: 1280px) {
-			.message_me-block {
-			width: 954px;
-			}
-		}
+	@media (min-width: 1280px) {
+	.message_me-block {
+	width: 954px;
+	}
+	}
 
 .message_me-block-title {
-		color: var(--white);
-		text-align: center;
-		font-family: var(--orelega-one);
-		font-size: var(--body-regular);
-		font-weight: var(--normal);
-		line-height: normal;
+	color: var(--white);
+	text-align: center;
+	font-family: var(--orelega-one);
+	font-size: var(--body-regular);
+	font-weight: var(--normal);
+	line-height: normal;
+	width: 146px;
+	text-align: center;
 
 }
 
 
-		@media (min-width: 744px) {
-			.message_me-block-title {
-			font-size: 28px;
-			width: 200px;
-			}
-		}
+	@media (min-width: 744px) {
+	.message_me-block-title {
+	font-size: 28px;
+	width: 200px;
+	}
+	}
 	
-		@media (min-width: 1280px) {
-			.message_me-block-title {
-			width: 285px;
-			font-size: 35px;
-			}
-		}
+	@media (min-width: 1280px) {
+	.message_me-block-title {
+	width: 285px;
+	font-size: 35px;
+	}
+	}
 
 .message-btn-line {
 	display: block;
@@ -79,10 +87,10 @@
 }
 
 	@media (min-width: 744px) {
-		.message-btn-line {
-		height: 92px;
-		}
-		}
+	.message-btn-line {
+	height: 92px;
+	}
+	}
 
 .message_me-btn {
 	color: var(--background);
@@ -97,7 +105,7 @@
 	display: flex;
 	width: 145px;
 	height: 48px;
-	padding: 16px 24px;
+	padding: 15.5px 24px;
 	justify-content: center;
 	align-items: center;
 	gap: 8px;
@@ -130,15 +138,15 @@
 }
 @media (min-width: 744px) {
 	.message_me_social_wrap {
-		height: 46px;
-		width: 424px;
-		gap: 26px;
+	height: 46px;
+	width: 424px;
+	gap: 26px;
 	}
 }
 
 @media (min-width: 1280px) {
 	.message_me_social_wrap {
-		width: 844px;
+	width: 844px;
 	}
 }
 
@@ -161,19 +169,19 @@
 .message_me_social_btn:hover,
 .message_me_social_btn:focus {
 	border-radius: 36px;
-		border: 2px solid var(--main-1, #D53A84);
-		background: #F3E3F3;
+	border: 2px solid var(--main-1, #D53A84);
+	background: #F3E3F3;
 }
 
 @media (min-width: 744px) {
 	.message_me_social_btn {
-		width: 200px;
-		padding: 10px 99px;
+	width: 200px;
+	padding: 10px 99px;
 	}
 }
 
 @media (min-width: 1280px) {
 	.message_me_social_btn {
-		width: 409px;
+	width: 409px;
 	}
 }
