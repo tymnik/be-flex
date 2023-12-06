@@ -1,24 +1,32 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-const swiperGallery = new Swiper('.gallery-swiper-js', {
-  modules: [Navigation],
-  rewind: true,
-  setWrapperSize: true,
-  uniqueNavElements: true,
+new Swiper('.gallery-swiper-js', {
+  modules: [Navigation, Pagination],
+  // rewind: true,
+  // setWrapperSize: true,
+  // uniqueNavElements: true,
   speed: 300,
-  spaceBetween: 16,
+  grabCursor: true,
+  spaceBetween: 26,
   slidesPerView: 1,
+  keyboard: {
+    enabled: true,
+  },
+  mousewheel: {
+    sensitivity: 1,
+    eventsTarget: '.swiper-slide',
+  },
+  loop: true,
   breakpoints: {
     744: {
-      spaceBetween: 16,
-      slidesPerView: 1.7,
+      slidesPerView: 1.8,
     },
     1280: {
-      spaceBetween: 16,
-      slidesPerView: 2.9,
+      slidesPerView: 3,
       grabCursor: true,
     },
   },
@@ -27,5 +35,10 @@ const swiperGallery = new Swiper('.gallery-swiper-js', {
   navigation: {
     nextEl: '.gallery-slider-btn-next-js',
     prevEl: '.gallery-slider-btn-prev-js',
+  },
+
+  pagination: {
+    el: '.gallery-swiper-pagination',
+    type: 'bullets',
   },
 });
