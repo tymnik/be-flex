@@ -49,10 +49,9 @@
         border: unset;
         padding: unset;
         flex-direction: row;
-        max-width: 1284px;
+        width: 1270px;
         align-items: center;
         gap: 20px;
-        width: unset;
     }
 
         @media screen and (min-width: 1300px) {
