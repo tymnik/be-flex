@@ -115,13 +115,11 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .header-wrap {
-        padding: 0 8px;
-    }
 
     .header-container {
-        max-width: 1280px;
-        margin: 0 80px;
+        max-width: none;
+        margin: 0;
+        padding: 8px 80px;
     }
 
     .header-switchandburger-wrap {
