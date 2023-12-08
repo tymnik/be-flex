@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
     input.addEventListener('countrychange', function (event) {
         const selectedCountry = iti.getSelectedCountryData();
         console.log('Selected country code: ' + selectedCountry.dialCode);
-                var arrowElement = document.querySelector('.iti__arrow');
+        const arrowElement = document.querySelector('.iti__arrow');
         arrowElement.style.display = 'none';
     });
 
     const selectedDialCodeElement = document.querySelector('.iti__selected-dial-code');
-    selectedDialCodeElement.classList.add('vfkb'); 
+    selectedDialCodeElement.classList.add('vfkb');
 
     document.getElementById('user-tel').addEventListener('input', function (event) {
         this.value = this.value.replace(/[^0-9]/g, '');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     const userTelInput = document.getElementById('user-tel');
-    userTelInput.addEventListener('countrychange', function () {
+    userTelInput.addEventListener('change', function () {
         setTimeout(function () {
             var arrowElement = document.querySelector('.iti__arrow');
             arrowElement.style.display = 'none';
@@ -48,43 +48,38 @@ document.addEventListener('DOMContentLoaded', function () {
     // -----------------------
     
     document.getElementById('btn').addEventListener('click', function (event) {
-    event.preventDefault();
+        event.preventDefault();
 
-    const formElements = document.querySelectorAll('.submit_form_input, .modal-check');
-    const privacyCheckbox = document.getElementById('user-privacy');
+        const formElements = document.querySelectorAll('.modal-check');
+        const privacyCheckbox = document.getElementById('user-privacy');
 
-    formElements.forEach(function (element) {
-        if (element.value.trim() === '' && element !== document.getElementById('user-comment')) {
-            element.classList.add('red-border');
-        } else {
-            element.classList.remove('red-border');
-        }
-    });
-
-    validatePhoneNumber();
-    validateNameInput();
-    
-
-if (!privacyCheckbox.checked) {
-    privacyCheckbox.classList.add('red-border');
-    privacyCheckbox.style.border = '2px solid var(--error, #A61717)';
-} else {
-    privacyCheckbox.classList.remove('red-border');
-    privacyCheckbox.style.border = '1px solid var(--black-90, #08070C)';
-}
-
+        validatePhoneNumber();
+        validateNameInput();
 
         
-
-    const allFieldsEmpty = Array.from(formElements).every(function (element) {
-        return element.value.trim() === '' || element === document.getElementById('user-comment');
-    });
-
-    if (allFieldsEmpty || userTelInput.classList.contains('red-border') || userNameInput.classList.contains('red-border') || !privacyCheckbox.checked) {
-        console.log('Не можна відправити порожню форму або з невалідним номером телефону, ім\'ям або без погодження з політикою конфіденційності');
-        return;
-        }
         
+        // privacyCheckbox.addEventListener('change', function () {
+        //     if (privacyCheckbox.checked) {
+        //         privacyCheckbox.classList.remove('red-border');
+        //         privacyCheckbox.style.border = '1px solid var(--main-2, #6B39D0)';
+        //     } else {
+        //         privacyCheckbox.classList.add('red-border');
+        //         privacyCheckbox.style.border = '2px solid var(--error, #A61717)';
+        //     }
+        // });
+
+    // const allFieldsEmpty = Array.from(formElements).every(function (element) {
+    //     return element.value.trim() === '' || element === document.getElementById('user-comment');
+    // });
+
+    // if (allFieldsEmpty || userTelInput.classList.contains('red-border') || userNameInput.classList.contains('red-border') || !privacyCheckbox.checked) {
+    //     console.log('Не можна відправити порожню форму або з невалідним номером телефону, ім\'ям або без погодження з політикою конфіденційності');
+    //     return;
+    // }
+
+
+
+
     // -----------------------
         const formData = new FormData(document.querySelector('.sign_up_form'));
         const telegramToken = '6943310494:AAF9IRuXS0o6ejGqdXoa_ZHePm6PcEwLLLA';
@@ -97,33 +92,36 @@ if (!privacyCheckbox.checked) {
         message += `<b>Повідомлення: </b> ${document.getElementById('user-comment').value}\n`;
 
         formData.forEach(function (value, key) {
-            message += key + ': ' + value + '\n';
+        message += key + ': ' + value + '\n';
         });
 
         axios.post(`${Url_api}/sendMessage`, {
-            chat_id: ChatId,
-            parse_mode: 'html',
-            text: message,
+        chat_id: ChatId,
+        parse_mode: 'html',
+        text: message,
         }).then(function (response) {
-            console.log('Повідомлення відправлено до Telegram:', response.data);
+        console.log('Повідомлення відправлено до Telegram:', response.data);
         }).catch(function (error) {
-            console.error('Помилка відправлення повідомлення до Telegram:', error);
+        console.error('Помилка відправлення повідомлення до Telegram:', error);
         });
     });
 
     function validatePhoneNumber() {
         if (userTelInput.value.trim() === '' || !iti.isValidNumber()) {
-            userTelInput.classList.add('red-border');
+        userTelInput.classList.add('red-border');
         } else {
-            userTelInput.classList.remove('red-border');
+        userTelInput.classList.remove('red-border');
         }
     }
 
     function validateNameInput() {
         if (userNameInput.value.trim().length === 1) {
-            userNameInput.classList.add('red-border');
+        userNameInput.classList.add('red-border');
         } else {
-            userNameInput.classList.remove('red-border');
+        userNameInput.classList.remove('red-border');
         }
+
+        
     }
+    
 });

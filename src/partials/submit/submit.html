@@ -3,13 +3,13 @@
 		<h2 class="sign_up_title main_title">Sign up for the 1st
 		training session</h2>
 	<div class="form_wrapper">
-	<form class="sign_up_form" action="#" method="post" enctype="multipart/form-data">
+	<form id="form" class="sign_up_form" action="#" method="post" enctype="multipart/form-data">
 		<div class="sign_up_form_div">
 					<div class="user_name_wrap">
-						<input type="text" id="user-name" name="user-name" class="submit_form_input name-input" placeholder="Name" required>
+						<input type="text" id="user-name" name="user-name" class="submit_form_input name-input _req" placeholder="Name" required>
 					</div>
 					<div class="user-phone-container">
-						<input type="tel" id="user-tel" name="user-phone" class="submit_form_input phone_input" required>
+						<input type="tel" id="user-tel" name="user-phone" class="submit_form_input phone_input _req" required>
 					</div>
 					<!--textarea-->
 					<div class="sign_up-textarea_content">
@@ -17,15 +17,17 @@
 							placeholder="comment"></textarea>
 					</div>
 					<!--checkbox-->
-					<div class="sign_up-privacy">
-						<input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="modal-check">
-						<label for="user-privacy" class="check-label">
-							<span class="check-text">
-								I agree to the&nbsp;
-								<a href="#" class="link-privacy link">Privacy Policy</a>
-							</span>
-						</label>
+					<div class="sign_up_checkbox">
+							<input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="sign_up_checkbox_input _req">
+							<label for="user-privacy" class="sign_up_checkbox_label">
+								<span class="check-text">
+									I agree to the&nbsp;
+									<a href="#" class="link-privacy link">Privacy Policy</a>
+								</span>
+							</label>
 					</div>
+
+
 		</div>
 
 			<button type="submit" id="btn" class="sign_up_button">Get started for free</button>
