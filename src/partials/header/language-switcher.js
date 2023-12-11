@@ -10,10 +10,10 @@ function switchLanguage(e) {
     textNode.textContent = language;
 
     
-    // i18next.changeLanguage(language, (err, t) => {
-    //     if (err) return console.log('something went wrong loading', err);
-    //     updateContent();
-    // });
+    i18next.changeLanguage(language, (err, t) => {
+        if (err) return console.log('something went wrong loading', err);
+        updateContent();
+    });
 }
 
 const languageSwitchers = document.querySelectorAll('.language-switcher-btn');
@@ -30,5 +30,4 @@ function updateContent() {
     });
 }
 
-// Initial content update
 updateContent();
