@@ -70,10 +70,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        if (error > 0) {
-            console.log('Не можна відправити форму з помилками валідації');
-            return;
-        }
+        // if (error > 0) {
+        //     console.log('Не можна відправити форму з помилками валідації');
+        //     return;
+        // }
 
         // Отримання даних і відправлення форми, якщо валідація успішна
         try {
