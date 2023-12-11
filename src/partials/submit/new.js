@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 element.classList.remove('red-border');
             }
+            
         });
 
         const allFieldsEmpty = Array.from(formElements).every(function (element) {
