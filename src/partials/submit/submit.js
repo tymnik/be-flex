@@ -85,13 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-<<<<<<< Updated upstream
-        // if (error > 0) {
-        //     console.log('Не можна відправити форму з помилками валідації');
-        //     return;
-        // }
-=======
->>>>>>> Stashed changes
+
 
         // Отримання даних і відправлення форми, якщо валідація успішна
 
