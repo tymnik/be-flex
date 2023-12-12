@@ -1,3 +1,4 @@
+import './partials/header/language-switcher.js';
 import './partials/header/header';
 import './partials/hero/hero';
 import './partials/about-me/about-me';
