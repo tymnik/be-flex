@@ -8,9 +8,9 @@
     <title>Be Flex</title>
     
     <script type="module" crossorigin src="/be-flex/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/be-flex/assets/vendor-a1c4b7a3.js">
+    <link rel="modulepreload" crossorigin href="/be-flex/assets/vendor-f6a00c0a.js">
     <link rel="stylesheet" href="/be-flex/assets/vendor-e4c787fc.css">
-    <link rel="stylesheet" href="/be-flex/assets/index-88702014.css">
+    <link rel="stylesheet" href="/be-flex/assets/index-9e54eba9.css">
   </head>
 
   <body>
@@ -22,11 +22,11 @@
             </svg></a>
 
         <nav class="header-nav">
-            <a href="#about-me" class="header-nav-link">About me</a>
-            <a href="#you-will-find" class="header-nav-link">What will you find</a>
-            <a href="#for-whom" class="header-nav-link">For whom</a>
-            <a href="#gallery" class="header-nav-link">Gallery</a>
-            <a href="#address" class="header-nav-link">Adress</a>
+            <a href="#about-me" class="header-nav-link" data-i18n="header.aboutMe">About me</a>
+            <a href="#you-will-find" class="header-nav-link" data-i18n="header.youWillFind">What will you find</a>
+            <a href="#for-whom" class="header-nav-link" data-i18n="header.forWhom">For whom</a>
+            <a href="#gallery" class="header-nav-link" data-i18n="header.gallery">Gallery</a>
+            <a href="#address" class="header-nav-link" data-i18n="header.adress">Adress</a>
         </nav>
 
         <div class="header-switchandburger-wrap">
@@ -74,16 +74,16 @@
     </button>
 
     <nav class="mobile-menu-nav">
-      <a href="#about-me" class="mobile-nav-link">About me</a>
-      <a href="#you-will-find" class="mobile-nav-link">What will you find</a>
-      <a href="#for-whom" class="mobile-nav-link">For whom</a>
-      <a href="#gallery" class="mobile-nav-link">Gallery</a>
-      <a href="#address" class="mobile-nav-link">Adress</a>
+      <a href="#about-me" class="mobile-nav-link" data-i18n="header.aboutMe">About me</a>
+      <a href="#you-will-find" class="mobile-nav-link" data-i18n="header.youWillFind">What will you find</a>
+      <a href="#for-whom" class="mobile-nav-link" data-i18n="header.forWhom">For whom</a>
+      <a href="#gallery" class="mobile-nav-link" data-i18n="header.gallery">Gallery</a>
+      <a href="#address" class="mobile-nav-link" data-i18n="header.adress">Adress</a>
     </nav>
 
     <ul class="mobile-menu-info">
       <li class="mobile-info-item language-switcher">
-        <p>Switch language: </p>
+        <p data-i18n="header.switchTxt">Switch language: </p>
         <button class="language-switcher-btn" type="button">
           EN
           <svg width="24" height="24" class="language-switcher-icon">
@@ -100,7 +100,7 @@
         <a href="tel:+971524116236" class="mobmenu-phone-number">+971 52 411 6236</a>
       </li>
       <li class="mobile-info-item mobile-our-socials">
-        <p>Follow me</p>
+        <p data-i18n="header.follow">Follow me</p>
         <ul class="mobmenu-socials-list">
           <li class="mobmenu-socials-item">
             <a href="https://www.instagram.com/be.flexs/?igshid=MzMyNGUyNmU2YQ%3D%3D" target="_blank" rel="noopener">
@@ -145,28 +145,28 @@
     </h1>
 
     <div class="hero-free-trial">
-        <h2 class="hero-subtitle">Gymnastics for girls</h2>
-        <button type="button" id="hero-section-button" class="hero-button">Book for a trial class</button>
+        <h2 class="hero-subtitle" data-i18n="hero.subtitle">Gymnastics for girls</h2>
+        <button type="button" id="hero-section-button" class="hero-button" data-i18n="hero.button">Book for a trial class</button>
     </div>
 </section>
     <section class="numbers-section">
     <ul class="numbers-section-list">
         <li class="numbers-section-item">
             <h3 class="numbers-section-number">18</h3>
-            <p class="numbers-section-text">Years <br>in gymnastics</p>
+            <p class="numbers-section-text" data-i18n="numbers.first">Years <br> in gymnastics</p>
         </li>
         <li class="numbers-section-item">
             <h3 class="numbers-section-number">7</h3>
-            <p class="numbers-section-text">Years <br>teaching children</p>
+            <p class="numbers-section-text" data-i18n="numbers.second">Years <br> teaching children</p>
         </li>
         <li class="numbers-section-item">
             <h3 class="numbers-section-number">4</h3>
-            <p class="numbers-section-text">Countries<br> in which I worked</p>
+            <p class="numbers-section-text" data-i18n="numbers.third">Countries <br> in which I worked</p>
         </li>
     </ul>
 </section>
     <section class="about-me" id="about-me">
-    <h2 class="about-me-title">About me</h2>
+    <h2 class="about-me-title" data-i18n="aboutMe.title">About me</h2>
     <div class="about-me-wrapper">
         <picture>
             <source srcset="/be-flex/assets/about_me_desc-5440f95f.jpg 1x, /be-flex/assets/about_me_desc_2x-1be2cc4d.jpg 2x"
@@ -178,18 +178,18 @@
             <img src="/be-flex/assets/about_me_desc-5440f95f.jpg" alt="Anastasia's photo" class="about-me-photo" loading="lazy">
         </picture>
         <div class="intro-text">
-            <p>About Anastasia</p>
+            <p data-i18n="aboutMe.subtitle">About Anastasia</p>
             <br>
-            <p class="about-me-text">Welcome to my digital space! I'm Anastasia, a dedicated and passionate gymnastics
+            <p class="about-me-text" data-i18n="aboutMe.text">Welcome to my digital space! I'm Anastasia, a dedicated and passionate gymnastics
                 coach with over seven years of experience in nurturing young talents. My journey began at<span
                     class="ellipsis">...</span>
-            <span class="btn-position"><button class="show-more-btn common-button">read more</button></span>
+            <span class="btn-position"><button class="show-more-btn common-button" data-i18n="aboutMe.readMore">read more</button></span>
             the youthful age of 16, marking the start of a rewarding career filled with growth, learning, and joy.
             At 23, I reflect on these years with immense pride, having had the privilege of coaching in diverse cultural
             settings
             across Ukraine, Turkey, Kuwait, and Dubai.</p>
             <br>
-            <p>Since 2021, Dubai has been my coaching home — a city that resonates with my love
+            <p data-i18n="aboutMe.text2">Since 2021, Dubai has been my coaching home — a city that resonates with my love
                 for
                 gymnastics, offering unparalleled opportunities and facilities. My expertise lies in guiding children
                 from the tender age of four,
@@ -200,19 +200,19 @@
                 victories and accolades.
             </p>
             <br>
-            <p>Join me in exploring the world of gymnastics, where every leap is a step towards
+            <p data-i18n="aboutMe.text3">Join me in exploring the world of gymnastics, where every leap is a step towards
                 greatness.</p>
-            <div class="btn-position"><button class="show-less-btn common-button">read less</button></div>
+            <div class="btn-position"><button class="show-less-btn common-button" data-i18n="aboutMe.readLess">read less</button></div>
         </div>
     </div>
 </section>
     <section class="you-will-find" id="you-will-find">
-    <h2 class="you-will-find-title">You will find</h2>
+    <h2 class="you-will-find-title" data-i18n="youWillFind.title">You will find</h2>
     <ul class="you-will-find-list">
         <li>
             <div class="you-will-find-card">
                 <div class="find-card-wrapper">
-                    <h3 class="find-card-title">Individual classes</h3>
+                    <h3 class="find-card-title" data-i18n="youWillFind.card1Subtitle">Individual classes</h3>
                     <picture class="find-card-photo first-card-photo">
                         <source
                             srcset="/be-flex/assets/will_find_1_desc-063d1919.jpg 1x, /be-flex/assets/will_find_1_desc_2x-bebe64e7.jpg 2x"
@@ -229,12 +229,12 @@
                 </div>
                 <div class="first-card-tab-wrapper text-alive">
                     <ol class="find-card-ordered-list">
-                        <li class="find-card-list-text"><span class="find-list-span">Student and coach</span></li>
-                        <li class="find-card-list-text"><span class="find-list-span break-text">Double<span
-                                    class="double-training-explanation">(child and her friend)</span></span></li>
-                        <li class="find-card-list-text"><span class="find-list-span">Mom and me</span></li>
+                        <li class="find-card-list-text"><span class="find-list-span" data-i18n="youWillFind.card1Item1">Student and coach</span></li>
+                        <li class="find-card-list-text"><span class="find-list-span break-text" data-i18n="youWillFind.card1Item2">Double<span
+                                    class="double-training-explanation" data-i18n="youWillFind.card1Item2Explanation">(child and her friend)</span></span></li>
+                        <li class="find-card-list-text"><span class="find-list-span" data-i18n="youWillFind.card1Item3">Mom and me</span></li>
                     </ol>
-                    <p class="find-card-text">Individual (private) class is a unique opportunity for gymnast to work
+                    <p class="find-card-text" data-i18n="youWillFind.card1text">Individual (private) class is a unique opportunity for gymnast to work
                         individually with a coach.
                         Because of individual
                         lessons with a coach, the child develops much better and more successfully, to learn new skills
@@ -246,7 +246,7 @@
         <li>
             <div class="find-second-card">
                 <div class="find-card-wrapper">
-                    <h3 class="find-card-title">Group classes</h3>
+                    <h3 class="find-card-title" data-i18n="youWillFind.card2Subtitle">Group classes</h3>
                     <picture class="find-card-photo second-card-photo">
                         <source
                             srcset="/be-flex/assets/will_find_2_desc-eeeba8fd.jpg 1x, /be-flex/assets/will_find_2_desc_2x-db28eb66.jpg 2x"
@@ -262,18 +262,18 @@
                     </picture>
                 </div>
                 <div class="second-card-text-wrapper text-alive">
-                    <h4 class="group-classes-title">Group of 8-10 kids</h4>
-                    <p class="group-card-text">If you want your child to learn to gymnastics and have fun, then this
+                    <h4 class="group-classes-title" data-i18n="youWillFind.card2TextTitle">Group of 8-10 kids</h4>
+                    <p class="group-card-text" data-i18n="youWillFind.card2Text1">If you want your child to learn to gymnastics and have fun, then this
                         kind of
                         training is perfect.
                     </p>
                     <br>
-                    <p class="group-card-text">In the process of sports activities, children learn to control their body
+                    <p class="group-card-text" data-i18n="youWillFind.card2Text2">In the process of sports activities, children learn to control their body
                         and
                         are taught discipline.
                     </p>
                     <br>
-                    <p class="group-card-text">Flexibility, dexterity, ability to move and repeat unfamiliar exercises
+                    <p class="group-card-text" data-i18n="youWillFind.card2Text3">Flexibility, dexterity, ability to move and repeat unfamiliar exercises
                         are
                         developed.</p>
                     <br>
@@ -283,7 +283,7 @@
         <li>
             <div class="you-will-find-card">
                 <div class="find-card-wrapper">
-                    <h3 class="find-card-title">Competitions</h3>
+                    <h3 class="find-card-title" data-i18n="youWillFind.card3Subtitle">Competitions</h3>
                     <picture class="find-card-photo third-card-photo">
                         <source
                             srcset="/be-flex/assets/will_find_3_desc-40c17d37.jpg 1x, /be-flex/assets/will_find_3_desc_2x-50b5cc7b.jpg 2x"
@@ -300,11 +300,11 @@
                 </div>
                 <div class="third-card-tab-wrapper text-alive">
                     <ol class="third-card-ordered-list">
-                        <li class="third-card-list-text"><span class="third-card-span">Preparation for competition
+                        <li class="third-card-list-text"><span class="third-card-span" data-i18n="youWillFind.card3Text1">Preparation for competition
                                 between clubs in Dubai</span></li>
-                        <li class="third-card-list-text"><span class="third-card-span">Preparing for competition in
+                        <li class="third-card-list-text"><span class="third-card-span" data-i18n="youWillFind.card3Text2">Preparing for competition in
                                 other countries</span></li>
-                        <li class="third-card-list-text"><span class="third-card-span">Create gymnastics program</span>
+                        <li class="third-card-list-text"><span class="third-card-span" data-i18n="youWillFind.card3Text3">Create gymnastics program</span>
                         </li>
                     </ol>
                 </div>
@@ -313,14 +313,14 @@
     </ul>
 </section>
     <div class="sign-btn-block">
-    <p class="sign-btn-block-text">Sign up for a class right now</p>
+    <p class="sign-btn-block-text" data-i18n="signBtnBlock.text">Sign up for a class right now</p>
     <svg class="sign-btn-line">
         <use href="/be-flex/assets/icons-4a807171.svg#icon-line-for-btn" height="100%"></use>
     </svg>
-    <button type="button" class="sign-up-btn">sign up</button>
+    <button type="button" class="sign-up-btn" data-i18n="signBtnBlock.btn">sign up</button>
 </div>
     <section class="for-whom" id="for-whom">
-    <h2 class="for-whom-title">For whom?</h2>
+    <h2 class="for-whom-title" data-i18n="forWhom.title">For whom?</h2>
     <ul class="for-whom-list">
         <li class="for-whom-first-block">
             <div class="first-box-content">
@@ -335,8 +335,8 @@
                         loading="lazy">
                 </picture>
                 <div class="for-whom-first-wrapper">
-                    <h3 class="for-whom-text-title">Gymnastics for children</h3>
-                    <p class="for-whom-description">3-14 years</p>
+                    <h3 class="for-whom-text-title" data-i18n="forWhom.subtitle1">Gymnastics for children</h3>
+                    <p class="for-whom-description" data-i18n="forWhom.desc1">3-14 years</p>
                 </div>
             </div>
         </li>
@@ -352,8 +352,8 @@
                     <img src="/be-flex/assets/for_whom_2_desc-914d2c43.jpg" alt="The group of young gymnasts" class="for-whom-img"
                         loading="lazy">
                 </picture>
-                <h3 class="for-whom-second-text-title">Group classes</h3>
-                <p class="for-whom-second-description">2 / 4 / 8 <span class="for-whom-span">persons</span></p>
+                <h3 class="for-whom-second-text-title" data-i18n="forWhom.subtitle2">Group classes</h3>
+                <p class="for-whom-second-description" data-i18n="forWhom.desc2">2 / 4 / 8 <span class="for-whom-span" >persons</span></p>
             </div>
         </li>
         <li class="for-whom-third-block">
@@ -369,15 +369,15 @@
                         class="for-whom-img" loading="lazy">
                 </picture>
                 <div class="for-whom-third-block-wrapper">
-                    <h3 class="for-whom-third-title">Ready to join?</h3>
-                    <button type="button" class="to-join-btn">To join</button>
+                    <h3 class="for-whom-third-title" data-i18n="forWhom.callToAct">Ready to join?</h3>
+                    <button type="button" class="to-join-btn" data-i18n="forWhom.btn">To join</button>
                 </div>
             </div>
         </li>
     </ul>
 </section>
     <section class="apparatus">
-    <h2 class="apparatus-title">Practicing in apparatus</h2>
+    <h2 class="apparatus-title" data-i18n="apparatus.title">Practicing in apparatus</h2>
     <ul class="apparatus-list">
         <li class="apparatus-card">
             <picture class="apparatus-photo">
@@ -390,8 +390,8 @@
                 <img src="/be-flex/assets/apparatus_1_desc-e748f59a.jpg" alt="Practicing in bars" class="for-whom-img"
                     loading="lazy">
             </picture>
-            <p class="apparatus-card-description">Be strong and brave</p>
-            <h3 class="apparatus-card-title">Bars</h3>
+            <p class="apparatus-card-description" data-i18n="apparatus.card1Text">Be strong and brave</p>
+            <h3 class="apparatus-card-title" data-i18n="apparatus.card1Sub">Bars</h3>
         </li>
         <li class="apparatus-card">
             <picture class="apparatus-photo">
@@ -404,8 +404,8 @@
                 <img src="/be-flex/assets/apparatus_2_desc-d7692731.jpg" alt="Practicing in vault" class="for-whom-img"
                     loading="lazy">
             </picture>
-            <p class="apparatus-card-description">Jump high and run fast</p>
-            <h3 class="apparatus-card-title">Vault</h3>
+            <p class="apparatus-card-description" data-i18n="apparatus.card2Text">Jump high and run fast</p>
+            <h3 class="apparatus-card-title" data-i18n="apparatus.card2Sub">Vault</h3>
         </li>
         <li class="apparatus-card">
             <picture class="apparatus-photo">
@@ -418,8 +418,8 @@
                 <img src="/be-flex/assets/apparatus_3_desc-3a4dafbe.jpg" alt="Practicing in beam" class="for-whom-img"
                     loading="lazy">
             </picture>
-            <p class="apparatus-card-description">Balance and control body</p>
-            <h3 class="apparatus-card-title">Beam</h3>
+            <p class="apparatus-card-description" data-i18n="apparatus.card3Text">Balance and control body</p>
+            <h3 class="apparatus-card-title" data-i18n="apparatus.card3Sub">Beam</h3>
         </li>
         <li class="apparatus-card">
             <picture class="apparatus-photo">
@@ -432,14 +432,14 @@
                 <img src="/be-flex/assets/apparatus_4_desc-5dd099ac.jpg" alt="Practicing in floor" class="for-whom-img"
                     loading="lazy">
             </picture>
-            <p class="apparatus-card-description">Listen to music and dance</p>
-            <h3 class="apparatus-card-title">Floor</h3>
+            <p class="apparatus-card-description" data-i18n="apparatus.card4Text">Listen to music and dance</p>
+            <h3 class="apparatus-card-title" data-i18n="apparatus.card4Sub">Floor</h3>
         </li>
     </ul>
 </section>
     <section class="training_section">
 	<div class="training_section_container">
-		<h2 class="training_section_title main_title">How is training goes?</h2>
+		<h2 class="training_section_title main_title" data-i18n="training.title">How is training goes?</h2>
 
 		<div class="training_border">
 			<picture>
@@ -449,32 +449,32 @@
 				<img src="/be-flex/assets/about_training_mob-a4d1efa1.jpg" alt="A photo of a training" class="gymnast_img" loading="lazy">
 			</picture>
 			<div class="training_wrapp">
-				<h3 class="training_wrapp_title">Training plan</h3>
-				<p class="training_wrapp_text">60 min</p>
+				<h3 class="training_wrapp_title" data-i18n="training.subtitle">Training plan</h3>
+				<p class="training_wrapp_text" data-i18n="training.bigMin">60 min</p>
 				<ul class="training_list">
 					<li class="training_item">
 						<svg class="training_icon" width="43.996" height="44">
 							<use href="/be-flex/assets/icons-4a807171.svg#icon-timer"></use>
 						</svg>
-						<p class="training_first_text top_title">10 min</p>
-						<p class="training_second_text low_text">Warm up and flexibility</p>
+						<p class="training_first_text top_title" data-i18n="training.smallMin1">10 min</p>
+						<p class="training_second_text low_text" data-i18n="training.smallTxt1">Warm up and flexibility</p>
 					</li>
 					<li class="training_item">
 						<svg class="training_icon" width="43.996" height="44">
 							<use href="/be-flex/assets/icons-4a807171.svg#icon-timer"></use>
 						</svg>
-						<p class="training_first_text top_title">40 min</p>
-						<p class="training_second_text low_text">Main part</p>
+						<p class="training_first_text top_title" data-i18n="training.smallMin2">40 min</p>
+						<p class="training_second_text low_text" data-i18n="training.smallTxt2">Main part</p>
 					</li>
 					<li class="training_item">
 						<svg class="training_icon" width="43.996" height="44">
 							<use href="/be-flex/assets/icons-4a807171.svg#icon-timer"></use>
 						</svg>
-						<p class="training_first_text top_title">10 min</p>
-						<p class="training_second_text low_text">Calm down</p>
+						<p class="training_first_text top_title" data-i18n="training.smallMin3">10 min</p>
+						<p class="training_second_text low_text" data-i18n="training.smallTxt3">Calm down</p>
 					</li>
 				</ul>
-				<p class="training_last_text">Trainings go from simple to complex, because each simple element gradually
+				<p class="training_last_text" data-i18n="training.mainTxt">Trainings go from simple to complex, because each simple element gradually
 					becomes
 					complex, training always starts with
 					the basic rights to perform the perfect technique, if your child has experience, I will help him
@@ -485,7 +485,7 @@
 </section>
     <section class="to_take_section">
 	<div class="to_take_container ">
-		<h2 class="to_take_title main_title">What to take
+		<h2 class="to_take_title main_title" data-i18n="toTake.title">What to take
 			to class</h2>
 		<ul class="to_take_list">
 			<li class="to_take_item">
@@ -494,7 +494,7 @@
 						<use href="/be-flex/assets/icons-4a807171.svg#icon-sport-clothes"></use>
 					</svg>
 				</div>
-				<p class="to_take_text low_text">Comfortable sports clothes</p>
+				<p class="to_take_text low_text" data-i18n="toTake.item1">Comfortable sports clothes</p>
 			</li>
 			<li class="to_take_item">
 				<div class="to_take_border current">
@@ -505,7 +505,7 @@
 						<use href="/be-flex/assets/icons-4a807171.svg#icon-band"></use>
 					</svg>
 				</div>
-				<p class="to_take_text low_text">Hair band</p>
+				<p class="to_take_text low_text" data-i18n="toTake.item2">Hair band</p>
 			</li>
 			<li class="to_take_item">
 				<div class="to_take_border">
@@ -513,7 +513,7 @@
 						<use href="/be-flex/assets/icons-4a807171.svg#icon-water"></use>
 					</svg>
 				</div>
-				<p class="to_take_text low_text">Water</p>
+				<p class="to_take_text low_text" data-i18n="toTake.item3">Water</p>
 			</li>
 			<li class="to_take_item">
 				<div class="to_take_border">
@@ -521,7 +521,7 @@
 						<use href="/be-flex/assets/icons-4a807171.svg#icon-coming-time"></use>
 					</svg>
 				</div>
-				<p class="to_take_text low_text">Come 15 minutes before training</p>
+				<p class="to_take_text low_text" data-i18n="toTake.item4">Come 15 minutes before training</p>
 			</li>
 			<li class="to_take_item">
 				<div class="to_take_border">
@@ -529,7 +529,7 @@
 						<use href="/be-flex/assets/icons-4a807171.svg#icon-socks"></use>
 					</svg>
 				</div>
-				<p class="to_take_text low_text">Socks</p>
+				<p class="to_take_text low_text" data-i18n="toTake.item5">Socks</p>
 			</li>
 			<li class="to_take_item">
 				<div class="to_take_border">
@@ -537,7 +537,7 @@
 						<use href="/be-flex/assets/icons-4a807171.svg#icon-mood"></use>
 					</svg>
 				</div>
-				<p class="to_take_text low_text">Definitely a good mood</p>
+				<p class="to_take_text low_text" data-i18n="toTake.item6">Definitely a good mood</p>
 			</li>
 		</ul>
 	</div>
@@ -579,12 +579,12 @@
 
     <section class="questions_section">
 	<div class="questions_container">
-		<h2 class="questions_title main_title">Answers
+		<h2 class="questions_title main_title" data-i18n="faq.title">Answers
 		to questions</h2>
 	<ul class="questions_main_list">
 		<li class="questions_main_item">
 <div class="questions_wrapper">
-	<h3 class="questions_list_title">How does a trial lesson work?</h3>
+	<h3 class="questions_list_title" data-i18n="faq.q1">How does a trial lesson work?</h3>
 	<div class="questions_svg_wrapp">
 	<div class="questions_svg_wrapp_inner">
 		<svg class="questions_svg" width="24" height="24">
@@ -594,12 +594,12 @@
 	</div>
 </div>
 	<div class="questions_sub_wrapp">
-		<p class="questions_text">A trial lesson is 30-minute private session for you to get to know coach and develop a learning plan.</p>
+		<p class="questions_text" data-i18n="faq.a1">A trial lesson is 30-minute private session for you to get to know coach and develop a learning plan.</p>
 	</div>
 </li>
 <li class="questions_main_item">
 	<div class="questions_wrapper">
-		<h3 class="questions_list_title">How often kids should make gymnastics to make a result?</h3>
+		<h3 class="questions_list_title" data-i18n="faq.q2">How often kids should make gymnastics to make a result?</h3>
 		<div class="questions_svg_wrapp"><div class="questions_svg_wrapp_inner">
 			<svg class="questions_svg" width="24" height="24">
 				<use href="/be-flex/assets/icons-4a807171.svg#icon-arrow"></use>
@@ -608,13 +608,13 @@
 		</div>
 		</div>
 		<div class="questions_sub_wrapp">
-			<p class="questions_text">It's so individual because all of the kids are different and also it's depends of the age and level of child .
+			<p class="questions_text" data-i18n="faq.a2">It's so individual because all of the kids are different and also it's depends of the age and level of child .
 				<br>Beginner and young children need to practice 1-2 times per week for 1 hour.</p>
 		</div>
 			</li>
 			<li class="questions_main_item">
 		<div class="questions_wrapper">
-				<h3 class="questions_list_title">If a child misses a class, is the fee refunded?</h3>
+				<h3 class="questions_list_title" data-i18n="faq.q3">If a child misses a class, is the fee refunded?</h3>
 		<div class="questions_svg_wrapp">
 		<div class="questions_svg_wrapp_inner">
 			<svg class="questions_svg" width="24" height="24">
@@ -624,7 +624,7 @@
 		</div>
 		</div>
 		<div class="questions_sub_wrapp">
-			<p class="questions_text">Missed class can only be considered for a valid reason.
+			<p class="questions_text" data-i18n="faq.a3">Missed class can only be considered for a valid reason.
 				<br>A valid reason is illness with confirmation - a certificate from a doctor.</p>
 		</div>
 			</li>
@@ -633,11 +633,11 @@
 </section>
     <section class="message_me-section">
 <div class="message_me-block">
-	<p class="message_me-block-title">Have any questions?</p>
+	<p class="message_me-block-title" data-i18n="messageMe.title">Have any questions?</p>
 	<svg class="message-btn-line">
 		<use href="/be-flex/assets/icons-4a807171.svg#icon-line-for-btn" height="100%"></use>
 	</svg>
-	<button type="button" class="message_me-btn">Message me</button>
+	<button type="button" class="message_me-btn" data-i18n="messageMe.btn">Message me</button>
 </div>
 <ul class="message_me_social_wrap">
 	<li class="message_me_social_item">
@@ -653,7 +653,7 @@
 
     <section class="gallery" id="gallery">
   <div class="gallery-wrapper">
-    <h2 class="gallery-title">Gallery</h2>
+    <h2 class="gallery-title" data-i18n="gallery.title">Gallery</h2>
     <div class="gallery-swiper-pagination swiper-pagination"></div>
     <div class="bottom-block">
       <ul class="slider-btns">
@@ -1286,6 +1286,7 @@
 </section>
 
 
+    
     
   </body>
 </html>
