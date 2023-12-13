@@ -194,10 +194,9 @@ body {
 	resize: none;
 }
 
-.sign_up_checkbox._error .sign_up_checkbox_label::before {
-	border: 2px solid var(--error, #A61717);
+.sign_up_checkbox_input_error .sign_up_checkbox_label::before {
+	border: 2px solid #A61717;
 }
-
 .sign_up_checkbox {
 		display: flex;
 		align-items: center;

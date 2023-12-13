@@ -5,7 +5,6 @@ import axios from 'axios';
 let iti;
 var selectedCountry;
 let userTelInput;
-let userNameInput;
 let formElements
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     form.addEventListener('submit', formSend);
 
-    const formElements = document.querySelectorAll('.submit_form_input, .sign_up_checkbox_input');
+    formElements = document.querySelectorAll('.submit_form_input, .sign_up_checkbox_input');
 
     formElements.forEach((input) => {
         input.addEventListener('input', function () {
@@ -120,17 +119,26 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    function addError(input) {
-        input.parentElement.classList.add('_error');
-        input.classList.add('_error');
+function addError(input) {
+    input.parentElement.classList.add('_error');
+    input.classList.add('_error');
+    if (input.type === 'checkbox' && !input.checked) {
+        input.parentElement.classList.add('sign_up_checkbox_input_error');
+    } else {
         input.style.border = '2px solid #A61717';
     }
+}
 
-    function removeError(input) {
-        input.parentElement.classList.remove('_error');
-        input.classList.remove('_error');
+function removeError(input, removeBorder = true) {
+    input.parentElement.classList.remove('_error');
+    input.classList.remove('_error');
+    input.parentElement.classList.remove('sign_up_checkbox_input_error');
+
+    if (removeBorder) {
         input.style.removeProperty('border');
     }
+}
+
 
     function isValidPhoneNumber(phoneNumber) {
         return /^\d{9,12}$/.test(phoneNumber);
