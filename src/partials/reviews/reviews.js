@@ -6,9 +6,6 @@ import 'swiper/css/pagination';
 
 new Swiper('.reviews-swiper-js', {
   modules: [Navigation, Pagination],
-  // rewind: true,
-  // setWrapperSize: true,
-  // uniqueNavElements: true,
   speed: 300,
   grabCursor: true,
   spaceBetween: 26,

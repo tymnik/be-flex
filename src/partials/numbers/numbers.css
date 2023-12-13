@@ -100,10 +100,6 @@
         width: 1280px
     }
 
-    .numbers-section-item {
-        /* height: 98px; */
-    }
-
     .numbers-section-number::before {
         width: 2px;
         height: 84px;

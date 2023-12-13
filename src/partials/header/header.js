@@ -56,13 +56,10 @@ function copyPhoneNumber(phoneNumber) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Get the height of the sticky header
   const headerHeight = document.querySelector('.header-wrap').offsetHeight;
 
-  // Select all anchor links
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
-  // Handle anchor link clicks
   anchorLinks.forEach(anchorLink => {
     anchorLink.addEventListener('click', function (e) {
       e.preventDefault();
@@ -71,10 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
-        // Calculate the target scroll position
         const targetScrollPosition = targetElement.offsetTop - headerHeight;
 
-        // Scroll to the target position
         window.scrollTo({
           top: targetScrollPosition,
           behavior: 'smooth',

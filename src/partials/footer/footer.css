@@ -13,7 +13,7 @@
 .footer-logo-link > svg {
   fill: var(--background);
   height: 112px;
-  width: 319px;
+  max-width: 319px;
 }
 
 .footer-logo-link:hover,
@@ -31,18 +31,16 @@
   }
 
   .footer-logo-link > svg {
+    max-width: unset;
     width: 464px;
     height: 163px;
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1280px) {
   .footer-container {
     height: 235px;
-    padding-top: 13px;
-    padding-bottom: 24px;
-    padding-left: 440px;
-    padding-right: 438px;
+    padding: 13px auto 24px;
   }
 
   .footer-logo-link > svg {
