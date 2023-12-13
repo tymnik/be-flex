@@ -70,8 +70,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        width: unset;
-        max-width: 628px;
+        width: 628px;
         margin-bottom: unset;
     }
 }

@@ -49,15 +49,14 @@
         border: unset;
         padding: unset;
         flex-direction: row;
-        max-width: 1284px;
+        width: 1270px;
         align-items: center;
         gap: 20px;
-        width: unset;
     }
 
-        @media screen and (min-width: 1300px) {
-gap: 27px;
-        }
+    @media screen and (min-width: 1300px) {
+        gap: 27px;
+    }
 }
 
 .find-card-wrapper {
@@ -72,7 +71,7 @@ gap: 27px;
         margin-bottom: unset;
     }
 
-    @media screen and (min-width: 1280px) {       
+    @media screen and (min-width: 1280px) {
         width: 410px;
         border-radius: 36px;
         border: 2px solid var(--black-90);
@@ -280,7 +279,7 @@ gap: 27px;
     }
 }
 
-/**------HOVER-EFFECT------**/
+/**------HOVER-DETAILS------**/
 
 @media screen and (min-width: 1280px) {
 
@@ -301,11 +300,6 @@ gap: 27px;
         z-index: 1;
         opacity: 0;
         transition: opacity 0.3s ease;
-    }
-
-    .first-card-photo:hover::before,
-    .first-card-photo:focus::before {
-        opacity: 2;
     }
 
     .first-card-tab-wrapper {
@@ -368,11 +362,6 @@ gap: 27px;
         transition: opacity 0.3s ease;
     }
 
-    .second-card-photo:hover::before,
-    .second-card-photo:focus::before {
-        opacity: 2;
-    }
-
     .second-card-text-wrapper {
         position: absolute;
         width: 410px;
@@ -419,11 +408,6 @@ gap: 27px;
         transition: opacity 0.3s ease;
     }
 
-    .third-card-photo:hover::before,
-    .third-card-photo:focus::before {
-        opacity: 2;
-    }
-
     .third-card-tab-wrapper {
         position: absolute;
         width: 410px;
@@ -451,9 +435,12 @@ gap: 27px;
         line-height: normal;
     }
 
+
+    /**------HOVERS-------**/
+
     .text-alive {
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         pointer-events: none;
         opacity: 0;
         transition: opacity 0.3s ease;
@@ -465,6 +452,22 @@ gap: 27px;
 
     .find-second-card:hover .text-alive {
         opacity: 1;
+    }
+
+    .you-will-find-card:hover .first-card-photo::before,
+    .you-will-find-card:focus .first-card-photo::before {
+        opacity: 2;
+    }
+
+    .find-second-card:hover .second-card-photo::before,
+    .find-second-card:focus .second-card-photo::before {
+        opacity: 2;
+    }
+
+
+    .you-will-find-card:hover .third-card-photo::before,
+    .you-will-find-card:focus .third-card-photo::before {
+        opacity: 2;
     }
 
     .visually-hidden {

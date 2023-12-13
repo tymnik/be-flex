@@ -43,6 +43,7 @@
 
 .reviews-swiper-container {
   padding-left: 16px;
+  padding-bottom: 32px;
 }
 
 .reviews-card {
@@ -127,7 +128,7 @@
     font-size: 60px;
   }
   .reviews-swiper-container {
-    padding-left: 48px;
+    padding-left: unset;
   }
   .reviews-card {
     width: 409px;
@@ -147,9 +148,9 @@
     padding-top: 8px;
   }
 
-  .reviews-swiper-container {
-    padding-left: 80px;
-  }
+  /* .reviews-swiper-container {
+    padding-left: unset;
+  } */
 }
 /**
   |============================
@@ -205,11 +206,11 @@
 
 @media screen and (min-width: 744px) {
   .bottom-block {
-    padding: 8px 48px;
+    padding: 8px 0;
   }
 }
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .bottom-block {
-    padding: 8px 80px;
+    padding: 8px 0;
   }
-}
+} */
