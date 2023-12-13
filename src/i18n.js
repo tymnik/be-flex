@@ -120,7 +120,17 @@ i18next.init({
           'item5':'Socks',
           'item6':'Definitely a good mood',
         },
-        'submitForm':{},
+        'submitForm':{
+          'title':'Sign up for the 1st training session',
+
+          'placeholderName':'Name',
+          'placeholderComment':'comment',
+
+          'privacy':`I agree to the&nbsp;
+          <a href="#" class="link-privacy link">Privacy Policy</a>`,
+
+          'btn':'Get started for free',
+        },
         'faq':{
           'title':'Answers to questions',
 
@@ -142,9 +152,49 @@ i18next.init({
         'gallery':{
           'title':'Gallery',
         },
-        'review':{},
-        'address':{},
-        'followMe':{},
+        'reviews':{
+          'title':'Reviews',
+          
+          'name1':'Veronica G.',
+          'comment1':`The child has been going to Anastasia for acrobatics for about 6 months, I am very satisfied with it. I want to emphasize the high level of the master's qualifications and the individual approach to each child.`,
+
+          'name2':'Alexander',
+          'comment2':'After the 1st training, we realized that this ideal place is suitable for our Camilla.',
+
+          'name3':'Albina Kravets G.',
+          'comment3':`Coach Anastasia is a game-changer! Our daughter's skills and
+          confidence have soared since joining gymnastics classes.
+          Anastasia's passion and personalized approach make every session
+          enjoyable and productive.`,
+
+          'name4':'Emily T.',
+          'comment4':`Coach Anastasia has been transformative for our child. The
+          classes strike the perfect balance between fun and
+          skill-building. Anastasia's dedication and focus on safety make
+          us confident in our daughter's gymnastics journey.`,
+
+          'name5':'Sarah M.',
+          'comment5':`Our daughter loves gymnastics with Coach Anastasia! The classes
+          are fun yet structured, and Anastasia's patience and expertise
+          shine through. It's fantastic to see our child's progress and
+          enthusiasm grow each week.`,
+        },
+        'address':{
+          'title':'Contact me',
+
+          'subtitle1':'Address:',
+
+          'subtitle2':'Phone number:',
+
+          'subtitle3':'Working hours:',
+          'item3':` Monday - Sunday:<span class="contact-me-card-info-data"
+          >10 am - 9 pm</span>`,
+
+          'btn':'Get your trial class',        
+        },
+        'followMe':{
+          'title':'Follow me',
+        },
 
       },
     },
@@ -263,7 +313,17 @@ i18next.init({
           'item5':'Шкарпетки',
           'item6':'Гарний настрій',
         },
-        'submitForm':{},
+        'submitForm':{
+          'title':'Записуйся на 1-ше тренування',
+
+          'placeholderName':`Ім'я`,
+          'placeholderComment':'коментар',
+
+          'privacy':`Я згоден із&nbsp;
+          <a href="#" class="link-privacy link">Політикою конфіденційності</a>`,
+          
+          'btn':'Почни безкоштовно',
+        },
         'faq':{
           'title':'Відповіді на питання',
 
@@ -285,9 +345,40 @@ i18next.init({
         'gallery':{
           'title':'Галерея',
         },
-        'review':{},
-        'address':{},
-        'followMe':{},
+        'reviews':{
+          'title':`Рев'ю`,
+          
+          'name1':'Вероніка Дж.',
+          'comment1':`Дочка ходить до Анастасії на акробатику вже близько 6 місяців, я дуже задоволена. Хочу відзначити високий рівень кваліфікації тренера та індивідуальний підхід до кожної дитини.`,
+
+          'name2':'Олександр',
+          'comment2':'Вже після першого тренування ми зрозуміли, що це ідеальне місце підходить для нашої Камілли.',
+
+          'name3':'Альбіна Кравець Г.',
+          'comment3':`Анастасія змінила все! Навички та впевненість нашої доньки зросли після того, як вона приєдналася до настиних уроків гімнастики. Пристрасть та індивідуальний підхід Анастасії роблять кожну сесію приємною та продуктивною.`,
+
+          'name4':'Емілі Т.',
+          'comment4':`Тренер Анастасія змінила нашу дитину. Її заняття досягають ідеального баланс між грою та навчанням. Відданість Анастасії та її турбота про безпеку дають нам повну впевненість в подорожі нашої доньки світом гімнастики.`,
+
+          'name5':'Сара М.',
+          'comment5':`Наша донечка обожнює гімнастику з Анастасією! Заняття веселі, але чітко структуровані, терпіння та досвід Анастасії добре видно. Приємно щотижня бачити прогрес та захват нашої дитини.`,
+        },
+        'address':{
+          'title':`Зв'яжись зі мною`,
+
+          'subtitle1':'Адреса:',
+
+          'subtitle2':'Номер телефону:',
+
+          'subtitle3':'Робочі години:',
+          'item3':` Понеділок - Неділя:<span class="contact-me-card-info-data"
+          >10:00 - 21:00</span>`,
+
+          'btn':'Отримай пробне занянття',
+        },
+        'followMe':{
+          'title':'Підпишись на мене',
+        },
       },
     },
   },
