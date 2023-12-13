@@ -1,16 +1,22 @@
 .apparatus {
     padding: 72px 8px;
+}
 
-    @media screen and (min-width: 391px) {
+@media screen and (min-width: 391px) {
+    .apparatus {
         padding: 72px 16px;
     }
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .apparatus {
         padding: 72px 48px 56px;
         border-top: 2px solid var(--black-90);
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .apparatus {
         padding: 88px 80px 89px;
     }
 }
@@ -24,13 +30,17 @@
     line-height: normal;
     width: 221px;
     margin: 0 auto 40px;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .apparatus-title {
         width: 619px;
         font-size: 60px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .apparatus-title {
         margin: 0 auto 64px;
     }
 }
@@ -42,15 +52,19 @@
     column-gap: 15px;
     max-width: 343px;
     margin: 0 auto;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .apparatus-list {
         max-width: unset;
         width: 648px;
         row-gap: 40px;
         column-gap: 40px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .apparatus-list {
         flex-wrap: nowrap;
         width: unset;
         max-width: 1280px;
@@ -63,8 +77,10 @@
     flex-direction: column;
     max-width: calc((100%-15px) / 2);
     margin: 0 auto;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .apparatus-card {
         max-width: calc((100%-40px) / 2);
     }
 }
@@ -76,8 +92,10 @@
     border-radius: 24px;
     border: 2px solid #000;
     overflow: hidden;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .apparatus-photo {
         max-width: 302px;
     }
 }
@@ -90,8 +108,10 @@
     font-weight: var(--normal);
     line-height: normal;
     margin: 8px 0;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .apparatus-card-description {
         font-size: 18px;
         margin: 16px 0;
     }
@@ -104,8 +124,10 @@
     font-size: 24px;
     font-weight: var(--normal);
     line-height: normal;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .apparatus-card-title {
         font-size: 35px;
     }
 }

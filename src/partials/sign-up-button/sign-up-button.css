@@ -9,15 +9,19 @@
     gap: 10px;
     margin: 0 auto;
     justify-content: center;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .sign-btn-block {
         max-width: 648px;
         height: 140px;
         border-radius: 60px;
         gap: 46px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .sign-btn-block {
         max-width: 954px;
     }
 }
@@ -29,13 +33,17 @@
     font-family: var(--orelega-one);
     font-size: 16px;
     line-height: normal;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .sign-btn-block-text {
         font-size: 28px;
         width: 200px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .sign-btn-block-text {
         width: 285px;
         font-size: 35px;
     }
@@ -46,10 +54,12 @@
     width: 2px;
     height: 63px;
     fill: var(--white);
-    
-    @media screen and (min-width: 744px) {
-            height: 92px;
-        }
+}
+
+@media screen and (min-width: 744px) {
+    .sign-btn-line {
+        height: 92px;
+    }
 }
 
 .sign-up-btn {
@@ -62,15 +72,19 @@
     width: 145px;
     height: 48px;
     line-height: normal;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .sign-up-btn {
         font-size: 28px;
         width: 202px;
         height: 70px;
     }
+}
 
-        @media screen and (min-width: 1280px) {
-            width: 302px;
-            font-size: 35px;
-        }
+@media screen and (min-width: 1280px) {
+    .sign-up-btn {
+        width: 302px;
+        font-size: 35px;
+    }
 }

@@ -2,12 +2,16 @@
     padding: 72px 16px 0;
     display: flex;
     flex-direction: column;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom {
         padding: 120px 0 0;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .for-whom {
         padding: 88px 0 0;
     }
 }
@@ -20,8 +24,10 @@
     line-height: normal;
     text-align: center;
     margin-bottom: 40px;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom-title {
         font-size: 60px;
     }
 }
@@ -30,8 +36,10 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom-list {
         gap: unset;
     }
 }
@@ -44,28 +52,35 @@
     border: 2px solid #000;
     overflow: hidden;
     margin: 0 auto 16px;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom-photo {
         max-width: 200px;
         align-items: center;
         margin-bottom: unset;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .for-whom-photo {
         max-width: 409px;
     }
 }
 
-.for-whom-second-photo {
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom-second-photo {
         order: 2;
         width: 200px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .for-whom-second-photo {
         width: 407px;
     }
 }
+
 
 .for-whom-first-wrapper {
     max-width: 343px;
@@ -73,16 +88,22 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom-first-wrapper {
         gap: 24px;
         max-width: unset;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+
+@media screen and (min-width: 1280px) {
+    .for-whom-first-wrapper {
         gap: 26px;
     }
 }
+
 
 .for-whom-text-title {
     width: 100%;
@@ -92,16 +113,20 @@
     font-size: 24px;
     font-weight: var(--normal);
     line-height: normal;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom-text-title {
         font-size: 35px;
         width: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .for-whom-text-title {
         font-size: 60px;
         width: 411px;
     }
@@ -119,15 +144,19 @@
     font-size: 24px;
     font-weight: var(--normal);
     line-height: normal;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom-second-text-title {
         font-size: 35px;
         order: 3;
         width: 200px;
         max-width: unset;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .for-whom-second-text-title {
         font-size: 60px;
         width: 409px;
     }
@@ -142,16 +171,20 @@
     font-size: 14px;
     font-weight: var(--normal);
     line-height: normal;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom-description {
         font-weight: var(--bold);
         width: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .for-whom-description {
         width: 409px;
         font-size: 24px;
         font-weight: var(--bold-extra);
@@ -171,16 +204,20 @@
     flex-direction: column;
     margin: auto;
     justify-content: center;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom-second-description {
         font-weight: var(--bold);
         order: 1;
         margin: unset;
         width: 200px;
         max-width: unset;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .for-whom-second-description {
         width: 409px;
         font-size: 24px;
         font-weight: var(--bold-extra);
@@ -195,15 +232,19 @@
     align-items: center;
     margin: 0 auto;
     gap: 16px;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom-third-block-wrapper {
         flex-direction: row;
         gap: 24px;
         max-width: unset;
         margin: unset;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .for-whom-third-block-wrapper {
         gap: 78px;
     }
 }
@@ -216,22 +257,28 @@
     font-size: 32px;
     font-weight: var(--normal);
     line-height: normal;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .for-whom-third-title {
         font-size: 35px;
         width: 200px;
         display: flex;
         align-items: center;
         text-align: left;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .for-whom-third-title {
         font-size: 60px;
         width: unset;
         max-width: 409px;
     }
+}
 
-    @media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) {
+    .for-whom-third-title {
         width: 409px;
     }
 }
@@ -250,12 +297,16 @@
     font-weight: var(--normal);
     line-height: normal;
     color: #D53A84;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .to-join-btn {
         width: 200px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .to-join-btn {
         width: 303px;
     }
 }
@@ -265,10 +316,12 @@
     color: var(--white);
 }
 
-.for-whom-first-block,
-.for-whom-second-block,
-.for-whom-third-block {
-    @media screen and (min-width: 744px) {
+
+@media screen and (min-width: 744px) {
+
+    .for-whom-first-block,
+    .for-whom-second-block,
+    .for-whom-third-block {
         margin: 0 auto;
         border-top: 2px solid var(--black-90);
         width: 100%;
@@ -282,20 +335,24 @@
 
 /**-----BOXES-----**/
 
-.first-box-content {
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .first-box-content {
         width: 648px;
         display: flex;
         margin: 0 auto;
         gap: 24px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .first-box-content {
         width: 1260px;
         gap: 26px;
     }
+}
 
-    @media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) {
+    .first-box-content {
         width: 1280px;
     }
 }
@@ -307,8 +364,10 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .second-box-content {
         max-width: unset;
         width: 648px;
         display: flex;
@@ -317,20 +376,24 @@
         align-items: center;
         gap: 24px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .second-box-content {
         width: 1260px;
         gap: 27px;
         flex-wrap: nowrap;
     }
+}
 
-    @media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) {
+    .second-box-content {
         width: 1280px;
     }
 }
 
-.third-box-content {
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .third-box-content {
         display: flex;
         flex-direction: row-reverse;
         gap: 24px;
@@ -338,13 +401,17 @@
         margin: 0 auto;
         align-items: center;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .third-box-content {
         width: 1260px;
         gap: 70px;
     }
+}
 
-    @media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) {
+    .third-box-content {
         width: 1277px;
         gap: 78px;
     }

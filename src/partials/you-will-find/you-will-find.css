@@ -1,11 +1,15 @@
 .you-will-find {
     padding: 72px 16px 59px;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .you-will-find {
         padding: 0 44px 40px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .you-will-find {
         padding: 0 0 88px;
     }
 }
@@ -18,12 +22,16 @@
     text-align: center;
     margin-bottom: 40px;
     font-weight: var(--normal);
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .you-will-find-title {
         font-size: 60px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .you-will-find-title {
         margin-bottom: 64px;
     }
 }
@@ -34,8 +42,10 @@
     gap: 40px;
     max-width: 343px;
     margin: 0 auto;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .you-will-find-list {
         background-color: rgba(107, 57, 208, 0.10);
         border: 2px solid var(--black-90);
         border-radius: 36px;
@@ -43,8 +53,10 @@
         max-width: unset;
         width: 648px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .you-will-find-list {
         background-color: unset;
         border: unset;
         padding: unset;
@@ -53,8 +65,10 @@
         align-items: center;
         gap: 20px;
     }
+}
 
-    @media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) {
+    .you-will-find-list {
         gap: 27px;
     }
 }
@@ -65,13 +79,17 @@
     border-radius: 24px;
     overflow: hidden;
     margin-bottom: 24px;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .find-card-wrapper {
         width: 339px;
         margin-bottom: unset;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .find-card-wrapper {
         width: 410px;
         border-radius: 36px;
         border: 2px solid var(--black-90);
@@ -82,8 +100,10 @@
     display: block;
     border-top: 1.673px solid var(--black-90);
     width: 100%;
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .find-card-photo {
         border-top: 2px solid var(--black-90);
     }
 }
@@ -99,20 +119,24 @@
     font-size: 28px;
     font-weight: var(--normal);
     font-family: var(--orelega-one);
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .find-card-title {
         font-size: 30px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .find-card-title {
         font-size: 35px;
     }
 }
 
 /** ------FIRST-CARD------**/
 
-.you-will-find-card {
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .you-will-find-card {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -131,8 +155,10 @@
     list-style: none;
     padding-left: 0;
     color: var(--black-60);
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .find-card-ordered-list {
         gap: 18.5px;
     }
 }
@@ -153,8 +179,10 @@
     display: flex;
     width: 215px;
     justify-content: center;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .find-list-span {
         width: 212px;
     }
 }
@@ -169,8 +197,10 @@
     max-width: 329px;
     display: flex;
     margin: 16px auto 0;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .find-card-text {
         margin: 26.5px auto 0;
         max-width: 235px;
         font-size: 14px;
@@ -192,21 +222,23 @@
 
 /** ------SECOND-CARD------**/
 
-.find-second-card {
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .find-second-card {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .find-second-card {
         flex-direction: row;
     }
 }
 
-.second-card-text-wrapper {
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .second-card-text-wrapper {
         width: 239px;
     }
 }
@@ -219,8 +251,10 @@
     font-weight: var(--normal);
     font-size: 20px;
     color: var(--black-60);
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .group-classes-title {
         font-size: 20px;
     }
 }
@@ -232,8 +266,10 @@
     font-weight: var(--normal);
     color: var(--black-60);
     text-align: center;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .group-card-text {
         font-size: 14px;
     }
 }
@@ -251,8 +287,10 @@
     list-style: none;
     padding-left: 0;
     color: var(--black-60);
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .third-card-ordered-list {
         gap: 16px;
     }
 }
@@ -273,8 +311,10 @@
     display: flex;
     width: 270px;
     justify-content: center;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .third-card-span {
         width: 225px;
     }
 }

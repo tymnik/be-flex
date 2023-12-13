@@ -3,14 +3,20 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+}
 
-    @media screen and (min-width: 744px) {
-        padding: 16px 48px 72px;
+@media screen and (min-width: 744px) {
+    .about-me {
+        padding: 16px 48px 80px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .about-me {
         padding: 32px 80px 88px;
     }
+
+
 }
 
 .about-me::after {
@@ -18,24 +24,24 @@
     display: block;
     width: 100%;
     border-top: 2px solid #949494;
-    margin-top: 8px;
+    margin-top: 16px;
 }
 
+@media screen and (min-width: 744px) {}
+
 .about-me-wrapper {
-    max-width: 343px;
     margin: 0 auto;
+}
 
-    @media screen and (min-width: 744px) {
-        max-width: 648px;
-    }
-
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .about-me-wrapper {
         display: flex;
         gap: 24px;
         max-width: 1280px;
         margin: 0 auto;
     }
 }
+
 
 .about-me-title {
     font-size: 40px;
@@ -44,13 +50,17 @@
     text-align: center;
     margin-bottom: 40px;
     line-height: 1.1;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .about-me-title {
         font-size: 60px;
         line-height: 1.08;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .about-me-title {
         margin-bottom: 64px;
     }
 }
@@ -63,13 +73,17 @@
     border: 2px solid #000;
     margin-bottom: 16px;
     position: relative;
+}
 
-    @media screen and (min-width: 744px) {
+@media screen and (min-width: 744px) {
+    .about-me-photo {
         width: 648px;
         margin-bottom: 24px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .about-me-photo {
         width: 628px;
         margin-bottom: unset;
     }
@@ -80,96 +94,60 @@
     margin: 0 auto;
     overflow: hidden;
     max-width: 343px;
-    max-height: 210px;
     line-height: normal;
+}
 
-    &.collapsed {
-        max-height: 1500px;
-    }
-
-    @media screen and (min-width: 332px) {
-        max-height: 188px;
-    }
-
-    @media screen and (min-width: 391px) {
-        max-height: 165px;
-    }
-
-    @media screen and (min-width: 744px) {
-        max-height: unset;
+@media screen and (min-width: 744px) {
+    .intro-text {
         max-width: 628px;
         font-size: var(--body-1);
         line-height: normal;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .intro-text {
         max-width: 628px;
         font-size: 20px;
     }
 }
 
-.ellipsis {
-    display: none;
-
-    @media screen and (max-width: 743px) {
-        display: inline;
-    }
-}
-
-.btn-position {
-    display: flex;
-    margin-left: auto;
-
-    @media screen and (min-width: 744px) {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 743px) {
-
-    .intro-text p:nth-child(5),
-    .intro-text p:nth-child(n+6) {
-        display: none;
+    .collapsed {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
     }
+}
 
-    .intro-text.collapsed p:nth-child(5),
-    .intro-text.collapsed p:nth-child(n+6) {
-        display: block;
-    }
+.common-button {
+    display: block;
+    width: 88px;
+    height: 32px;
+    border-radius: 12px;
+    border: 1px solid var(--black-60);
+    font-size: var(--smallest);
+    line-height: normal;
+    font-weight: var(--normal);
+    font-family: var(--manrope);
+    background-color: initial;
+    margin-left: auto;
+}
 
-    .common-button {
-        width: 88px;
-        height: 32px;
-        border-radius: 12px;
-        border: 1px solid var(--black-60);
-        font-size: var(--smallest);
-        line-height: normal;
-        font-weight: var(--normal);
-        font-family: var(--manrope);
-        background-color: initial;
-        margin-left: auto;
-    }
+.common-button:hover,
+.common-button:focus {
+    border: 1px solid var(--main-violet);
+    color: var(--main-violet);
+}
 
-    .common-button:hover,
-    .common-button:focus {
-        border: 1px solid var(--main-violet);
-        color: var(--main-violet);
-    }
-
-    .show-less-btn {
-        display: none;
-    }
+.show-less-btn {
+    display: none;
 }
 
 @media screen and (min-width: 744px) {
-
-    .intro-text p:nth-child(4),
-    .intro-text p:nth-child(n+5) {
-        display: block;
-    }
-
-    .show-more-btn,
-    .show-less-btn {
+    .btn-position {
         display: none;
     }
 }
