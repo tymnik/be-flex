@@ -6,20 +6,10 @@ import 'swiper/css/pagination';
 
 new Swiper('.gallery-swiper-js', {
   modules: [Navigation, Pagination],
-  // rewind: true,
-  // setWrapperSize: true,
-  // uniqueNavElements: true,
   speed: 300,
   grabCursor: true,
   spaceBetween: 26,
   slidesPerView: 1,
-  keyboard: {
-    enabled: true,
-  },
-  mousewheel: {
-    sensitivity: 1,
-    eventsTarget: '.swiper-slide',
-  },
   loop: true,
   breakpoints: {
     744: {
