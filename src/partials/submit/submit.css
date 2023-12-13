@@ -55,8 +55,6 @@ body {
 	}
 }
 
-
-
 .sign_up_section_container {
 	display: flex;
 	flex-direction: column;
@@ -88,20 +86,20 @@ body {
 
 @media (min-width: 744px) {
 	.form_wrapper {
-		width: 648px;
-		height: 502px;
-		border-radius: 36px;
-		border: 2px solid #D53A84;
-		background: rgba(253, 246, 253, 0.80);
-		align-items: center;
-		margin: 0 auto;
+	width: 648px;
+	height: 502px;
+	border-radius: 36px;
+	border: 2px solid #D53A84;
+	background: rgba(253, 246, 253, 0.80);
+	align-items: center;
+	margin: 0 auto;
 	}
 }
 
 @media (min-width: 1280px) {
 	.form_wrapper {
-		width: 737px;
-		height: 537px;
+	width: 737px;
+	height: 537px;
 	}
 }
 
@@ -115,14 +113,14 @@ body {
 
 @media (min-width: 744px) {
 	.sign_up_form {
-		max-width: 434px;
-		gap: 24px;
+	max-width: 434px;
+	gap: 24px;
 	}
 }
 
 @media (min-width: 1280px) {
 	.sign_up_form {
-		max-width: 627px;
+	max-width: 627px;
 	}
 }
 
@@ -134,14 +132,13 @@ body {
 
 @media (min-width: 744px) {
 	.sign_up_form_div {
-		gap: 8px;
+	gap: 8px;
 	}
 }
 
-.sign_up_form_input {
+.submit_form_input {
 	border-radius: 36px;
 	border: 2px solid var(--black-60, #272727);
-	padding: 16px;
 	width: 328px;
 	padding: 16px 36px;
 
@@ -153,32 +150,37 @@ body {
 	line-height: normal;
 }
 
-.sign_up_form_input:hover,
-.sign_up_form_input:hover {
+.submit_form_input:hover {
 	border: 2px solid var(--main-1, #D53A84);
 	background: rgba(224, 137, 179, 0.10);
 }
 
+.submit_form_input:focus {
+	border-radius: 36px;
+	border: 2px solid var(--black-60, #272727);
+	color: var(--black-60, #272727);
+}
+
 @media (max-width: 374px) {
-	.sign_up_form_input {
-		width: 272px;
+	.submit_form_input {
+	width: 272px;
 	}
 }
 
-.sign_up_form_input:focus {
+.submit_form_input:focus {
 	outline: none;
 }
 
 @media (min-width: 744px) {
-	.sign_up_form_input {
-		width: 424px;
-		font-size: var(--subtitle-3);
+	.submit_form_input {
+	width: 424px;
+	font-size: var(--subtitle-3);
 	}
 }
 
 @media (min-width: 1280px) {
-	.sign_up_form_input {
-		width: 628px;
+	.submit_form_input {
+	width: 628px;
 	}
 }
 
@@ -192,11 +194,70 @@ body {
 	resize: none;
 }
 
-.modal-check {
-	width: 20px;
-	height: 20px;
+.sign_up_checkbox_input_error .sign_up_checkbox_label::before {
+	border: 2px solid #A61717;
+}
+.sign_up_checkbox {
+		display: flex;
+		align-items: center;
 }
 
+.sign_up_checkbox_input {
+	display: none;
+}
+
+.sign_up_checkbox_input:checked + .sign_up_checkbox_label::after {
+transform: scale(1);
+}
+.sign_up_checkbox_label {
+font-size: 16px;
+line-height: 140%;
+display: inline-flex;
+align-items: center;
+position: relative;
+cursor: pointer;
+
+	text-align: center;
+	line-height: 20px;
+}
+
+.sign_up_checkbox_label:hover::before {
+	border: 1px solid var(--main-1, #D53A84);
+}
+
+.sign_up_checkbox_label::before {
+	content: "";
+	flex: 0 0 20px;
+	align-self: flex-start;
+	height: 20px;
+	width: 20px;
+	border-radius: 4px;
+	border: 1px solid var(--black-90, #08070C);
+	margin-right: 10px;
+}
+
+.sign_up_checkbox_label::after {
+	content: "✓";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+
+	background: var(--main-2, #6B39D0);
+	color: white;
+	border-radius: 4px;
+
+	transform: scale(0);
+	transition: transform 0.5s ease 0s;
+
+}
+
+.check-text {
+	color: #000000;
+}
+
+#user-privacy:hover {
+	border: 1px solid var(--main-1, #D53A84);
+}
 .check-text {
 	color: var(--black-60, #272727);
 	font-family: Manrope;
@@ -206,27 +267,15 @@ body {
 	line-height: normal;
 }
 
-
-.red-border {
-	border: 2px solid var(--error, #A61717);
-}
-
 @media (min-width: 744px) {
-	.check-text {
-		font-size: var(--body-2);
+.check-text {
+font-size: var(--body-2);
 	}
 }
 
-.sign_up-privacy {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	gap: 8px;
-}
-
-@media (min-width: 1280px) {
-	.sign_up-privacy {
-		gap: 10px;
+@media (min-width: 744px) {
+.check-text {
+font-size: var(--body-2);
 	}
 }
 
@@ -258,20 +307,20 @@ body {
 
 @media (max-width: 374px) {
 	.sign_up_button {
-		width: 272px;
+	width: 272px;
 	}
 }
 
 @media (min-width: 744px) {
 	.sign_up_button {
-		width: 424px;
-		font-style: var(--subtitle-2);
+	width: 424px;
+	font-style: var(--subtitle-2);
 	}
 }
 
 @media (min-width: 1280px) {
 	.sign_up_button {
-		width: 628px;
+	width: 628px;
 	}
 }
 
@@ -280,9 +329,21 @@ body {
 }
 
 @media (min-width: 744px) {
-	.sign_up_section .main_title {
-		font-size: var(--title-2);
-	}
+.sign_up_section .main_title {
+font-size: var(--title-2);
+}
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+transition: background-color 5000s ease-in-out 0s;
+background-color: white;
+}
+
+.submit_form_input {
+color: var(--black-60);
 }
 
 /* Intl-tel-input */
@@ -303,17 +364,21 @@ background-color: transparent;
 .iti--allow-dropdown input[disabled]+.iti__flag-container:hover,
 .iti--allow-dropdown input[readonly]+.iti__flag-container:hover {
 	cursor: unset;
-		background-color: transparent;
+	background-color: transparent;
 }
 
-
-
 .iti.iti--separate-dial-code .iti__arrow {
-	margin-left: 6px;
+	margin-left: 8px;
 	width: 1px;
 	height: 45px;
 	border: unset;
 	background: var(--black-60, #272727);
+}
+
+@media (min-width: 744px) {
+	.iti.iti--separate-dial-code .iti__arrow {
+			margin-right: 8px;
+	}
 }
 
 .iti .iti__flag-container .iti__selected-flag {
@@ -324,4 +389,14 @@ background-color: transparent;
 
 .iti .iti--separate-dial-code .iti--show-flags .iti__selected-dial-code {
 	margin: unset;
+}
+
+.iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+	font-size: 14px;
+}
+
+@media (min-width: 744px) {
+	.iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+		font-size: 20px;
+	}
 }
