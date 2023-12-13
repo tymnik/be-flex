@@ -1,5 +1,4 @@
 .hero-section {
-    /* width: 375px; */
     height: 667px;
     flex-shrink: 0;
     padding-bottom: 116px;
@@ -16,7 +15,6 @@
 .hero-big-title {
     max-width: 375px;
     max-height: 282px;
-    /* flex-shrink: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +45,8 @@
 
 .hero-button {
     display: flex;
-    width: 343px;
+    width: 100%;
+    max-width: 343px;
     height: 70px;
     padding: 16px 58px;
     justify-content: center;
@@ -104,7 +103,7 @@
     }
 
     .hero-button {
-        width: 397px;
+        max-width: 397px;
     }
 }
 
