@@ -47,7 +47,8 @@
 
 .hero-button {
     display: flex;
-    width: 343px;
+    width: 100%;
+    max-width: 343px;
     height: 70px;
     padding: 16px 58px;
     justify-content: center;
@@ -104,7 +105,7 @@
     }
 
     .hero-button {
-        width: 397px;
+        max-width: 397px;
     }
 }
 
