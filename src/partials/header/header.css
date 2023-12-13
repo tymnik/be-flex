@@ -20,12 +20,10 @@
 .header-container {
     height: 64px;
     width: 100%;
-    /* max-width: 375px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    /* position: fixed; */
 
     padding: 8px 16px;
 }
@@ -66,7 +64,6 @@
 }
 
 .header-burger-opener {
-    /* padding: 10px; */
     border: 2px solid #08070C;
     border-radius: 50%;
     width: 48px;
@@ -90,9 +87,7 @@
 
 
     .header-container {
-        /* max-width: 648px; */
         padding: 8px 48px;
-        /* margin: 0 56px; */
     }
 
     .header-logo-link>svg {
