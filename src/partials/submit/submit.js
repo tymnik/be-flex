@@ -45,51 +45,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // ------------------------------------------------------------------------------
-const form = document.getElementById('form');
-    
 document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('form');
+
     form.addEventListener('submit', formSend);
+
+    const formElements = document.querySelectorAll('.submit_form_input, .sign_up_checkbox_input');
+
+    formElements.forEach((input) => {
+        input.addEventListener('input', function () {
+            validateInput(input);
+        });
+    });
 
     async function formSend(e) {
         e.preventDefault();
 
         let error = 0;
-        
-
-        const userNameInput = document.getElementById('user-name');
-        if (userNameInput.value.trim().length < 1) {
-            addError(userNameInput);
-            error++;
-        } else {
-            removeError(userNameInput);
-        }
-        const formElements = document.querySelectorAll('.submit_form_input, .sign_up_checkbox_input');
 
         formElements.forEach((input) => {
-            removeError(input);
+            validateInput(input);
 
-            if (input.type === 'checkbox' && !input.checked) {
-                addError(input);
-                error++;
-            } else if (input.id === 'user-tel') {
-                const userTelInput = document.getElementById('user-tel');
-                if (!isValidPhoneNumber(userTelInput.value.trim())) {
-                    addError(userTelInput);
-                    error++;
-                } else {
-                    removeError(userTelInput);
-                }
-            } else if (input.id !== 'user-comment' && input.value.trim() === '') {
-                addError(input);
+            if (input.parentElement.classList.contains('_error')) {
                 error++;
             }
         });
 
+        console.log('Error count:', error);
 
-
-        // Отримання даних і відправлення форми, якщо валідація успішна
-
+        if (error === 0) {
             try {
+                console.log('Form is valid. Trying to submit...');
                 const formData = new FormData(document.querySelector('.sign_up_form'));
                 const telegramToken = '6943310494:AAF9IRuXS0o6ejGqdXoa_ZHePm6PcEwLLLA';
                 const ChatId = '-1002131222060';
@@ -104,31 +90,53 @@ document.addEventListener('DOMContentLoaded', function () {
                     message += key + ': ' + value + '\n';
                 });
 
+                console.log('Sending form data to Telegram...');
                 const response = await axios.post(`${Url_api}/sendMessage`, {
                     chat_id: ChatId,
                     parse_mode: 'html',
                     text: message,
                 });
 
-                console.log('Повідомлення відправлено до Telegram:', response.data);
+                console.log('Form data sent successfully to Telegram:', response.data);
             } catch (error) {
-                console.error('Помилка відправлення повідомлення до Telegram:', error);
+                console.error('Error sending form data to Telegram:', error);
             }
         }
+    }
+
+    function validateInput(input) {
+        const value = input.value.trim();
+
+        if (input.id === 'user-name' && value.length < 1) {
+            addError(input);
+        } else if (input.type === 'checkbox' && !input.checked) {
+            addError(input);
+        } else if (input.id === 'user-tel' && !isValidPhoneNumber(value)) {
+            addError(input);
+        } else if (input.id !== 'user-comment' && value === '') {
+            addError(input);
+        } else {
+            removeError(input);
+        }
+    }
 
     function addError(input) {
         input.parentElement.classList.add('_error');
         input.classList.add('_error');
+        input.style.border = '2px solid #A61717';
     }
 
     function removeError(input) {
         input.parentElement.classList.remove('_error');
         input.classList.remove('_error');
+        input.style.removeProperty('border');
     }
 
     function isValidPhoneNumber(phoneNumber) {
-        return /^\d{10}$/.test(phoneNumber);
+        return /^\d{9,12}$/.test(phoneNumber);
     }
 });
+
+
 
 

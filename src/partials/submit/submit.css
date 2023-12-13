@@ -193,21 +193,10 @@ body {
 	border: 2px solid var(--black-60, #272727);
 	resize: none;
 }
-.sign_up_form._error {
-	border: 2px solid var(--error, #A61717);
-}
 
 .sign_up_checkbox._error .sign_up_checkbox_label::before {
 	border: 2px solid var(--error, #A61717);
 }
-
-red_border {
-		border: 2px solid var(--error, #A61717);
-}
-
-/* .sign_up-privacy {
-	display: flex;
-	align-items: center;} */
 
 .sign_up_checkbox {
 		display: flex;
@@ -248,8 +237,6 @@ cursor: pointer;
 	margin-right: 10px;
 }
 
-
-
 .sign_up_checkbox_label::after {
 	content: "✓";
 	width: 20px;
@@ -265,48 +252,10 @@ cursor: pointer;
 
 }
 
-
-.sign_up_checkbox_label a {
-	color: #6B39D0;
-}
-
-
-/* #user-privacy {
-	appearance: none;
-	width: 20px;
-	height: 20px;
-	border: 1px solid var(--black-90, #08070C);
-	background: transparent;
-	border-radius: 4px;
-	margin-right: 10px;
-	cursor: pointer;
-	transition: 0.3s ease;
-}
-
-#user-privacy:checked {
-	background-color: #6B39D0;
-	border: 1px solid #6B39D0;
-}
-
-
-
-#user-privacy:checked::before {
-	content: "✓";
-	color: var(--background);
-	font-size: 16px;
-	line-height: 20px;
-	text-align: center;
-	font-weight: bold;
-	display: block;
-} */
-
 .check-text {
 	color: #000000;
 }
 
-/* .red-border {
-	border: 2px solid var(--error, #A61717);
-} */
 #user-privacy:hover {
 	border: 1px solid var(--main-1, #D53A84);
 }
