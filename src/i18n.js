@@ -11,7 +11,7 @@ i18next.init({
           'youWillFind': 'What will you find',
           'forWhom': 'For whom',
           'gallery': 'Gallery',
-          'adress': 'Adress',
+          'address': 'Address',
           'switchTxt': 'Switch language:',
           'follow': 'Follow me:'
           },
@@ -205,7 +205,7 @@ i18next.init({
           'youWillFind': 'Що в нас є',
           'forWhom': 'Для кого',
           'gallery': 'Галерея',
-          'adress': 'Адреса',
+          'address': 'Адреса',
           'switchTxt': 'Зміни мову:',
           'follow': 'Підпишись:'
         },
