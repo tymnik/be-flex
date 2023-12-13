@@ -10,7 +10,7 @@
     <script type="module" crossorigin src="/be-flex/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/be-flex/assets/vendor-f6a00c0a.js">
     <link rel="stylesheet" href="/be-flex/assets/vendor-e4c787fc.css">
-    <link rel="stylesheet" href="/be-flex/assets/index-10bae93a.css">
+    <link rel="stylesheet" href="/be-flex/assets/index-b08ffd15.css">
   </head>
 
   <body>
@@ -560,25 +560,27 @@
 		<h2 class="sign_up_title main_title" data-i18n="submitForm.title">Sign up for the 1st
 		training session</h2>
 	<div class="form_wrapper">
-	<form class="sign_up_form" action="#" method="post" enctype="multipart/form-data">
+	<form id="form" class="sign_up_form" action="#" method="post" enctype="multipart/form-data" novalidate>
 		<div class="sign_up_form_div">
 					<div class="user_name_wrap">
-						<input type="text" id="user-name" name="user-name" class="sign_up_form_input name-input" placeholder="Name" required data-i18n="submitForm.placeholderName">
+						<input type="text" id="user-name" name="user-name" class="submit_form_input name-input" placeholder="Name" required data-i18n="submitForm.placeholderName">
 					</div>
 					<div class="user-phone-container">
-						<input type="tel" id="user-tel" name="user-phone" class="sign_up_form_input phone_input" required>
+						<input type="tel" id="user-tel" name="user-phone" class="submit_form_input phone_input" required>
 					</div>
 					<!--textarea-->
 					<div class="sign_up-textarea_content">
-						<textarea id="user-comment" name="user-comment" class="sign_up_form_input textarea_content"
+						<textarea id="user-comment" name="user-comment" class="submit_form_input textarea_content"
 							placeholder="comment" data-i18n="submitForm.placeholderComment"></textarea>
 					</div>
 					<!--checkbox-->
 					<div class="sign_up-privacy">
-						<input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="modal-check ">
-						<label for="user-privacy" class="check-text" data-i18n="submitForm.privacy">
-							I agree to the&nbsp;
-							<a href="#" class="link-privacy link">Privacy Policy</a>
+						<input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="sign_up_checkbox_input">
+						<label for="user-privacy" class="sign_up_checkbox_label" data-i18n="submitForm.privacy">
+							<span class="check-text">
+								I agree to the&nbsp;
+								<a href="#" class="link-privacy link">Privacy Policy</a>
+							</span>
 						</label>
 					</div>
 		</div>
