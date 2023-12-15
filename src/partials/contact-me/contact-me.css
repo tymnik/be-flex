@@ -63,6 +63,13 @@
   font-weight: var(--normal);
   line-height: normal;
 }
+
+.contact-me-card-info-data:hover,
+.contact-me-card-info-data:focus {
+  color: var(--main-violet);
+  transition: fill 250ms linear;
+}
+
 .contact-me-card-info-data span {
   padding-left: 24px;
 }
