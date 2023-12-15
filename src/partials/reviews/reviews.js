@@ -37,5 +37,6 @@ new Swiper('.reviews-swiper-js', {
   pagination: {
     el: '.reviews-swiper-pagination',
     type: 'bullets',
+    clickable: true,
   },
 });

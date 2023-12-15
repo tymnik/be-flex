@@ -30,5 +30,6 @@ new Swiper('.gallery-swiper-js', {
   pagination: {
     el: '.gallery-swiper-pagination',
     type: 'bullets',
+    clickable: true,
   },
 });

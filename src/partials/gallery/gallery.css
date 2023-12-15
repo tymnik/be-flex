@@ -119,3 +119,6 @@
     padding-bottom: 43px;
   }
 }
+.gallery-swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--main-violet);
+}

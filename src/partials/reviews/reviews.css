@@ -112,6 +112,11 @@
   font-weight: var(--normal);
   line-height: normal;
 }
+
+.reviews-swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--main-violet);
+}
+
 @media screen and (min-width: 375px) {
   .reviews-wrap {
     width: 375px;
@@ -212,4 +217,3 @@
     padding: 8px 0;
   }
 }
-
