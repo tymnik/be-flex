@@ -15,8 +15,6 @@
     .about-me {
         padding: 32px 80px 88px;
     }
-
-
 }
 
 .about-me::after {
@@ -69,8 +67,7 @@
     display: block;
     margin: 0 auto;
     width: 343px;
-    border-radius: 36px;
-    border: 2px solid #000;
+    height: 100%;
     margin-bottom: 16px;
     position: relative;
 }
@@ -84,7 +81,7 @@
 
 @media screen and (min-width: 1280px) {
     .about-me-photo {
-        width: 628px;
+        min-width: 628px;
         margin-bottom: unset;
     }
 }
