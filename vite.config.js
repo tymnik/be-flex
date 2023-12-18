@@ -14,7 +14,7 @@ export default defineConfig(({ command }) => {
 
       rollupOptions: {
         input: glob.sync('./src/*.html'),
-
+        base: '',
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
