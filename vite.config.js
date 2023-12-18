@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 
@@ -12,9 +13,9 @@ export default defineConfig(({ command }) => {
       sourcemap: true,
 
       rollupOptions: {
-        input: {
-          main: './src/main.js',
-        },
+        input: glob.sync('./src/*.html'),
+        main: './src/main.js',
+
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
