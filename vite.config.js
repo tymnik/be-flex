@@ -14,7 +14,6 @@ export default defineConfig(({ command }) => {
 
       rollupOptions: {
         input: glob.sync('./src/*.html'),
-        main: './src/main.js',
 
         output: {
           manualChunks(id) {
@@ -25,7 +24,7 @@ export default defineConfig(({ command }) => {
           entryFileNames: 'commonHelpers.js',
         },
       },
-      outDir: '../dist',
+      outDir: './src',
     },
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
   };
